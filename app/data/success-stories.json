@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "label": "REAL STORIES, REAL HOPE",
+    "title": "Every child has a story worth sharing.",
+    "description": "Meet the children, families, educators, and volunteers turning access to learning into new possibilities.",
+    "image": "/about-edu.png",
+    "imageAlt": "Student smiling during a learning activity"
+  },
+  "featured": {
+    "label": "FEATURED STORY",
+    "title": "A school kit became a reason to raise her hand.",
+    "person": "Maya, learning center student",
+    "quote": "She held her new bag all morning and refused to put it down. That was the day she started raising her hand.",
+    "description": "With her own notebooks, pencils, and a quiet place to study, Maya found the confidence to take part in every lesson. Today, she helps younger students prepare their schoolwork.",
+    "image": "/post-1.png",
+    "imageAlt": "Children holding their new school supply kits"
+  },
+  "stories": [
+    {
+      "title": "A classroom that feels like home",
+      "description": "After joining an after-school learning group, Anita began reading every day and now looks forward to helping her classmates practise.",
+      "tag": "Learning support",
+      "image": "/program-1.png",
+      "imageAlt": "Children learning together in a classroom"
+    },
+    {
+      "title": "From first click to first project",
+      "description": "Daniel discovered computers through a digital learning session and built his first presentation about the future he wants to create.",
+      "tag": "Digital learning",
+      "image": "/program-2.png",
+      "imageAlt": "Students learning computer skills together"
+    },
+    {
+      "title": "A mentor makes room for possibility",
+      "description": "When local teachers joined our training program, more children received patient guidance and a learning plan shaped around their needs.",
+      "tag": "Community partnership",
+      "image": "/post-2.png",
+      "imageAlt": "Students participating in a group learning activity"
+    }
+  ],
+  "impact": [
+    { "value": "1,200+", "label": "children supported" },
+    { "value": "24", "label": "learning centers" },
+    { "value": "80+", "label": "active volunteers" }
+  ]
+}

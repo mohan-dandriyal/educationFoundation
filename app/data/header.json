@@ -1,0 +1,15 @@
+
+{
+  "logo": "/logo.png",
+  "logoAlt": "D. Sullivan",
+  "logoHref": "#top",
+  "links": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Our Program", "href": "/our-program" },
+    { "label": "Our Impact", "href": "/our-impact" },
+    { "label": "success  Story", "href": "/our-success-story" },
+    { "label": "blog", "href": "/blog" }
+  ],
+  "cta": { "label": "Let's talk", "href": "/contact-us" }
+}

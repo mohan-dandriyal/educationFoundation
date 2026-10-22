@@ -1,0 +1,213 @@
+{
+    "post": [
+        {
+            "id": 1,
+            "slug": "sharing-school-supplies-spreading-smiles",
+            "title": "Sharing School Supplies, Spreading Smiles",
+            "author": "Admin",
+            "date": "2025-03-20",
+            "dateLabel": "Mar 20, 2025",
+            "readTime": "2 min read",
+            "image": {
+                "src": "/post-1.png",
+                "alt": "Close-up of a hiking boot on a city street covered in autumn leaves at sunset"
+            },
+            "views": 379,
+            "href": "/blog/sharing-school-supplies-spreading-smiles"
+        },
+        {
+            "id": 2,
+            "slug": "how-education-opens-doors-to-new-dreams",
+            "title": "How Education Opens Doors to New Dreams",
+            "author": "Admin",
+            "date": "2025-03-20",
+            "dateLabel": "Mar 20, 2025",
+            "readTime": "2 min read",
+            "image": {
+                "src": "/post-2.png",
+                "alt": "Sunset over a pebbly beach with waves rolling in under a cloudy sky"
+            },
+            "views": 177,
+            "href": "/blog/how-education-opens-doors-to-new-dreams"
+        },
+        {
+            "id": 3,
+            "slug": "sustainable-living-tips-reduce-waste-and-conserve-energy",
+            "title": "Sustainable Living Tips: Reduce Waste and Conserve Energy",
+            "author": "Admin",
+            "date": "2025-03-20",
+            "dateLabel": "Mar 20, 2025",
+            "readTime": "2 min read",
+            "image": {
+                "src": "/program-1.png",
+                "alt": "Woman in a black puffer jacket standing on a blurred city street"
+            },
+            "views": 81,
+            "href": "/blog/sustainable-living-tips-reduce-waste-and-conserve-energy"
+        }
+    ],
+    "details": [
+        {
+            "id": 1,
+            "slug": "sharing-school-supplies-spreading-smiles",
+            "title": "Sharing School Supplies, Spreading Smiles",
+            "author": {
+                "name": "Admin",
+                "initials": "AD"
+            },
+            "date": "2025-03-20",
+            "dateLabel": "Mar 20, 2025",
+            "readTime": "2 min read",
+            "image": {
+                "src": "/post-1.png",
+                "alt": "Children holding their new school supply kits at a learning center"
+            },
+            "views": 379,
+            "comments": 2,
+            "likes": 24,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "A new notebook, a sharp pencil and a sturdy bag may look like small things. For a child who has none of them, they can decide whether she sits at the back of the class or takes part in every lesson."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This spring our volunteers and supporters packed more than 1,200 school kits and delivered them to our learning centers. Every kit holds notebooks, pencils, a ruler, a water bottle and a backpack, so no child has to share a single pencil or write on scraps of paper."
+                },
+                {
+                    "type": "image",
+                    "src": "/post-1.png",
+                    "alt": "Children holding their new school supply kits at a learning center",
+                    "caption": "Kits handed out at one of our learning centers."
+                },
+                {
+                    "type": "heading",
+                    "text": "Why a small kit makes a big difference"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Our teachers report that children with their own supplies arrive on time more often, finish more of their work and speak up more in class. Owning the tools to learn tells a child that she belongs there."
+                },
+                {
+                    "type": "quote",
+                    "text": "She held her new bag all morning and refused to put it down. That was the day she started raising her hand.",
+                    "cite": "A teacher at one of our learning centers"
+                },
+                {
+                    "type": "heading",
+                    "text": "How you can help"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "You can sponsor a kit, organize a supply drive at your school or workplace, or volunteer at our next packing day. Every kit costs less than a lunch out and stays with a child for the whole school year."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "how-education-opens-doors-to-new-dreams",
+            "title": "How Education Opens Doors to New Dreams",
+            "author": {
+                "name": "Admin",
+                "initials": "AD"
+            },
+            "date": "2025-03-20",
+            "dateLabel": "Mar 20, 2025",
+            "readTime": "2 min read",
+            "image": {
+                "src": "/post-2.png",
+                "alt": "Students learning together in a classroom at one of our centers"
+            },
+            "views": 177,
+            "comments": 0,
+            "likes": 18,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "Ask a child what she wants to be when she grows up and the answers are bold: a doctor, a pilot, a teacher, an engineer. Education is the bridge between those dreams and the life that makes them possible."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "In the communities we serve, many children leave school early because of distance, cost or a lack of support at home. Our learning centers bring free classes close to home, so a child can learn without walking for hours or choosing between school and helping her family."
+                },
+                {
+                    "type": "image",
+                    "src": "/post-2.png",
+                    "alt": "Students learning together in a classroom at one of our centers",
+                    "caption": "A morning class at one of our learning centers."
+                },
+                {
+                    "type": "heading",
+                    "text": "More than lessons"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Alongside reading, writing and math, our mentors help children build confidence, curiosity and the habit of asking questions. These skills stay with them long after the school day ends."
+                },
+                {
+                    "type": "heading",
+                    "text": "Dreams that spread"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "When one child finishes school, her whole family benefits. Graduates return as tutors and volunteers, and younger children see what is possible. That is how a single classroom can change a community."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "sustainable-living-tips-reduce-waste-and-conserve-energy",
+            "title": "Sustainable Living Tips: Reduce Waste and Conserve Energy",
+            "author": {
+                "name": "Admin",
+                "initials": "AD"
+            },
+            "date": "2025-03-20",
+            "dateLabel": "Mar 20, 2025",
+            "readTime": "2 min read",
+            "image": {
+                "src": "/program-1.png",
+                "alt": "Girl in a school uniform holding a chalkboard that reads Right to Education"
+            },
+            "views": 81,
+            "comments": 1,
+            "likes": 9,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": "Living sustainably does not mean changing everything at once. Small habits, repeated every day at home and at school, add up to real savings in waste and energy."
+                },
+                {
+                    "type": "heading",
+                    "text": "Reduce waste"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Carry a reusable water bottle and lunch box, choose refillable or loose items over single-use packaging, and give notebooks and uniforms a second life by passing them on. Compost food scraps where you can."
+                },
+                {
+                    "type": "image",
+                    "src": "/program-2.png",
+                    "alt": "Students sorting recycling at a school eco club",
+                    "caption": "Students sorting recycling at a school eco club."
+                },
+                {
+                    "type": "heading",
+                    "text": "Conserve energy"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Switch off lights and chargers when you leave a room, open curtains instead of turning on lamps, and dry clothes in the sun. In classrooms, a simple checklist handed to students makes saving energy a shared habit."
+                },
+                {
+                    "type": "heading",
+                    "text": "Learn it together"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Children who learn these habits early teach them to their families. That is why our programs include eco clubs, where students plan small projects and track how much waste and energy they save."
+                }
+            ]
+        }
+    ]
+}

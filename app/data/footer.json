@@ -1,0 +1,19 @@
+{
+  "logo": "/logo.png",
+  "logoAlt": "D. Sullivan",
+  "logoHref": "/",
+  "heading": "Leading the change.",
+  "cta": { "label": "Let's talk", "href": "/contact-us" },
+  "links": [
+    { "label": "Home", "href": "/" },
+    { "label": "Our program", "href": "/our-program" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact", "href": "/contact-us" }
+  ],
+  "contact": {
+    "email": "hello@dsullivan.org",
+    "phone": "+1 (000) 000-0000",
+    "phoneHref": "tel:+10000000000"
+  },
+  "backToTopLabel": "Back to top"
+}

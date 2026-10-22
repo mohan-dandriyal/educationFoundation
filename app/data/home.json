@@ -1,0 +1,62 @@
+{
+    "hero": {
+        "eyebrow": "D. Sullivan / AgriTech",
+        "title": "Leading the Change",
+        "description": "We develop cutting-edge agritech solutions that enhance sustainability and improve crop yield. Join us in our mission to revolutionize the future of agriculture.",
+        "cta": "Explore More",
+        "ctaHref": "#discover",
+        "leftImage": {
+            "src": "/hero-left.png",
+            "alt": "Researcher inspecting healthy crops in a green field"
+        },
+        "rightImage": {
+            "src": "/hero-right.png",
+            "alt": "Drone flying above a sunlit agricultural field"
+        }
+    },
+    "about": {
+        "label" : "about us",
+        "title": "Building Brighter Futures Through Education",
+        "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis omnis ipsa ipsum voluptatum veniam. Delectus totam dolores quam. Molestias modi incidunt doloribus illo voluptas fuga beatae, pariatur reprehenderit quasi iure?",
+        "buttonText": "Contact Us",
+        "href": "/contact",
+        "image": {
+            "src": "/about-edu.png",
+            "alt": "Smiling woman in an olive green t-shirt standing on cracked, dry earth"
+        }
+    },
+    "ourProgram": {
+        "eyebrow": "Our Program",
+        "heading": "We believe every child deserves an opportunity to learn and grow.",
+        "images": [
+            {
+                "src": "/program-1.png",
+                "alt": "We introduce children to computers, digital tools."
+            },
+            {
+                "src": "/program-2.png",
+                "alt": "We aim to provide essential learning materials, including books, notebooks, stationery, and school supplies to children who need them."
+            }
+        ]
+    },
+    "ourBlog": {
+        "eyebrow": "Our Post",
+        "heading": "We believe every child deserves an opportunity to learn, grow, and build a brighter ",
+        "post": [
+            {
+                "src": "/program-1.png",
+                "alt": "We introduce children to computers, digital tools.",
+                "title": "Every Child Deserves a Chance to Learn",
+                "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "slug": ""
+            },
+            {
+                "src": "/program-2.png",
+                "alt": "We aim to provide essential learning materials, including books, notebooks, stationery, and school supplies to children who need them.",
+                "title": "Sharing School Supplies, Spreading Smiles",
+                "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "slug": ""
+            }
+        ]
+    }
+}

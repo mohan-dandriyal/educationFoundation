@@ -1,0 +1,107 @@
+{
+    "hero": {
+        "title": "We'd Love to Hear From You",
+        "description": "",
+        "image": {
+            "src": "/about-edu.png",
+            "alt": "Smiling woman crouching in a field, holding a young green plant"
+        },
+        "button": {
+            "buttonText": "Explore Our Programs",
+            "buttonLink": "/our-program"
+        }
+    },
+    "formSection": {
+        "label": "Contact Us",
+        "title": "Get in Touch",
+        "description": "Questions about our programs, volunteering or donating? Send us a message and our team will reply within two working days.",
+        "email": "hello@dsullivan.org",
+        "mobileNo": "+1 (000) 000-0000",
+        "address": "123 Learning Street, Your City, Your Country",
+        "officeHours": "Monday to Friday, 9:00 to 17:00",
+        "formTitle": "Send us a message",
+        "submitButton": "Send Message",
+        "sendingText": "Sending…",
+        "successTitle": "Message sent",
+        "successMessage": "Thank you for reaching out. We will get back to you within two working days.",
+        "sendAnotherText": "Send another message",
+        "errorMessage": "Something went wrong and your message was not sent. Please try again, or email us directly.",
+        "formFields": [
+            {
+                "name": "name",
+                "label": "Full name",
+                "type": "text",
+                "placeholder": "Your name",
+                "required": true,
+                "autoComplete": "name",
+                "minLength": 2,
+                "width": "half"
+            },
+            {
+                "name": "email",
+                "label": "Email address",
+                "type": "email",
+                "placeholder": "name@example.com",
+                "required": true,
+                "autoComplete": "email",
+                "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+                "width": "half"
+            },
+            {
+                "name": "phone",
+                "label": "Phone number",
+                "type": "tel",
+                "placeholder": "+1 000 000 0000",
+                "required": false,
+                "autoComplete": "tel",
+                "pattern": "^[0-9+()\\-\\s]{7,20}$",
+                "width": "half"
+            },
+            {
+                "name": "subject",
+                "label": "Topic",
+                "type": "select",
+                "placeholder": "Select a topic",
+                "required": true,
+                "options": [
+                    "General enquiry",
+                    "Volunteering",
+                    "Donations",
+                    "Partnerships",
+                    "Sponsoring a child"
+                ],
+                "width": "half"
+            },
+            {
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "placeholder": "How can we help?",
+                "required": true,
+                "rows": 5,
+                "minLength": 10,
+                "width": "full"
+            }
+        ],
+        "validationErrors": {
+            "name": {
+                "required": "Please enter your name.",
+                "minLength": "Your name should have at least 2 characters."
+            },
+            "email": {
+                "required": "Please enter your email address.",
+                "pattern": "Please enter a valid email address, like name@example.com."
+            },
+            "phone": {
+                "pattern": "Please enter a valid phone number, using digits, spaces, + or dashes."
+            },
+            "subject": {
+                "required": "Please choose a topic."
+            },
+            "message": {
+                "required": "Please write a message.",
+                "minLength": "Your message should have at least 10 characters."
+            }
+        }
+    }
+}

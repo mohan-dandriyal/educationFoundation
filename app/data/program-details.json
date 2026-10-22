@@ -1,0 +1,70 @@
+{
+  "programs": [
+    {
+      "slug": "free-education",
+      "title": "Free Education for All",
+      "category": "Education",
+      "image": "/program-1.png",
+      "imageAlt": "Children studying together in a classroom",
+      "intro": "Every child deserves a safe, supportive place to learn. Our free education program helps remove the cost and access barriers that keep children out of school.",
+      "story": "We work with local educators and families to provide consistent lessons, patient support, and the confidence children need to keep learning.",
+      "features": ["Learning support", "Basic education", "Academic guidance"],
+      "outcomes": ["Stronger reading and numeracy", "Improved school attendance", "More confidence in the classroom"]
+    },
+    {
+      "slug": "digital-learning",
+      "title": "Digital Learning",
+      "category": "Technology",
+      "image": "/program-2.png",
+      "imageAlt": "Students learning computer skills together",
+      "intro": "Digital skills open doors to education, work, and connection. We give children practical experience with computers and technology in a welcoming environment.",
+      "story": "Our mentors make technology approachable through guided projects that build curiosity, problem-solving, and the confidence to try something new.",
+      "features": ["Computer education", "Digital literacy", "Technology awareness"],
+      "outcomes": ["Stronger computer confidence", "Practical digital skills", "Greater access to online learning"]
+    },
+    {
+      "slug": "books-school-supplies",
+      "title": "Books and School Supplies",
+      "category": "Resources",
+      "image": "/post-1.png",
+      "imageAlt": "Books, notebooks, and school supplies ready for students",
+      "intro": "The right tools can change how a child feels about school. We provide books, notebooks, stationery, and learning materials so every student can take part with confidence.",
+      "story": "From a first school kit to a new set of reading books, each resource is chosen with teachers and communities so it meets a real need.",
+      "features": ["Books and notebooks", "Stationery kits", "Learning materials"],
+      "outcomes": ["Better participation in lessons", "More independent study", "Fewer barriers to completing schoolwork"]
+    },
+    {
+      "slug": "girls-education",
+      "title": "Girls' Education",
+      "category": "Inclusion",
+      "image": "/post-2.png",
+      "imageAlt": "Girls participating in a learning activity",
+      "intro": "When girls can learn, communities grow stronger. This program supports equal access to education and helps girls pursue their goals with confidence.",
+      "story": "We pair learning support with encouragement, mentorship, and family conversations that help girls stay engaged in school and imagine new possibilities.",
+      "features": ["Equal learning opportunities", "Educational guidance", "Confidence building"],
+      "outcomes": ["Increased participation in learning", "Stronger self-belief", "More pathways to future study"]
+    },
+    {
+      "slug": "after-school-learning",
+      "title": "After-School Learning",
+      "category": "Learning Support",
+      "image": "/program-1.png",
+      "imageAlt": "Children taking part in an after-school lesson",
+      "intro": "A little extra time and support can make a lasting difference. Our after-school sessions help children practise, ask questions, and enjoy learning at their own pace.",
+      "story": "Mentors create calm, encouraging sessions where homework becomes manageable and reading becomes something children look forward to.",
+      "features": ["Homework assistance", "Reading practice", "Mentoring sessions"],
+      "outcomes": ["Improved understanding of core subjects", "Consistent study habits", "More positive learning experiences"]
+    },
+    {
+      "slug": "early-childhood-learning",
+      "title": "Early Childhood Learning",
+      "category": "Early Education",
+      "image": "/program-2.png",
+      "imageAlt": "Young children learning through play",
+      "intro": "The early years shape a child’s relationship with learning. We use play, stories, and hands-on activities to build strong foundations for school and life.",
+      "story": "Children learn best when they feel safe and curious, so our educators create joyful spaces where every question and discovery is welcome.",
+      "features": ["Creative activities", "Early literacy", "Foundational skills"],
+      "outcomes": ["Stronger language development", "Improved social skills", "A positive start to education"]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+    "hero": {
+        "image": {
+            "src": "/program-1.png",
+            "alt": "Our Impact Banner Image"
+        },
+        "title": "Small Steps, Big Changes",
+        "description": "",
+        "buttons": {
+            "text": "Support Our Mission",
+            "linkTo": "/about"
+        }
+    },
+    "impactStatistics": {
+        "label": "OUR IMPACT",
+        "title": "Together, We're Making a Difference",
+        "description": "",
+        "statistics": [
+            {
+                "id": 1,
+                "value": "1200+",
+                "title": "Children Supported",
+                "description": "Helping children access learning opportunities.",
+                "icon": "Users"
+            },
+            {
+                "id": 2,
+                "value": "25+",
+                "title": "Communities Reached",
+                "description": "Supporting education in underserved communities.",
+                "icon": "MapPin"
+            },
+            {
+                "id": 3,
+                "value": "80+",
+                "title": "Active Volunteers",
+                "description": "People sharing their time and skills for education.",
+                "icon": "HeartHandshake"
+            },
+            {
+                "id": 4,
+                "value": "3000+",
+                "title": "Learning Materials",
+                "description": "Books and educational resources shared with learners.",
+                "icon": "BookOpen"
+            }
+        ]
+    },
+
+    "ourFutureGoals": {
+        "label": "OUR FUTURE GOALS",
+        "title": "Building a Brighter Future Through Education",
+        "description": "Our vision is to create a world where every child has the opportunity to learn, grow, and reach their full potential. With your support, we can expand educational opportunities and empower more communities.",
+        "image": {
+            "src": "/about-edu.png",
+            "alt": "Children learning together and building a brighter future"
+        },
+        "goals": [
+            {
+                "id": 1,
+                "title": "Expand Access to Education",
+                "description": "Help more children access quality learning opportunities regardless of their background.",
+                "icon": "GraduationCap"
+            },
+            {
+                "id": 2,
+                "title": "Promote Digital Learning",
+                "description": "Introduce technology and digital skills to prepare children for tomorrow's opportunities.",
+                "icon": "Laptop"
+            },
+            {
+                "id": 3,
+                "title": "Provide Learning Resources",
+                "description": "Make books, school supplies, and educational materials more accessible to children in need.",
+                "icon": "BookOpen"
+            },
+            {
+                "id": 4,
+                "title": "Strengthen Communities",
+                "description": "Build partnerships with educators, volunteers, families, and local communities.",
+                "icon": "Users"
+            }
+        ],
+        "button": {
+            "text": "Join Our Mission",
+            "linkTo": "/volunteer"
+        }
+    },
+
+    "finalCallToAction": {
+        "label": "BE PART OF THE CHANGE",
+        "title": "Together, We Can Change Lives",
+        "description": "Every contribution brings us closer to a future where every child has the opportunity to learn, dream, and succeed. Join us in making education accessible to all.",
+        "image": {
+            "src": "/program-1.png",
+            "alt": "Children smiling and learning together"
+        },
+        "buttons": [
+            {
+                "text": "Donate Now",
+                "linkTo": "/donate",
+                "variant": "primary"
+            },
+            {
+                "text": "Support Our Mission",
+                "linkTo": "/about",
+                "variant": "secondary"
+            }
+        ]
+    }
+}

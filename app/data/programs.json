@@ -1,0 +1,276 @@
+{
+    "hero": {
+        "label": "OUR PROGRAMS",
+        "title": "Creating Opportunities Through Education",
+        "description": "We believe every child deserves the opportunity to learn, grow, and build a brighter future. Our education programs provide children with the resources, skills, and support they need to succeed.",
+        "primaryButton": {
+            "text": "Explore Our Programs",
+            "link": "/our-program"
+        }
+    },
+    "programsOverview": {
+        "label": "WHAT WE DO",
+        "title": "Education for Every Child",
+        "description": "Discover our programs designed to make learning accessible, inclusive, and meaningful for every child.",
+        "programs": [
+            {
+                "id": 1,
+                "title": "Free Education for All",
+                "slug": "free-education",
+                "category": "Education",
+                "description": "Help children from underserved communities access quality education and build a strong foundation for their future.",
+                "image": "/program-1.png",
+                "imageAlt": "Children studying in a classroom",
+                "icon": "GraduationCap",
+                "features": [
+                    "Learning support",
+                    "Basic education",
+                    "Academic guidance"
+                ],
+                "buttonText": "Learn More",
+                "link": "/programs/free-education"
+            },
+            {
+                "id": 2,
+                "title": "Digital Learning",
+                "slug": "digital-learning",
+                "category": "Technology",
+                "description": "Introduce children to digital tools, computer skills, and technology-based learning opportunities.",
+                "image": "/program-2.png",
+                "imageAlt": "Students learning computer skills",
+                "icon": "Laptop",
+                "features": [
+                    "Computer education",
+                    "Digital literacy",
+                    "Technology awareness"
+                ],
+                "buttonText": "Learn More",
+                "link": "/programs/digital-learning"
+            },
+            {
+                "id": 3,
+                "title": "Books and School Supplies",
+                "slug": "books-school-supplies",
+                "category": "Resources",
+                "description": "Provide essential educational materials to help students participate in learning with confidence.",
+                "image": "/post-1.png",
+                "imageAlt": "Books, notebooks, and school supplies",
+                "icon": "BookOpen",
+                "features": [
+                    "Books and notebooks",
+                    "Stationery kits",
+                    "Learning materials"
+                ],
+                "buttonText": "Learn More",
+                "link": "/programs/school-supplies"
+            },
+            {
+                "id": 4,
+                "title": "Girls' Education",
+                "slug": "girls-education",
+                "category": "Inclusion",
+                "description": "Encourage equal access to education and support girls in pursuing their learning goals.",
+                "image": "/post-2.png",
+                "imageAlt": "Girls participating in a learning activity",
+                "icon": "HeartHandshake",
+                "features": [
+                    "Equal learning opportunities",
+                    "Educational guidance",
+                    "Confidence building"
+                ],
+                "buttonText": "Learn More",
+                "link": "/programs/girls-education"
+            },
+            {
+                "id": 5,
+                "title": "After-School Learning",
+                "slug": "after-school-learning",
+                "category": "Learning Support",
+                "description": "Help children strengthen their understanding through additional lessons, reading, and guided activities.",
+                "image": "/program-1.png",
+                "imageAlt": "Children taking part in an after-school lesson",
+                "icon": "BookMarked",
+                "features": [
+                    "Homework assistance",
+                    "Reading practice",
+                    "Mentoring sessions"
+                ],
+                "buttonText": "Learn More",
+                "link": "/programs/after-school-learning"
+            },
+            {
+                "id": 6,
+                "title": "Early Childhood Learning",
+                "slug": "early-childhood-learning",
+                "category": "Early Education",
+                "description": "Support young children's early development through engaging, age-appropriate learning activities.",
+                "image": "/program-2.png",
+                "imageAlt": "Young children learning through play",
+                "icon": "Puzzle",
+                "features": [
+                    "Creative activities",
+                    "Early literacy",
+                    "Foundational skills"
+                ],
+                "buttonText": "Learn More",
+                "link": "/programs/early-childhood-learning"
+            }
+        ]
+    },
+    "featuredProgram": {
+        "label": "FEATURED PROGRAM",
+        "title": "Every Child Deserves a Chance to Learn",
+        "description": "We aim to reduce barriers to education by connecting children with learning resources, academic support, and opportunities to develop essential skills.",
+        "image": "/images/featured-program.jpg",
+        "imageAlt": "Teacher helping a child with schoolwork",
+        "highlights": [
+            "Accessible learning opportunities",
+            "Supportive learning environments",
+            "Academic and personal development"
+        ],
+        "buttonText": "Support This Program",
+        "link": "/donate"
+    },
+    "skillsDevelopment": {
+        "label": "LEARN AND GROW",
+        "title": "Preparing Young Minds for Tomorrow",
+        "description": "Learning goes beyond textbooks. We encourage children to develop practical skills, creativity, confidence, and curiosity.",
+        "items": [
+            {
+                "id": 1,
+                "title": "Digital Literacy",
+                "description": "Build essential computer and technology skills.",
+                "icon": "Monitor"
+            },
+            {
+                "id": 2,
+                "title": "Reading and Writing",
+                "description": "Strengthen communication and language skills.",
+                "icon": "BookOpen"
+            },
+            {
+                "id": 3,
+                "title": "Creative Learning",
+                "description": "Encourage curiosity through creative and interactive activities.",
+                "icon": "Palette"
+            },
+            {
+                "id": 4,
+                "title": "Personal Development",
+                "description": "Build confidence, teamwork, and problem-solving skills.",
+                "icon": "Lightbulb"
+            }
+        ]
+    },
+    "educationalResources": {
+        "label": "LEARNING RESOURCES",
+        "title": "Giving Children the Tools to Succeed",
+        "description": "The right learning materials can make education more engaging and accessible. Help us connect children with the resources they need.",
+        "image": "/images/educational-resources.jpg",
+        "imageAlt": "Educational books and stationery prepared for students",
+        "resources": [
+            "School books",
+            "Notebooks and stationery",
+            "Educational activity kits",
+            "Digital learning resources"
+        ],
+        "buttonText": "Help Provide School Supplies",
+        "link": "/donate"
+    },
+    "howProgramsWork": {
+        "label": "OUR APPROACH",
+        "title": "From Opportunity to Achievement",
+        "description": "A thoughtful approach helps us understand learning needs and work toward meaningful educational outcomes.",
+        "steps": [
+            {
+                "id": 1,
+                "number": "01",
+                "title": "Understand the Need",
+                "description": "Identify educational barriers and the needs of children and communities.",
+                "icon": "Search"
+            },
+            {
+                "id": 2,
+                "number": "02",
+                "title": "Plan the Support",
+                "description": "Develop suitable learning activities and resource plans.",
+                "icon": "ClipboardList"
+            },
+            {
+                "id": 3,
+                "number": "03",
+                "title": "Learn Together",
+                "description": "Work with educators, volunteers, families, and community partners.",
+                "icon": "Users"
+            },
+            {
+                "id": 4,
+                "number": "04",
+                "title": "Review Progress",
+                "description": "Evaluate activities and identify opportunities to improve learning support.",
+                "icon": "ChartNoAxesCombined"
+            }
+        ]
+    },
+    "impact": {
+        "label": "OUR IMPACT",
+        "title": "Every Learning Journey Matters",
+        "description": "Every opportunity to learn can help a child develop new skills, confidence, and hope for the future.",
+        "statistics": [
+            {
+                "id": 1,
+                "label": "Children Supported",
+                "value": "1200+",
+                "icon": "Users"
+            },
+            {
+                "id": 2,
+                "label": "Community Partners",
+                "value": "25+",
+                "icon": "Handshake"
+            },
+            {
+                "id": 3,
+                "label": "Active Volunteers",
+                "value": "80+",
+                "icon": "HeartHandshake"
+            },
+            {
+                "id": 4,
+                "label": "Learning Materials Shared",
+                "value": "3000+",
+                "icon": "BookOpen"
+            }
+        ],
+        "buttonText": "Discover Our Impact",
+        "link": "/our-impact"
+    },
+    "stories": {
+        "label": "REAL STORIES, REAL HOPE",
+        "title": "Every Child Has a Story",
+        "description": "Discover how access to learning, encouragement, and educational resources can create new possibilities.",
+        "buttonText": "Read Our Stories",
+        "link": "/success-stories",
+        "image": "/images/student-success.jpg",
+        "imageAlt": "Students participating in an educational activity"
+    },
+    "getInvolved": {
+        "label": "BE PART OF THE CHANGE",
+        "title": "Help Us Open Doors to Education",
+        "description": "Your time, skills, and support can help create more learning opportunities for children and communities.",
+        "actions": [
+            {
+                "text": "Donate Now",
+                "link": "/donate",
+                "style": "primary"
+            },
+            {
+                "text": "Become a Volunteer",
+                "link": "/volunteer",
+                "style": "secondary"
+            }
+        ],
+        "image": "/images/volunteer-education.jpg",
+        "imageAlt": "Volunteer supporting children with their learning"
+    }
+}
