@@ -69,8 +69,6 @@ const mainPhotoVariants: Variants = {
 export function AboutSplitSection({
   title = "Together, We Can Build a Brighter Future",
   description = "",
-  cta = "Learn More",
-  ctaHref = "/our-program",
   thumbs = [
     { src: "/program-1.png", alt: "Aerial view of a red dirt path winding through green forest" },
     { src: "/program-2.png", alt: "Clear blue lake with grassy shore and distant hills" },
@@ -137,13 +135,13 @@ export function AboutSplitSection({
         initial={initial}
         whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
-        className="relative min-h-[420px] md:min-h-0"
+        className="relative min-h-[420px] md:min-h-0 md:block hidden"
       >
         <motion.div
           variants={mainFrameVariants}
           className="absolute inset-0 overflow-hidden"
         >
-          <motion.div variants={mainPhotoVariants} className="absolute inset-0">
+          <motion.div variants={mainPhotoVariants} className="absolute inset-0 ">
             <Image
               src={mainImage.src}
               alt={mainImage.alt}
