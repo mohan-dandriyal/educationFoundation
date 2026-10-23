@@ -54,7 +54,7 @@ export function AboutUsSection({
     return (
         <section
             aria-labelledby="about-title"
-            className="relative border-b border-[#252d4a] text-[#252d4a]"
+            className="relative border-b border-[#15452e] text-[#15452e]"
         >
             <MainContainer>
                 <motion.div
@@ -62,19 +62,18 @@ export function AboutUsSection({
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
                     variants={columnVariants}
-                    className="flex min-h-[520px] px-5  flex-col items-start justify-around py-16 md:h-dvh md:min-h-0 md:py-0"
+                    className="px-5 py-16 flex justify-center flex-col items-center md:py-20"
                 >
                     <div>
-                        <SectionLabel>
-                           <span className="text-[#252d4a]">{label}</span>
-                        </SectionLabel>
 
-                        <SectionInnerTitle>{title}</SectionInnerTitle>
+                        <div className="mt-4 text-center">
+                            <SectionInnerTitle>{title}</SectionInnerTitle>
+                        </div>
                     </div>
 
                     <motion.p
                         variants={riseVariants}
-                        className="mt-16 max-w-[34ch] text-[clamp(1rem,1.1vw,1.25rem)] leading-normal md:mt-20 md:max-w-[36ch]"
+                        className="mt-16 max-w-[34ch] text-[clamp(1rem,1.1vw,1.25rem)] leading-normal md:mt-8 md:max-w-[76ch] text-center"
                     >
                         {description}
                     </motion.p>
@@ -85,29 +84,31 @@ export function AboutUsSection({
                 </motion.div>
             </MainContainer>
 
-            {/* Image column: outer wrapper only watches the scroll, inner frame does the clip reveal */}
             <motion.div
                 initial={initial}
                 whileInView="show"
                 viewport={{ once: true, amount: 0.1 }}
-                className="relative h-[min(110vw,520px)] w-full border-t border-[#252d4a] md:absolute md:right-0 md:top-0 md:h-full md:w-6/12 md:border-l md:border-t-0"
+                className="relative h-[clamp(280px,38vw,560px)] w-full"
             >
                 <motion.div
                     variants={frameVariants}
-                    className="absolute inset-0 overflow-hidden"
+                    role="img"
+                    aria-label={image?.alt ?? ""}
+                    className="absolute inset-0 overflow-hidden bg-cover bg-center bg-fixed"
+                    style={{ backgroundImage: `url(${image?.src ?? ""})` }}
                 >
-                    <motion.div variants={photoVariants} className="absolute inset-0">
-                        <Image
-                            src={image?.src ?? ""}
-                            alt={image?.alt ?? ""}
-                            fill
-                            priority
-                            sizes="(min-width: 768px) 50vw, 100vw"
-                            className="object-cover"
-                        />
-                    </motion.div>
+                    <motion.div
+                        variants={photoVariants}
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{
+                            backgroundImage: `url(${image?.src ?? ""})`,
+                            backgroundAttachment: "fixed",
+                        }}
+                    />
                 </motion.div>
             </motion.div>
+
+            
         </section>
     );
 }

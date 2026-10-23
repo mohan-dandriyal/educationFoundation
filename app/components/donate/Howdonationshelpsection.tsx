@@ -51,7 +51,7 @@ export default function HowDonationsHelpSection({
   return (
     <section
       aria-labelledby="how-help-title"
-      className="bg-[#252d4a] px-6 py-16 text-[#fdfbf3] md:px-[6%] md:py-28"
+      className="bg-[#15452e] px-6 py-16 text-[#fdfbf3] md:px-[6%] md:py-28"
     >
       <motion.div
         initial={reduceMotion ? false : "hidden"}

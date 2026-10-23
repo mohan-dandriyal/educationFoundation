@@ -41,7 +41,7 @@ export default function DonationFaqSection({ content }: { content: DonationFaqCo
   return (
     <section
       aria-labelledby="donation-faq-title"
-      className="bg-[#fdfbf3] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
+      className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-28"
     >
       <motion.div
         initial={reduceMotion ? false : "hidden"}
@@ -70,7 +70,7 @@ export default function DonationFaqSection({ content }: { content: DonationFaqCo
                 <motion.span
                   aria-hidden="true"
                   variants={lineVariants}
-                  className="absolute left-0 top-0 h-px w-full origin-left bg-[#252d4a]"
+                  className="absolute left-0 top-0 h-px w-full origin-left bg-[#15452e]"
                 />
 
                 <h3 className="m-0">
@@ -80,7 +80,7 @@ export default function DonationFaqSection({ content }: { content: DonationFaqCo
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => setOpenId(isOpen ? null : item.id)}
-                    className="flex w-full items-center justify-between gap-6 py-6 text-left text-[clamp(1.1rem,1.5vw,1.4rem)] font-normal leading-[1.35] transition-colors duration-300 hover:text-[#4a5d2e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#252d4a]"
+                    className="flex w-full items-center justify-between gap-6 py-6 text-left text-[clamp(1.1rem,1.5vw,1.4rem)] font-normal leading-[1.35] transition-colors duration-300 hover:text-[#8a6b36] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b49358]"
                   >
                     <span>{item.question}</span>
                     {/* Plus turns into a cross when open */}
@@ -118,7 +118,7 @@ export default function DonationFaqSection({ content }: { content: DonationFaqCo
                   <motion.span
                     aria-hidden="true"
                     variants={lineVariants}
-                    className="absolute bottom-0 left-0 h-px w-full origin-left bg-[#252d4a]"
+                    className="absolute bottom-0 left-0 h-px w-full origin-left bg-[#15452e]"
                   />
                 )}
               </motion.div>

@@ -8,9 +8,8 @@ function page() {
   return (
     <div>
          <BlogSection
-                //   eyebrow={home.ourBlog.eyebrow ?? ""}
-                //   heading={home.ourBlog.heading ?? ""}
-                  post={blog.post ?? []} />
+                  post={blog.post ?? []}
+                  breadcrum={blog.breadcrum} />
     </div>
   )
 }

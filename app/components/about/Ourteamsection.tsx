@@ -73,10 +73,9 @@ const photoVariants: Variants = {
 };
 
 export function OurTeamSection({
-  eyebrow = "Our Team",
-  heading = "The people behind every classroom.",
-  intro = "Teachers, mentors and organizers who give their time so that every child has a place to learn.",
-  members = DEFAULT_MEMBERS,
+  eyebrow,
+  heading,
+  intro,  members,
 }: OurTeamSectionProps) {
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
@@ -84,7 +83,7 @@ export function OurTeamSection({
   return (
     <section
       aria-labelledby="team-title"
-      className="bg-[#fdfbf3] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
+      className="bg-[#fdfbf3] px-6  text-[#15452e] md:px-[6%] "
     >
       <MainContainer>
         {/* Header */}
@@ -93,16 +92,16 @@ export function OurTeamSection({
           whileInView="show"
           viewport={{ once: true, amount: 0.4 }}
           variants={headerVariants}
-          className="grid items-end gap-6 md:grid-cols-2 md:gap-20"
+          className="mx-auto flex max-w-[58rem] flex-col items-center gap-7 text-center md:gap-8"
         >
-          <div>
+          <div className="flex flex-col items-center">
             <SectionLabel>{eyebrow}</SectionLabel>
             <SectionInnerTitle>{heading}</SectionInnerTitle>
           </div>
 
           <motion.p
             variants={riseVariants}
-            className="m-0 max-w-[44ch] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7]"
+            className="m-0 max-w-[50ch] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7] text-[#4a5d2e]"
           >
             {intro}
           </motion.p>

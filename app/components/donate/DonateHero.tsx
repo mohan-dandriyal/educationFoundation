@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
-import { ActionLink } from "../Ourimpact/Actionlink";
 import { SectionTitle } from "../ui/SectionTitle";
+import { PrimaryButton } from "../ui/PrimaryButton";
+import { Breadcrumb } from "../Breadcrumb";
 
 export type DonateHeroContent = {
   image: { src: string; alt: string };
   title: string;
   description: string;
   buttons?: { text: string; linkTo: string };
+  breadcrum : {label : string, href : string}
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
@@ -23,15 +25,7 @@ const riseVariants: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: EASE } },
 };
-// Title: words slide up out of a mask, one after another
-const titleVariants: Variants = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.09 } },
-};
-const wordVariants: Variants = {
-  hidden: { y: "110%" },
-  show: { y: "0%", transition: { duration: 0.85, ease: EASE } },
-};
+
 
 // Image: opens from the right edge while the photo zoom settles
 const frameVariants: Variants = {
@@ -49,12 +43,11 @@ const photoVariants: Variants = {
 export default function DonateHeroSection({ content }: { content: DonateHeroContent }) {
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
-  const words = content.title.split(" ");
 
   return (
     <section
       aria-labelledby="donate-hero-title"
-      className="grid min-h-[640px] grid-cols-1 border-b border-[#252d4a] bg-[##fdfbf3] text-[#252d4a] md:min-h-svh md:grid-cols-2"
+      className="grid min-h-[640px] grid-cols-1 border-b border-[#15452e] bg-[#fdfbf3] text-[#15452e] md:min-h-svh md:grid-cols-2"
     >
       {/* Text */}
       <motion.div
@@ -64,6 +57,10 @@ export default function DonateHeroSection({ content }: { content: DonateHeroCont
         variants={wrapVariants}
         className="flex flex-col justify-center px-6 py-16 md:px-[8%] md:py-24"
       >
+        <div className="mb-6">
+          <Breadcrumb items={content?.breadcrum} />
+        </div>
+
         <SectionTitle>
           {content.title}
         </SectionTitle>
@@ -75,11 +72,13 @@ export default function DonateHeroSection({ content }: { content: DonateHeroCont
           {content.description}
         </motion.p>
 
-        {content.buttons && (
-          <motion.div variants={riseVariants} className="mt-10">
-            <ActionLink href={content.buttons.linkTo}>{content.buttons.text}</ActionLink>
-          </motion.div>
+        {content.buttons?.text && (
+          <PrimaryButton href={content.buttons.linkTo}>
+            {content.buttons?.text}
+          </PrimaryButton>
         )}
+
+
       </motion.div>
 
       {/* Image: outer wrapper only watches the scroll, inner frame does the clip reveal */}
@@ -87,7 +86,7 @@ export default function DonateHeroSection({ content }: { content: DonateHeroCont
         initial={initial}
         whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
-        className="relative min-h-[420px] border-t border-[#252d4a] md:min-h-0 md:border-l md:border-t-0"
+        className="relative min-h-[420px] border-t border-[#15452e] md:min-h-0 md:border-l md:border-t-0"
       >
         <motion.div variants={frameVariants} className="absolute inset-0 overflow-hidden">
           <motion.div variants={photoVariants} className="absolute inset-0">

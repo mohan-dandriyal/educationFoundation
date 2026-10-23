@@ -31,7 +31,7 @@ export const SectionTitle = ({ children }: sectionTitleProps) => {
             id="hero-title"
             variants={headingVariants}
             // aria-label={content.title}
-            className="m-0 max-w-120 text-[#252d4a] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(3rem,5vw,6rem)] font-normal leading-[1.02] tracking-[-0.02em] max-[900px]:text-[clamp(3.25rem,12vw,5.5rem)]"
+            className="m-0 max-w-[16ch] text-pretty font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.75rem,5.5vw,5.75rem)] font-normal leading-[0.94] tracking-[-0.045em] text-[#15452e] max-[900px]:text-[clamp(2.7rem,11vw,5rem)]"
         >
             <span aria-hidden="true">
                 {/* mask: clips the word while it slides up (padding keeps descenders) */}
@@ -63,7 +63,7 @@ export const SectionInnerTitle = ({ children }: sectionTitleProps) => {
         <motion.h2
             id="hero-title"
             variants={headingVariants}
-            className="mt-3 max-w-[28ch] text-[#252d4a] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.75rem,2.9vw,2.2rem)] font-normal leading-[1.3] tracking-[-0.01em]"
+            className="mt-4 max-w-[24ch] text-pretty font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.10rem,8vw,4.6rem)] font-medium leading-[1.06] tracking-[-0.035em] text-[#15452e]"
         >
             <span aria-hidden="true">
                 {/* mask: clips the word while it slides up (padding keeps descenders) */}
@@ -93,13 +93,13 @@ export const SectionLabel = ({ children }: sectionTitleProps) => {
     return (
 
         <motion.p
-            id="hero-title"
+            id="section-label"
             variants={headingVariants}
-                                className="m-0 text-[#252d4a] font-mono text-[clamp(0.85rem,1.1vw,1.1rem)] uppercase leading-none"
+            className="m-0 flex items-center gap-3 text-[clamp(0.68rem,0.8vw,0.82rem)] font-semibold uppercase leading-none tracking-[0.22em] text-[#8a6b36] before:h-px before:w-8 before:shrink-0 before:bg-[#6f984b]"
         >
             <span aria-hidden="true">
                 {/* mask: clips the word while it slides up (padding keeps descenders) */}
-                <span className="mb-[-0.15em] inline-block overflow-hidden pb-[0.15em] align-bottom">
+                <span className="mb-[-0.15em] text-[#6f984b] inline-block overflow-hidden pb-[0.15em] align-bottom">
                     <motion.span variants={wordVariants} className="inline-block">
                         {children}
                     </motion.span>

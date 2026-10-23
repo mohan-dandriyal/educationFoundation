@@ -15,11 +15,16 @@ import MainContainer from "../ui/MainContainer";
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
 
-const impactStats = [
-  { value: "1,200+", label: "students supported" },
-  { value: "24", label: "learning centers" },
-  { value: "87%", label: "school attendance" },
-];
+type SuccessStoryContent = {
+  featured: {
+    label: string;
+    title: string;
+    description: string;
+    image: string;
+    imageAlt: string;
+  };
+  impact: Array<{ value: string; label: string }>;
+};
 
 // Image: unveils from the bottom while the photo zoom settles
 const frameVariants: Variants = {
@@ -80,14 +85,18 @@ function CountUp({ value }: { value: string }) {
   );
 }
 
-export function SuccessStorySection() {
+export function SuccessStorySection({
+  content,
+}: {
+  content: SuccessStoryContent;
+}) {
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
 
   return (
     <section
       aria-labelledby="success-story-title"
-      className="overflow-hidden bg-[#fdfbf3] py-16 text-[#252d4a] md:py-24"
+      className="overflow-hidden bg-[#fdfbf3] py-16 text-[#15452e] md:py-24"
     >
       <MainContainer>
       <div className="mx-auto grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-16 lg:gap-24">
@@ -104,8 +113,8 @@ export function SuccessStorySection() {
           >
             <motion.div variants={photoVariants} className="absolute inset-0">
               <Image
-                src="/program-2.png"
-                alt="Children learning together with school supplies"
+                src={content.featured.image}
+                alt={content.featured.imageAlt}
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
                 className="object-cover"
@@ -122,27 +131,28 @@ export function SuccessStorySection() {
           variants={columnVariants}
           className="px-5"
         >
-          <SectionLabel>A success story</SectionLabel>
+          <SectionLabel>{content.featured.label}</SectionLabel>
 
           <SectionInnerTitle>
-            Small steps, lasting change.
+            {content.featured.title}
           </SectionInnerTitle>
 
           <motion.p
             variants={riseVariants}
             className="mb-0 mt-7 max-w-[48ch] text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.7]"
           >
-            When Maya joined our learning center, she was struggling to keep up
-            in class. With a quiet place to study, patient mentors, and the
+            {content.featured.description}
+            {/*
             right supplies, she found her confidence again—and now helps her
             younger classmates do the same.
+            */}
           </motion.p>
 
           <motion.dl
             variants={riseVariants}
-            className="m-0 mt-10 grid grid-cols-3 gap-4 border-y border-[#252d4a] py-6 sm:gap-8"
+            className="m-0 mt-10 grid grid-cols-3 gap-4 border-y border-[#15452e] py-6 sm:gap-8"
           >
-            {impactStats.map((stat) => (
+            {content.impact.map((stat) => (
               <div key={stat.label} className="flex min-w-0 flex-col-reverse justify-end">
                 <dt className="mt-2 max-w-[14ch] text-sm leading-5">
                   {stat.label}

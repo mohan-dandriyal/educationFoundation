@@ -1,0 +1,55 @@
+{
+    "hero": {
+        "title": "",
+        "dis": "",
+        "image": "",
+        "breadcrum": [
+            {
+                "label": "Home",
+                "href": "/"
+            },
+            {
+                "label": "Our Team's"
+            }
+        ]
+    },
+    "team": {
+        "eyebrow": "Our Team",
+        "heading": "The people behind every classroom.",
+        "intro": "Teachers, mentors, and organizers who give their time so every child has a place to learn.",
+        "members": [
+            {
+                "name": "Rohit Nair",
+                "role": "Founder and Director",
+                "image": {
+                    "src": "/pro-1.jpg",
+                    "alt": "Portrait of Priya Nair"
+                }
+            },
+            {
+                "name": "Samuel Mensah",
+                "role": "Head of Programs",
+                "image": {
+                    "src": "/pro-2.jpg",
+                    "alt": "Portrait of Samuel Mensah"
+                }
+            },
+            {
+                "name": "Elena Duarte",
+                "role": "Teacher Training Lead",
+                "image": {
+                    "src": "/pro-3.jpg",
+                    "alt": "Portrait of Elena Duarte"
+                }
+            },
+            {
+                "name": "Amir Hassan",
+                "role": "Community Partnerships",
+                "image": {
+                    "src": "/pro-1.jpg",
+                    "alt": "Portrait of Amir Hassan"
+                }
+            }
+        ]
+    }
+}

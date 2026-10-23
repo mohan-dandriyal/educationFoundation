@@ -8,11 +8,14 @@ import ContactSection, { type ContactContent } from '../components/contact/Conta
 function ContactUs() {
     return (
         <div>
+          
+
             <ContactHeroSection
                 title={contact?.hero?.title ?? ""}
                 description={contact?.hero?.description ?? ""}
                 mainImag={contact?.hero?.image ?? {}}
                 button={contact?.hero?.button ?? {}}
+                breadcrum={contact?.hero?.breadcrum ?? {}}
             />
 
 

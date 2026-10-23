@@ -36,7 +36,7 @@ export default function TransparencySection({ content }: { content: Transparency
   return (
     <section
       aria-labelledby="transparency-title"
-      className="border-y border-[#252d4a] bg-[#e6f5ae] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
+      className="border-y border-[#15452e] bg-[#e6f5ae] px-6 py-16 text-[#15452e] md:px-[6%] md:py-28"
     >
       <motion.div
         initial={reduceMotion ? false : "hidden"}
@@ -73,11 +73,11 @@ export default function TransparencySection({ content }: { content: Transparency
                 <motion.span
                   aria-hidden="true"
                   variants={lineVariants}
-                  className="absolute left-0 top-0 h-px w-full origin-left bg-[#252d4a]"
+                  className="absolute left-0 top-0 h-px w-full origin-left bg-[#15452e]"
                 />
                 <span
                   aria-hidden="true"
-                  className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-[#252d4a]"
+                  className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-[#15452e]"
                 >
                   <Icon className="h-4 w-4" />
                 </span>
@@ -94,7 +94,7 @@ export default function TransparencySection({ content }: { content: Transparency
                   <motion.span
                     aria-hidden="true"
                     variants={lineVariants}
-                    className="absolute bottom-0 left-0 h-px w-full origin-left bg-[#252d4a]"
+                    className="absolute bottom-0 left-0 h-px w-full origin-left bg-[#15452e]"
                   />
                 )}
               </motion.li>

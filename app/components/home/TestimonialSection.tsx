@@ -9,6 +9,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import { SectionInnerTitle, SectionLabel } from "../ui/SectionTitle";
 
 export type Testimonial = {
   id: number;
@@ -25,41 +26,17 @@ type TestimonialSectionProps = {
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
 
-const DEFAULT_ITEMS: Testimonial[] = [
-  {
-    id: 1,
-    name: "Roo Jackson",
-    quote:
-      "Volunteering with this team changed how I see my own community. They listen to families, plan with them, and show up every week. I am proud to be part of it.",
-    image: { src: "/pro-1.jpg", alt: "Portrait of Roo Jackson" },
-  },
-  {
-    id: 2,
-    name: "Anita Sharma",
-    quote:
-      "My daughter now goes to class every day and comes home excited to share what she learned. The teachers are patient and the learning center feels like a second home.",
-    image: { src: "/pro-1.jpg", alt: "Portrait of Anita Sharma" },
-  },
-  {
-    id: 3,
-    name: "Daniel Okafor",
-    quote:
-      "I donate every month because the yearly report shows exactly where the money goes. It is rare to see an organization this open and this effective.",
-    image: { src: "/pro-1.jpg", alt: "Portrait of Daniel Okafor" },
-  },
-];
-
 export function TestimonialSection({
   eyebrow = "Testimonials",
   heading = "What people say",
-  items = DEFAULT_ITEMS,
+  items = [],
 }: TestimonialSectionProps) {
   const reduceMotion = useReducedMotion();
 
   return (
     <section
       aria-labelledby="testimonials-title"
-      className="bg-[#fdfbf3] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-24"
+      className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-24"
     >
       <motion.div
         initial={reduceMotion ? false : { opacity: 0, y: 28 }}
@@ -68,15 +45,19 @@ export function TestimonialSection({
         transition={{ duration: 0.9, ease: EASE }}
         className="mx-auto max-w-[900px] text-center"
       >
-        <p className="m-0 text-xs font-medium uppercase tracking-[0.2em]">
-          {eyebrow}
-        </p>
-        <h2
-          id="testimonials-title"
-          className="m-0 mt-3 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,3.4vw,3.25rem)] font-normal leading-[1.15] tracking-[-0.01em]"
-        >
-          {heading}
-        </h2>
+
+
+        <div className="text-center flex justify-center">
+          <SectionLabel>
+            {eyebrow}
+          </SectionLabel>
+        </div>
+
+        <div className="text-center flex justify-center">
+          <SectionInnerTitle>
+            {heading}
+          </SectionInnerTitle>
+        </div>
 
         {/* Slider */}
         <div className="relative mt-14 md:mt-20">

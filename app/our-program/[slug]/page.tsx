@@ -51,7 +51,7 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
   if (!program) notFound();
 
   return (
-    <main className="bg-[#f4f4f4] text-[#252d4a]">
+    <main className="bg-[#fdfbf3] text-[#15452e]">
       <section className="px-6 py-16 md:px-[6%] md:py-24">
         <div className="mx-auto grid max-w-[1200px] items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-20">
           <div className="relative aspect-[4/5] overflow-hidden">
@@ -68,7 +68,7 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
           <div>
             <Link
               href="/our-program"
-              className="text-xs font-medium uppercase tracking-[0.2em] text-[#4a5d2e] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#252d4a]"
+              className="text-xs font-medium uppercase tracking-[0.2em] text-[#8a6b36] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b49358]"
             >
               ← All programs
             </Link>
@@ -78,31 +78,31 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
             </div>
 
             <SectionTitle>
-              <span className="text-[#252d4a]">{program.title}</span>
+              <span className="text-[#15452e]">{program.title}</span>
             </SectionTitle>
 
-            <p className="mt-8 max-w-[52ch] text-[clamp(1rem,1.2vw,1.2rem)] leading-8">
+            <p className="mt-8 max-w-[52ch] text-[clamp(1rem,1.2vw,1.2rem)] leading-8 text-[#15452e]/85">
               {program.intro}
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#fffaf0] px-6 py-16 md:px-[6%] md:py-24">
+      <section className="bg-[#e8f1df] px-6 py-16 md:px-[6%] md:py-24">
         <div className="mx-auto grid max-w-[1200px] gap-12 md:grid-cols-2 md:gap-20">
           <div>
             <SectionLabel>Why it matters</SectionLabel>
             <SectionInnerTitle>Learning creates possibility.</SectionInnerTitle>
           </div>
           <div>
-            <p className="m-0 text-lg leading-8 text-[#252d4a]/90">
+            <p className="m-0 text-lg leading-8 text-[#15452e]/90">
               {program.story}
             </p>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               {program.features.map((feature) => (
                 <div
                   key={feature}
-                  className="border-t border-[#252d4a]/25 pt-4 text-sm text-[#252d4a]"
+                  className="border-t border-[#15452e]/25 pt-4 text-sm text-[#15452e]"
                 >
                   {feature}
                 </div>
@@ -119,8 +119,8 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {program.outcomes.map((outcome, index) => (
-              <div key={outcome} className="border-t border-[#252d4a]/25 pt-5">
-                <span className="text-sm text-[#252d4a]">0{index + 1}</span>
+              <div key={outcome} className="border-t border-[#15452e]/25 pt-5">
+                <span className="text-sm font-semibold text-[#8a6b36]">0{index + 1}</span>
                 <p className="mt-8 max-w-[18ch] text-lg leading-7">{outcome}</p>
               </div>
             ))}

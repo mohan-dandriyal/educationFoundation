@@ -119,7 +119,7 @@ export function OurJourneySection({
     return (
         <section
             aria-labelledby="journey-title"
-            className="border-b border-[#252d4a] bg-[#f4f4f4] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
+            className="border-b border-[#15452e] bg-[#f4f4f4] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
         >
             <MainContainer>
                 <div className="mx-auto grid  gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
@@ -132,7 +132,7 @@ export function OurJourneySection({
                         className="self-start md:sticky md:top-28"
                     >
                         <SectionLabel>
-                            <span className="text-[#252d4a]">
+                            <span>
                                 {eyebrow}
                             </span>
                         </SectionLabel>
@@ -141,7 +141,7 @@ export function OurJourneySection({
 
                         <motion.p
                             variants={riseVariants}
-                            className="mb-0 mt-6 max-w-[38ch] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7]"
+                            className="mb-0 mt-6 max-w-[38ch] text-[#15452e] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7]"
                         >
                             {intro}
                         </motion.p>
@@ -157,7 +157,7 @@ export function OurJourneySection({
                         <motion.span
                             aria-hidden="true"
                             style={{ scaleY: reduceMotion ? 1 : scrollYProgress }}
-                            className="absolute bottom-0 left-[7px] top-0 w-px origin-top bg-[#252d4a]"
+                            className="absolute bottom-0 left-[7px] top-0 w-px origin-top bg-[#15452e]"
                         />
 
                         {milestones.map((item) => (
@@ -172,26 +172,26 @@ export function OurJourneySection({
                                 <motion.span
                                     aria-hidden="true"
                                     variants={dotVariants}
-                                    className="absolute -left-10 top-3 h-[15px] w-[15px] rounded-full border border-[#252d4a] bg-[#252d4a] md:-left-14"
+                                    className="absolute -left-10 top-3 h-[15px] w-[15px] rounded-full border border-[#15452e] bg-[#15452e] md:-left-14"
                                 />
 
                                 <time
                                     dateTime={item.year}
-                                    className="block font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.25rem,3.8vw,3.5rem)] leading-none text-[#252d4a]"
+                                    className="block font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.25rem,3.8vw,3.5rem)] leading-none text-[#15452e]"
                                 >
                                     {item.year}
                                 </time>
-                                <h3 className="m-0 mt-4 text-[clamp(1.2rem,1.6vw,1.5rem)] font-normal leading-[1.3]">
+                                <h3 className="m-0 mt-4 text-[#15452e] text-[clamp(1.2rem,1.6vw,1.5rem)] font-normal leading-[1.3]">
                                     {item.title}
                                 </h3>
-                                <p className="mb-0 mt-3 max-w-[44ch] text-[clamp(0.95rem,1.05vw,1.1rem)] leading-[1.7]">
+                                <p className="mb-0 mt-3 text-[#15452e] max-w-[44ch] text-[clamp(0.95rem,1.05vw,1.1rem)] leading-[1.7]">
                                     {item.text}
                                 </p>
 
                                 {/* Photo for this milestone */}
                                 <motion.div
                                     variants={frameVariants}
-                                    className="relative mt-8 aspect-[16/10] w-full max-w-[540px] overflow-hidden border border-[#252d4a]"
+                                    className="relative mt-8 aspect-[16/10] w-full max-w-[540px] overflow-hidden border border-[#15452e]"
                                 >
                                     <motion.div variants={photoVariants} className="absolute inset-0">
                                         <Image

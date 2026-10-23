@@ -4,7 +4,7 @@
         "title": "Leading the Change",
         "description": "We develop cutting-edge agritech solutions that enhance sustainability and improve crop yield. Join us in our mission to revolutionize the future of agriculture.",
         "cta": "Explore More",
-        "ctaHref": "#discover",
+        "ctaHref": "/about",
         "leftImage": {
             "src": "/hero-left.png",
             "alt": "Researcher inspecting healthy crops in a green field"
@@ -18,8 +18,8 @@
         "label" : "about us",
         "title": "Building Brighter Futures Through Education",
         "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis omnis ipsa ipsum voluptatum veniam. Delectus totam dolores quam. Molestias modi incidunt doloribus illo voluptas fuga beatae, pariatur reprehenderit quasi iure?",
-        "buttonText": "Contact Us",
-        "href": "/contact",
+        "buttonText": "About Us",
+        "href": "/about",
         "image": {
             "src": "/about-edu.png",
             "alt": "Smiling woman in an olive green t-shirt standing on cracked, dry earth"
@@ -27,7 +27,8 @@
     },
     "ourProgram": {
         "eyebrow": "Our Program",
-        "heading": "We believe every child deserves an opportunity to learn and grow.",
+        "heading": "Empowering Children Through Education",
+        "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis omnis ipsa ipsum voluptatum veniam. Delectus totam dolores quam. Molestias modi incidunt doloribus illo voluptas fuga beatae, pariatur reprehenderit quasi iure?",
         "images": [
             {
                 "src": "/program-1.png",
@@ -56,6 +57,143 @@
                 "title": "Sharing School Supplies, Spreading Smiles",
                 "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
                 "slug": ""
+            }
+        ]
+    },
+    "ourCauses": {
+    "tag": "OUR CAUSES",
+    "title": "Seeds of Change in Action",
+    "description": "Every child deserves the opportunity to learn, grow, and build a brighter future. Explore the causes that drive our mission.",
+    "buttonText": "Explore All Causes",
+    "buttonLink": "/our-causes",
+    "causes": [
+      {
+        "id": 1,
+        "title": "Digital Literacy for All",
+        "slug": "digital-literacy",
+        "category": "Technology",
+        "description": "Bridging the digital divide by helping children develop essential computer skills and access modern learning resources.",
+        "image": "/program-1.png",
+        "imageAlt": "Children learning digital skills on computers",
+        "raised": 45000,
+        "goal": 75000,
+        "donors": 86,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Learn More",
+        "buttonLink": "/our-causes/digital-literacy"
+      },
+      {
+        "id": 2,
+        "title": "STEAM Workshops in Rural Areas",
+        "slug": "steam-workshops",
+        "category": "Skill Development",
+        "description": "Inspiring young minds through hands-on science, technology, engineering, arts, and mathematics activities.",
+        "image": "/program-2.png",
+        "imageAlt": "Students participating in a hands-on science workshop",
+        "raised": 32000,
+        "goal": 60000,
+        "donors": 64,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Learn More",
+        "buttonLink": "/our-causes/steam-workshops"
+      },
+      {
+        "id": 3,
+        "title": "The Mobile Library Initiative",
+        "slug": "mobile-library",
+        "category": "Education",
+        "description": "Bringing books, storytelling, and educational resources to children in underserved communities.",
+        "image": "/post-2.png",
+        "imageAlt": "Children exploring books at a community library",
+        "raised": 28000,
+        "goal": 50000,
+        "donors": 52,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Learn More",
+        "buttonLink": "/our-causes/mobile-library"
+      },
+      {
+        "id": 4,
+        "title": "Art & Gardening for Empowerment",
+        "slug": "art-gardening",
+        "category": "Creative Learning",
+        "description": "Encouraging creativity, teamwork, environmental awareness, and confidence through art and gardening.",
+        "image": "/images/art-gardening.jpg",
+        "imageAlt": "Children planting seedlings together in a garden",
+        "raised": 18000,
+        "goal": 40000,
+        "donors": 39,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Learn More",
+        "buttonLink": "/our-causes/art-gardening"
+      },
+      {
+        "id": 5,
+        "title": "School Supplies for Every Child",
+        "slug": "school-supplies",
+        "category": "Basic Education",
+        "description": "Providing notebooks, stationery, school bags, and essential learning materials to children who need them.",
+        "image": "/images/school-supplies.jpg",
+        "imageAlt": "School bags and stationery prepared for students",
+        "raised": 22000,
+        "goal": 35000,
+        "donors": 47,
+        "featured": false,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/school-supplies"
+      },
+      {
+        "id": 6,
+        "title": "Girls' Education & Opportunity",
+        "slug": "girls-education",
+        "category": "Equal Opportunity",
+        "description": "Supporting girls with learning resources, mentoring, and opportunities to pursue their educational goals.",
+        "image": "/images/girls-education.jpg",
+        "imageAlt": "Girls studying together in a supportive classroom",
+        "raised": 38000,
+        "goal": 65000,
+        "donors": 73,
+        "featured": false,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/girls-education"
+      }
+    ],
+    "bottomCta": {
+      "title": "Be a Part of the Story",
+      "description": "Your support can open doors to education, inspire young minds, and help create lasting change in communities.",
+      "primaryButton": "Donate Now",
+      "primaryLink": "/donate",
+      "secondaryButton": "Become a Volunteer",
+      "secondaryLink": "/volunteer"
+    }
+  },
+    "testimonials": {
+        "eyebrow": "Testimonials",
+        "heading": "What people say",
+        "items": [
+            {
+                "id": 1,
+                "name": "Roo Jackson",
+                "quote": "Volunteering with this team changed how I see my own community. They listen to families, plan with them, and show up every week. I am proud to be part of it.",
+                "image": { "src": "/pro-1.jpg", "alt": "Portrait of Roo Jackson" }
+            },
+            {
+                "id": 2,
+                "name": "Anita Sharma",
+                "quote": "My daughter now goes to class every day and comes home excited to share what she learned. The teachers are patient and the learning center feels like a second home.",
+                "image": { "src": "/pro-1.jpg", "alt": "Portrait of Anita Sharma" }
+            },
+            {
+                "id": 3,
+                "name": "Daniel Okafor",
+                "quote": "I donate every month because the yearly report shows exactly where the money goes. It is rare to see an organization this open and this effective.",
+                "image": { "src": "/pro-1.jpg", "alt": "Portrait of Daniel Okafor" }
             }
         ]
     }

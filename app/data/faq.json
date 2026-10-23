@@ -1,0 +1,38 @@
+{
+    "hero": {
+        "title": "",
+        "dis": "",
+        "image": ""
+    },
+      "breadcrum": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Faq's"
+      }
+    ],
+    "faqs": {
+        "title": "FAQs",
+        "dis": "",
+        "faqsItems": [
+            {
+                "question": "Why is Sustainability So Important for the Future?",
+                "answer": "Sustainability is crucial for ensuring a healthy planet for future generations. It involves responsible resource management and reducing environmental impact."
+            },
+            {
+                "question": "How Can I Effectively Reduce Plastic Use?",
+                "answer": "Reducing single-use plastics and opting for reusable alternatives are effective ways to minimize plastic waste and protect the environment for the long term."
+            },
+            {
+                "question": "How Does Deforestation Affect the Environment?",
+                "answer": "Deforestation leads to habitat loss, biodiversity decline, soil erosion, and significantly contributes to climate change by releasing stored carbon into the atmosphere."
+            },
+            {
+                "question": "How can I help protect the environment?",
+                "answer": "Individual actions like reducing waste, supporting eco-friendly businesses, and advocating for policies can significantly impact protection."
+            }
+        ]
+    }
+}

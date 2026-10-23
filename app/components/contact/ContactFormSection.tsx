@@ -112,11 +112,11 @@ function validateField(
 /* ---------- Small pieces ---------- */
 
 const inputBase =
-    "w-full border bg-transparent px-4 py-3 text-base leading-normal text-[#252d4a] outline-none transition-colors duration-300 placeholder:text-[#252d4a]/50 focus:bg-[#e6f5ae]/40 focus-visible:ring-2 focus-visible:ring-[#252d4a]";
+    "w-full border bg-transparent px-4 py-3 text-base leading-normal text-[#15452e] outline-none transition-colors duration-300 placeholder:text-[#15452e]/50 focus:bg-[#e6f5ae]/40 focus-visible:ring-2 focus-visible:ring-[#15452e]";
 
 // Underline draws in from the left on hover
 const linkClass =
-    "bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-500 hover:bg-[length:100%_1px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#252d4a] motion-reduce:transition-none";
+    "bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-500 hover:bg-[length:100%_1px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#15452e] motion-reduce:transition-none";
 
 type DetailProps = {
     icon: ReactNode;
@@ -131,7 +131,7 @@ function Detail({ icon, label, text, href, external }: DetailProps) {
         <motion.li variants={riseVariants} className="flex items-start gap-5">
             <span
                 aria-hidden="true"
-                className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-[#252d4a]"
+                className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-[#15452e]"
             >
                 {icon}
             </span>
@@ -164,7 +164,7 @@ type FieldProps = {
 function Field({ field, value, error, onChange, onBlur }: FieldProps) {
     const id = `contact-${field.name}`;
     const errorId = `${id}-error`;
-    const border = error ? "border-[#b42318]" : "border-[#252d4a]";
+    const border = error ? "border-[#b42318]" : "border-[#15452e]";
 
     const shared = {
         id,
@@ -185,7 +185,7 @@ function Field({ field, value, error, onChange, onBlur }: FieldProps) {
                 {field.required ? (
                     <span aria-hidden="true"> *</span>
                 ) : (
-                    <span className="text-[#252d4a]/70"> (optional)</span>
+                    <span className="text-[#15452e]/70"> (optional)</span>
                 )}
             </label>
 
@@ -324,7 +324,7 @@ export default function ContactSection({
     return (
         <section
             aria-labelledby="contact-title"
-            className="grid grid-cols-1 border-b border-[#252d4a] text-[#252d4a] md:grid-cols-2"
+            className="grid grid-cols-1 border-b border-[#15452e] text-[#15452e] md:grid-cols-2"
         >
             {/* Left: contact details */}
             <motion.div
@@ -332,7 +332,7 @@ export default function ContactSection({
                 whileInView="show"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={columnVariants}
-                className="border-b border-[#252d4a] bg-[#fdfbf3] px-6 py-16 md:border-b-0 md:border-r md:px-[8%] md:py-24"
+                className="border-b border-[#15452e] bg-[#fdfbf3] px-6 py-16 md:border-b-0 md:border-r md:px-[8%] md:py-24"
             >
 
 
@@ -470,7 +470,7 @@ export default function ContactSection({
                                 <button
                                     type="submit"
                                     disabled={sending}
-                                    className="group relative mt-8 inline-flex w-full items-center justify-center gap-3 overflow-hidden border border-[#252d4a] bg-[#252d4a] px-10 py-4 text-[clamp(1rem,1.05vw,1.15rem)] text-[#e6f5ae] transition-colors duration-500 hover:text-[#252d4a] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#252d4a] disabled:cursor-not-allowed disabled:opacity-60 sm:w-fit motion-reduce:transition-none"
+                                    className="group relative mt-8 inline-flex w-full items-center justify-center gap-3 overflow-hidden border border-[#15452e] bg-[#15452e] px-10 py-4 text-[clamp(1rem,1.05vw,1.15rem)] text-[#e6f5ae] transition-colors duration-500 hover:text-[#15452e] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#15452e] disabled:cursor-not-allowed disabled:opacity-60 sm:w-fit motion-reduce:transition-none"
                                 >
                                     {/* lime fill sweeps in from the left on hover */}
                                     <span

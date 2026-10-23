@@ -1,0 +1,77 @@
+{
+    "breadcrum": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Gallery"
+      }
+    ],
+  "eyebrow": "Gallery",
+  "heading": "Small moments. Shared possibility.",
+  "intro": "A look at the people, places, and everyday moments that make our learning community thrive.",
+  "items": [
+    {
+      "src": "/about-edu.png",
+      "alt": "Child learning with a teacher",
+      "caption": "Learning starts with one curious question.",
+      "height": "440px",
+      "objectPosition": "center top",
+      "className": "md:row-span-2"
+    },
+    {
+      "src": "/program-1.png",
+      "alt": "Children learning together in a classroom",
+      "caption": "A classroom built around belonging.",
+      "height": "220px",
+      "objectPosition": "center 35%"
+    },
+    {
+      "src": "/post-1.png",
+      "alt": "Children receiving school supplies",
+      "caption": "The tools to keep going.",
+      "height": "220px",
+      "objectPosition": "center 35%"
+    },
+    {
+      "src": "/program-2.png",
+      "alt": "Students learning computer skills together",
+      "caption": "New skills, wider horizons.",
+      "height": "220px",
+      "objectPosition": "center 45%",
+      "className": "md:col-span-2"
+    },
+    {
+      "src": "/post-2.png",
+      "alt": "Students participating in a group learning activity",
+      "caption": "Growing together, every day.",
+      "height": "220px",
+      "objectPosition": "center 40%"
+    },
+    
+      {
+      "src": "/about-edu.png",
+      "alt": "Child learning with a teacher",
+      "caption": "Learning starts with one curious question.",
+      "height": "460px",
+      "objectPosition": "center top",
+      "className": "md:row-span-2"
+    },
+      {
+      "src": "/about-edu.png",
+      "alt": "Child learning with a teacher",
+      "caption": "Learning starts with one curious question.",
+      "height": "460px",
+      "objectPosition": "center top",
+      "className": "md:row-span-2"
+    },
+       {
+      "src": "/post-2.png",
+      "alt": "Students participating in a group learning activity",
+      "caption": "Growing together, every day.",
+      "height": "220px",
+      "objectPosition": "center 40%"
+    }
+  ]
+}

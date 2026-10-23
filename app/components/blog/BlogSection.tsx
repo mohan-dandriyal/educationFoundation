@@ -17,6 +17,7 @@ import {
 import MainContainer from "../ui/MainContainer";
 import { BlogCard, type BlogPost } from "@/app/components/ui/BlogCard"; // adjust path if needed
 import { SectionInnerTitle } from "../ui/SectionTitle";
+import { Breadcrumb } from "../Breadcrumb";
 
 type BlogSectionProps = {
     /** Small label at the top left (the breadcrumb in the design) */
@@ -26,6 +27,7 @@ type BlogSectionProps = {
     post: BlogPost[];
     /** How many posts show on each page */
     perPage?: number;
+    breadcrum : []
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
@@ -40,15 +42,6 @@ const riseVariants: Variants = {
     show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } },
 };
 
-// Title: words slide up out of a mask, one after another
-const titleVariants: Variants = {
-    hidden: {},
-    show: { transition: { staggerChildren: 0.08 } },
-};
-const wordVariants: Variants = {
-    hidden: { y: "110%" },
-    show: { y: "0%", transition: { duration: 0.85, ease: EASE } },
-};
 
 // Page numbers to show, with gaps for long lists: 1 … 4 5 6 … 12
 function getPages(current: number, total: number): (number | "gap")[] {
@@ -71,10 +64,10 @@ export default function BlogSection({
     heading = "All Posts",
     post,
     perPage = 6,
+    breadcrum,
 }: BlogSectionProps) {
     const reduceMotion = useReducedMotion();
     const initial = reduceMotion ? false : "hidden";
-    const words = heading.split(" ");
 
     const [page, setPage] = useState(1);
     const [query, setQuery] = useState("");
@@ -203,8 +196,12 @@ export default function BlogSection({
                         {heading}
                     </SectionInnerTitle>
 
+                     <div className='mt-4'>
+                        <Breadcrumb items={breadcrum} />
+      </div>
+
                     {/* Posts */}
-                    <div ref={listRef} className="mt-14 scroll-mt-24 md:mt-16">
+                    <div ref={listRef} className="mt-14 scroll-mt-24 md:mt-10">
                         {/* Announces results to screen readers */}
                         <p className="sr-only" aria-live="polite">
                             {filtered.length} {filtered.length === 1 ? "post" : "posts"}, page{" "}

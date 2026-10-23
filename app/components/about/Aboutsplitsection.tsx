@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
-import { PrimaryButton } from "../ui/PrimaryButton";
 import { SectionTitle } from "../ui/SectionTitle";
+import { Breadcrumb } from "../Breadcrumb";
 
 type Img = { src: string; alt: string };
 
@@ -16,6 +16,7 @@ type AboutSplitSectionProps = {
   thumbs?: [Img, Img];
   /** The large photo on the right */
   mainImage?: Img;
+  breadCrumb : []
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
@@ -30,15 +31,7 @@ const riseVariants: Variants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: EASE } },
 };
 
-// Title: words slide up out of a mask, one after another
-const headingVariants: Variants = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.1 } },
-};
-const wordVariants: Variants = {
-  hidden: { y: "110%" },
-  show: { y: "0%", transition: { duration: 0.85, ease: EASE } },
-};
+
 
 // Small photos: unveil from the bottom while the photo zoom settles
 const thumbFrameVariants: Variants = {
@@ -67,25 +60,19 @@ const mainPhotoVariants: Variants = {
 };
 
 export function AboutSplitSection({
-  title = "Together, We Can Build a Brighter Future",
-  description = "",
-  thumbs = [
-    { src: "/program-1.png", alt: "Aerial view of a red dirt path winding through green forest" },
-    { src: "/program-2.png", alt: "Clear blue lake with grassy shore and distant hills" },
-  ],
-  mainImage = {
-    src: "/about-edu.png",
-    alt: "Smiling woman crouching in a field, holding a young green plant",
-  },
+  title,
+  description,
+  thumbs,
+  breadCrumb,
+  mainImage,
 }: AboutSplitSectionProps) {
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
-  const words = title.split(" ");
 
   return (
     <section
       aria-labelledby="about-split-title"
-      className="grid min-h-svh grid-cols-1 bg-[#fdfbf3] text-[#252d4a] md:grid-cols-2"
+      className="grid min-h-svh grid-cols-1 bg-[#fdfbf3] text-[#15452e] md:grid-cols-2"
     >
       {/* Left column */}
       <motion.div
@@ -95,8 +82,12 @@ export function AboutSplitSection({
         variants={columnVariants}
         className="flex flex-col items-center justify-center px-6 py-16 text-center md:py-12"
       >
+        <div className="mb-10">
+          <Breadcrumb items={breadCrumb } />
+        </div>
+
         <SectionTitle>
-            {title}
+          {title}
         </SectionTitle>
 
         <motion.p
@@ -108,13 +99,12 @@ export function AboutSplitSection({
 
         {/* Two photos, the right one sits higher than the left */}
         <div className="mt-16 grid w-full max-w-[485px] grid-cols-2 items-start gap-[29px] md:mt-20">
-          {thumbs.map((img, i) => (
+          {thumbs?.map((img, i) => (
             <motion.div
               key={img.src}
               variants={thumbFrameVariants}
-              className={`relative aspect-[228/307] w-full overflow-hidden ${
-                i === 0 ? "mt-8 md:mt-11" : ""
-              }`}
+              className={`relative aspect-[228/307] w-full overflow-hidden ${i === 0 ? "mt-8 md:mt-11" : ""
+                }`}
             >
               <motion.div variants={thumbPhotoVariants} className="absolute inset-0">
                 <Image

@@ -2,7 +2,12 @@
 
 import { useRef, useState, type FormEvent, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
-import { motion, useReducedMotion, type Variants } from "motion/react";
+import {
+  AnimatePresence,
+  motion,
+  useReducedMotion,
+  type Variants,
+} from "motion/react";
 import { FaArrowRight, FaLock } from "react-icons/fa6";
 import { SectionHeading } from "../Ourimpact/Sectionheading";
 
@@ -95,32 +100,83 @@ function validateDonorField(field: DonorField, value: string): string {
 /* ---------- Small pieces ---------- */
 
 const inputBase =
-  "w-full border bg-[#fdfbf3]/40 px-4 py-3 text-base leading-normal text-[#252d4a] outline-none transition-colors duration-300 placeholder:text-[#252d4a]/50 focus:bg-[#e6f5ae]/40 focus-visible:ring-2 focus-visible:ring-[#252d4a]";
+  "w-full border bg-[#fdfbf3]/40 px-4 py-3 text-base leading-normal text-[#15452e] outline-none transition-colors duration-300 placeholder:text-[#15452e]/50 focus:bg-[#e6f5ae]/40 focus-visible:ring-2 focus-visible:ring-[#15452e]";
+
+/**
+ * Error text that eases open and closed instead of popping in,
+ * so the fields and buttons below it glide rather than jump.
+ */
+function Message({
+  id,
+  children,
+  className = "",
+}: {
+  id?: string;
+  children: ReactNode;
+  className?: string;
+}) {
+  const reduceMotion = useReducedMotion();
+  return (
+    <motion.div
+      id={id}
+      role="alert"
+      initial={reduceMotion ? false : { opacity: 0, height: 0 }}
+      animate={{ opacity: 1, height: "auto" }}
+      exit={reduceMotion ? undefined : { opacity: 0, height: 0 }}
+      transition={{ duration: 0.25, ease: EASE }}
+      className="overflow-hidden"
+    >
+      <p className={`m-0 text-sm text-[#b42318] ${className}`}>{children}</p>
+    </motion.div>
+  );
+}
 
 function ActionButton({
   children,
   type = "button",
   onClick,
-  disabled,
+  pending = false,
+  pendingLabel,
 }: {
   children: ReactNode;
   type?: "button" | "submit";
   onClick?: () => void;
-  disabled?: boolean;
+  pending?: boolean;
+  pendingLabel?: string;
 }) {
   return (
     <button
       type={type}
       onClick={onClick}
-      disabled={disabled}
-      className="group relative inline-flex w-full items-center justify-center gap-3 overflow-hidden border border-[#252d4a] bg-[#252d4a] px-8 py-4 text-[clamp(1rem,1.05vw,1.15rem)] text-[#e6f5ae] transition-colors duration-500 hover:text-[#252d4a] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#252d4a] disabled:cursor-not-allowed disabled:opacity-60 sm:w-fit motion-reduce:transition-none"
+      disabled={pending}
+      className="group relative inline-flex w-full items-center justify-center gap-3 overflow-hidden border border-[#15452e] bg-[#15452e] px-8 py-4 text-[clamp(1rem,1.05vw,1.15rem)] text-[#e6f5ae] transition-colors duration-500 hover:text-[#15452e] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b49358] disabled:cursor-not-allowed disabled:opacity-60 sm:w-fit motion-reduce:transition-none"
     >
       {/* lime fill sweeps in from the left on hover */}
       <span
         aria-hidden="true"
         className="absolute inset-0 origin-left scale-x-0 bg-[#e6f5ae] transition-transform duration-500 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-x-100 group-disabled:scale-x-0 motion-reduce:transition-none"
       />
-      <span className="relative">{children}</span>
+      {/* Both labels share one grid cell, so the button keeps the same width
+          when the text swaps to the pending label. */}
+      <span className="relative grid">
+        <span
+          className={`col-start-1 row-start-1 transition-opacity duration-200 ${
+            pending && pendingLabel ? "opacity-0" : ""
+          }`}
+        >
+          {children}
+        </span>
+        {pendingLabel && (
+          <span
+            aria-hidden={!pending}
+            className={`col-start-1 row-start-1 transition-opacity duration-200 ${
+              pending ? "" : "opacity-0"
+            }`}
+          >
+            {pendingLabel}
+          </span>
+        )}
+      </span>
       <FaArrowRight
         aria-hidden="true"
         className="relative h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
@@ -153,7 +209,7 @@ function DonorInput({
     "aria-invalid": error ? true : undefined,
     "aria-describedby": error ? errorId : undefined,
     onBlur: () => onBlur(field.name),
-    className: `${inputBase} ${error ? "border-[#b42318]" : "border-[#252d4a]"}`,
+    className: `${inputBase} ${error ? "border-[#b42318]" : "border-[#15452e]"}`,
   } as const;
 
   return (
@@ -163,7 +219,7 @@ function DonorInput({
         {field.required ? (
           <span aria-hidden="true"> *</span>
         ) : (
-          <span className="text-[#252d4a]/70"> (optional)</span>
+          <span className="text-[#15452e]/70"> (optional)</span>
         )}
       </label>
 
@@ -179,18 +235,26 @@ function DonorInput({
           {...shared}
           type={field.type}
           autoComplete={
-            field.type === "email" ? "email" : field.type === "tel" ? "tel" : field.name === "fullName" ? "name" : "off"
+            field.type === "email"
+              ? "email"
+              : field.type === "tel"
+                ? "tel"
+                : field.name === "fullName"
+                  ? "name"
+                  : "off"
           }
           maxLength={field.name === "panNumber" ? 10 : undefined}
           onChange={(e) => onChange(field.name, e.target.value)}
         />
       )}
 
-      {error && (
-        <p id={errorId} role="alert" className="m-0 mt-2 text-sm text-[#b42318]">
-          {error}
-        </p>
-      )}
+      <AnimatePresence initial={false}>
+        {error && (
+          <Message id={errorId} className="pt-2">
+            {error}
+          </Message>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -205,6 +269,7 @@ export default function DonationFlowSection({
   const reduceMotion = useReducedMotion();
   const router = useRouter();
   const initial = reduceMotion ? false : "hidden";
+  const scrollBehavior: ScrollBehavior = reduceMotion ? "auto" : "smooth";
 
   // Step 1: amount
   const [donationType, setDonationType] = useState(options.donationTypes[0]?.id ?? "");
@@ -237,15 +302,30 @@ export default function DonationFlowSection({
     return "";
   };
 
+  /* ----- Scrolling and focus -----
+     Focus is moved with preventScroll and the scroll is done separately with
+     scrollIntoView, so the page glides instead of jumping to the element. */
+
   const scrollToId = (id: string) =>
     document.getElementById(id)?.scrollIntoView({
-      behavior: reduceMotion ? "auto" : "smooth",
+      behavior: scrollBehavior,
       block: "start",
     });
 
+  const revealAndFocus = (el: HTMLElement | null | undefined) => {
+    if (!el) return;
+    el.scrollIntoView({ behavior: scrollBehavior, block: "center" });
+    el.focus({ preventScroll: true });
+  };
+
   const focusAmount = () => {
-    if (custom) customRef.current?.focus();
-    else document.querySelector<HTMLInputElement>('input[name="donation-amount"]')?.focus();
+    if (custom) {
+      revealAndFocus(customRef.current);
+      return;
+    }
+    revealAndFocus(
+      document.querySelector<HTMLInputElement>('input[name="donation-amount"]')
+    );
   };
 
   const handleContinue = () => {
@@ -255,14 +335,18 @@ export default function DonationFlowSection({
       focusAmount();
       return;
     }
+
     scrollToId("donor-details");
+
+    // On touch screens, focusing an input opens the keyboard and cuts the
+    // scroll short, so move focus to the section instead of the first field.
+    const finePointer = window.matchMedia("(pointer: fine)").matches;
     const first = details.fields[0];
-    if (first) {
-      window.setTimeout(
-        () => document.getElementById(`donor-${first.name}`)?.focus({ preventScroll: true }),
-        reduceMotion ? 0 : 700
-      );
-    }
+    const target =
+      finePointer && first
+        ? document.getElementById(`donor-${first.name}`)
+        : document.getElementById("donor-details");
+    target?.focus({ preventScroll: true });
   };
 
   const handleDonorChange = (name: string, value: string) => {
@@ -288,7 +372,7 @@ export default function DonationFlowSection({
     const amountMessage = getAmountError();
     if (amountMessage) {
       setAmountError(amountMessage);
-      scrollToId("donation-options");
+      scrollToId("donation-flow");
       return;
     }
 
@@ -301,7 +385,7 @@ export default function DonationFlowSection({
 
     const firstInvalid = details.fields.find((f) => nextErrors[f.name]);
     if (firstInvalid) {
-      document.getElementById(`donor-${firstInvalid.name}`)?.focus();
+      revealAndFocus(document.getElementById(`donor-${firstInvalid.name}`));
       return;
     }
 
@@ -333,7 +417,7 @@ export default function DonationFlowSection({
       <section
         id="donation-flow"
         aria-labelledby="donation-options-title"
-        className="scroll-mt-20 border-b border-[#252d4a] bg-[#fdfbf3] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
+        className="scroll-mt-24 border-b border-[#15452e] bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-10"
       >
         <motion.div
           initial={initial}
@@ -353,7 +437,7 @@ export default function DonationFlowSection({
           {/* Donation type */}
           <motion.fieldset variants={riseVariants} className="m-0 mt-12 border-0 p-0">
             <legend className="sr-only">Donation type</legend>
-            <div className="inline-flex divide-x divide-[#252d4a] border border-[#252d4a]">
+            <div className="inline-flex divide-x divide-[#15452e] border border-[#15452e]">
               {options.donationTypes.map((type) => (
                 <label key={type.id} className="relative cursor-pointer">
                   <input
@@ -364,7 +448,7 @@ export default function DonationFlowSection({
                     onChange={() => setDonationType(type.id)}
                     className="peer sr-only"
                   />
-                  <span className="block px-5 py-3 text-sm transition-colors duration-300 peer-checked:bg-[#252d4a] peer-checked:text-[#e6f5ae] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#252d4a] sm:px-6">
+                  <span className="block px-5 py-3 text-sm transition-colors duration-300 peer-checked:bg-[#15452e] peer-checked:text-[#e6f5ae] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#b49358] sm:px-6">
                     {type.label}
                   </span>
                 </label>
@@ -390,7 +474,7 @@ export default function DonationFlowSection({
                     }}
                     className="peer sr-only"
                   />
-                  <span className="flex h-full flex-col border border-[#252d4a] bg-[#fdfbf3]/40 p-6 transition-[transform,background-color,color] duration-300 hover:-translate-y-1 peer-checked:bg-[#252d4a] peer-checked:text-[#e6f5ae] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#252d4a] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+                  <span className="flex h-full flex-col border border-[#15452e] bg-[#fdfbf3]/40 p-6 transition-[transform,background-color,color] duration-300 hover:-translate-y-1 peer-checked:bg-[#15452e] peer-checked:text-[#e6f5ae] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#b49358] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                     <span className="font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,3vw,2.75rem)] leading-none">
                       {money(a.value)}
                     </span>
@@ -409,8 +493,8 @@ export default function DonationFlowSection({
                 {options.customAmount.label}
               </label>
               <div
-                className={`flex items-center border bg-[#fdfbf3]/40 focus-within:ring-2 focus-within:ring-[#252d4a] ${
-                  amountError && custom ? "border-[#b42318]" : "border-[#252d4a]"
+                className={`flex items-center border bg-[#fdfbf3]/40 transition-colors duration-300 focus-within:ring-2 focus-within:ring-[#15452e] ${
+                  amountError && custom ? "border-[#b42318]" : "border-[#15452e]"
                 }`}
               >
                 <span aria-hidden="true" className="px-4 text-lg">
@@ -430,7 +514,7 @@ export default function DonationFlowSection({
                     setSelectedId(null);
                     setAmountError("");
                   }}
-                  className="w-full bg-transparent py-3 pr-4 text-base outline-none placeholder:text-[#252d4a]/50"
+                  className="w-full bg-transparent py-3 pr-4 text-base outline-none placeholder:text-[#15452e]/50"
                 />
               </div>
               <p id="amount-hint" className="m-0 mt-2 text-xs">
@@ -439,18 +523,17 @@ export default function DonationFlowSection({
             </motion.div>
           )}
 
-          {amountError && (
-            <p role="alert" className="m-0 mt-4 text-sm text-[#b42318]">
-              {amountError}
-            </p>
-          )}
+          <AnimatePresence initial={false}>
+            {amountError && <Message className="pt-4">{amountError}</Message>}
+          </AnimatePresence>
 
           <motion.div
             variants={riseVariants}
             className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center"
           >
             <ActionButton onClick={handleContinue}>{options.button.text}</ActionButton>
-            <p className="m-0 text-sm" aria-live="polite">
+            {/* min-h reserves the line so the layout doesn't shift when the text appears */}
+            <p className="m-0 min-h-6 text-sm" aria-live="polite">
               {amount !== null && !getAmountError()
                 ? `You’ve chosen ${money(amount)}, ${typeLabel.toLowerCase()}.`
                 : ""}
@@ -462,8 +545,9 @@ export default function DonationFlowSection({
       {/* ---------- Step 2: donor details ---------- */}
       <section
         id="donor-details"
+        tabIndex={-1}
         aria-labelledby="donor-details-title"
-        className="scroll-mt-20 bg-[#fdfbf3] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
+        className="scroll-mt-24 bg-[#fdfbf3] px-6 py-16 text-[#15452e] outline-none md:px-[6%] md:py-28"
       >
         <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <motion.div
@@ -496,7 +580,7 @@ export default function DonationFlowSection({
             variants={riseVariants}
           >
             {/* Summary of the chosen amount */}
-            <div className="mb-8 flex flex-wrap items-center justify-between gap-3 border border-[#252d4a] bg-[#e6f5ae]/50 px-5 py-4">
+            <div className="mb-8 flex flex-wrap items-center justify-between gap-3 border border-[#15452e] bg-[#e6f5ae]/50 px-5 py-4">
               <div>
                 <p className="m-0 font-mono text-xs uppercase leading-none">Your donation</p>
                 <p className="m-0 mt-2 text-lg leading-snug">
@@ -507,8 +591,8 @@ export default function DonationFlowSection({
               </div>
               <button
                 type="button"
-                onClick={() => scrollToId("donation-options")}
-                className="text-sm underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#252d4a]"
+                onClick={() => scrollToId("donation-flow")}
+                className="text-sm underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b49358]"
               >
                 Change
               </button>
@@ -528,15 +612,23 @@ export default function DonationFlowSection({
                 ))}
               </div>
 
-              {submitError && (
-                <p role="alert" className="mb-0 mt-6 border border-[#b42318] px-4 py-3 text-sm text-[#b42318]">
-                  {submitError}
-                </p>
-              )}
+              <AnimatePresence initial={false}>
+                {submitError && (
+                  <Message className="pt-6">
+                    <span className="block border border-[#b42318] px-4 py-3">
+                      {submitError}
+                    </span>
+                  </Message>
+                )}
+              </AnimatePresence>
 
               <div className="mt-8">
-                <ActionButton type="submit" disabled={submitting}>
-                  {submitting ? "Please wait…" : details.button.text}
+                <ActionButton
+                  type="submit"
+                  pending={submitting}
+                  pendingLabel="Please wait…"
+                >
+                  {details.button.text}
                 </ActionButton>
               </div>
             </form>

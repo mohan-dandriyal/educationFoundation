@@ -1,50 +1,97 @@
 {
+  "breadcrum": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About us"
+    }
+  ],
   "aboutSplit": {
-    "title": "Together, We Can Build a Brighter Future",
+    "title": "Building Brighter Futures Together",
     "description": "We create practical learning opportunities so every child can learn, grow, and lead.",
     "cta": "Explore our programs",
     "ctaHref": "/our-program",
     "thumbs": [
-      { "src": "/program-1.png", "alt": "Aerial view of a green learning community" },
-      { "src": "/program-2.png", "alt": "Children learning together" }
+      {
+        "src": "/program-1.png",
+        "alt": "Aerial view of a green learning community"
+      },
+      {
+        "src": "/program-2.png",
+        "alt": "Children learning together"
+      }
     ],
-    "mainImage": { "src": "/about-edu.png", "alt": "Child learning with a teacher" }
+    "mainImage": {
+      "src": "/about-edu.png",
+      "alt": "Child learning with a teacher"
+    }
   },
   "mission": {
     "eyebrow": "Our Mission",
-    "heading": "Every child deserves a chance to learn, grow, and lead.",
-    "image": { "src": "/program-2.png", "alt": "Children learning together with school supplies" },
+    "heading": "Empowering Tomorrow's Leaders Today.",
+    "image": {
+      "src": "/program-2.png",
+      "alt": "Children learning together with school supplies"
+    },
     "pillars": [
-      { "title": "Access to learning", "text": "We open learning centers where schools are far away or out of reach." },
-      { "title": "Quality teaching", "text": "We support local teachers with books, supplies, and practical tools." },
-      { "title": "Community first", "text": "Families, volunteers, and local leaders shape every program." }
+      {
+        "title": "Access to learning",
+        "text": "We open learning centers where schools are far away or out of reach."
+      },
+      {
+        "title": "Quality teaching",
+        "text": "We support local teachers with books, supplies, and practical tools."
+      },
+      {
+        "title": "Community first",
+        "text": "Families, volunteers, and local leaders shape every program."
+      }
     ]
+  },
+  "ourVision": {
+    "tag": "OUR VISION",
+    "title": "Cultivating Knowledge, Nurturing Futures",
+    "description": "We envision a world where every child has access to quality education, equal opportunities, and the confidence to achieve their dreams. Through learning, innovation, and community support, we are building a brighter future for generations to come.",
+    "highlight": "Education for All, Opportunity for Everyone",
+    "image": "/hero-right.png",
+    "imageAlt": "Children learning together and building a brighter future",
+    "buttonText": "",
+    "buttonLink": ""
   },
   "journey": {
     "eyebrow": "Our Journey",
     "heading": "From one classroom to a movement.",
     "intro": "Every step began with a child who wanted to learn and a community that wanted to help.",
     "milestones": [
-      { "year": "2012", "title": "The first classroom", "text": "One room and twenty children began learning together.", "image": { "src": "/program-2.png", "alt": "Children learning together" } },
-      { "year": "2018", "title": "Teacher training", "text": "Local teachers joined our training program so good lessons could reach more villages.", "image": { "src": "/post-1.png", "alt": "Teacher helping a student" } },
-      { "year": "2024", "title": "A growing movement", "text": "Today, learning centers support more than 1,200 students.", "image": { "src": "/program-1.png", "alt": "Children smiling in a classroom" } }
-    ]
-  },
-  "team": {
-    "eyebrow": "Our Team",
-    "heading": "The people behind every classroom.",
-    "intro": "Teachers, mentors, and organizers who give their time so every child has a place to learn.",
-    "members": [
-      { "name": "Priya Nair", "role": "Founder and Director", "image": { "src": "/pro-1.jpg", "alt": "Portrait of Priya Nair" } },
-      { "name": "Samuel Mensah", "role": "Head of Programs", "image": { "src": "/pro-2.jpg", "alt": "Portrait of Samuel Mensah" } },
-      { "name": "Elena Duarte", "role": "Teacher Training Lead", "image": { "src": "/pro-3.jpg", "alt": "Portrait of Elena Duarte" } }
-    ]
-  },
-  "faq": {
-    "heading": "FAQs",
-    "items": [
-      { "question": "Why is education important?", "answer": "Education gives children the knowledge, confidence, and opportunities to shape their future." },
-      { "question": "How can I help?", "answer": "You can donate, volunteer, or help share our programs with your community." }
+      {
+        "year": "2012",
+        "title": "The first classroom",
+        "text": "One room and twenty children began learning together.",
+        "image": {
+          "src": "/program-2.png",
+          "alt": "Children learning together"
+        }
+      },
+      {
+        "year": "2018",
+        "title": "Teacher training",
+        "text": "Local teachers joined our training program so good lessons could reach more villages.",
+        "image": {
+          "src": "/post-1.png",
+          "alt": "Teacher helping a student"
+        }
+      },
+      {
+        "year": "2024",
+        "title": "A growing movement",
+        "text": "Today, learning centers support more than 1,200 students.",
+        "image": {
+          "src": "/program-1.png",
+          "alt": "Children smiling in a classroom"
+        }
+      }
     ]
   }
 }

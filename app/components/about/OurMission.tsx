@@ -61,13 +61,10 @@ const lineVariants: Variants = {
 };
 
 export function OurMissionSection({
-    eyebrow = "Our Mission",
-    heading = "Every child deserves a chance to learn, grow, and lead.",
-    image = {
-        src: "/program-2.png", // swap for your own photo
-        alt: "Children learning together with school supplies",
-    },
-    pillars = DEFAULT_PILLARS,
+    eyebrow,
+    heading ,
+    image,
+    pillars,
 }: OurMissionSectionProps) {
     const reduceMotion = useReducedMotion();
 
@@ -77,6 +74,13 @@ export function OurMissionSection({
             className="bg-[#fdfbf3]  md:px-[6%] px-6  py-16 text-[#252d4a] md:py-28"
         >
             <MainContainer>
+                <div className="flex justify-center flex-col items-center text-center pb-8">
+                     <SectionLabel>
+                            <span className="text-[#15452e]/90">{eyebrow}</span>
+                        </SectionLabel>
+
+                        <SectionInnerTitle>{heading}</SectionInnerTitle>
+                </div>
                 <motion.div
                     initial={reduceMotion ? false : "hidden"}
                     whileInView="show"
@@ -85,22 +89,18 @@ export function OurMissionSection({
                     className="mx-auto grid  gap-12 md:grid-cols-[1fr_1.1fr] md:gap-20"
                 >
                     {/* Statement + image */}
-                    <div>
-                        <SectionLabel>
-                            <span className="text-[#252d4a]/90">{eyebrow}</span>
-                        </SectionLabel>
-
-                        <SectionInnerTitle>{heading}</SectionInnerTitle>
+                    <div className="flex flex-col items-center text-center">
+                       
 
                         {/* Image, after the title */}
                         <motion.div
                             variants={frameVariants}
-                            className="relative mt-10 aspect-4/3 w-full overflow-hidden md:mt-14"
+                            className="relative h-[clamp(320px,38vw,560px)] w-full overflow-hidden md:mt-14"
                         >
-                            <motion.div variants={photoVariants} className="absolute inset-0">
+                            <motion.div variants={photoVariants} className="absolute  inset-0">
                                 <Image
-                                    src={image.src}
-                                    alt={image.alt}
+                                    src={image.src ?? ""}
+                                    alt={image.alt ?? ""}
                                     fill
                                     sizes="(min-width: 768px) 45vw, 100vw"
                                     className="object-cover"
@@ -120,12 +120,12 @@ export function OurMissionSection({
                                 <motion.span
                                     aria-hidden="true"
                                     variants={lineVariants}
-                                    className="absolute left-0 top-0 h-px w-full origin-left bg-[#252d4a]"
+                                    className="absolute left-0 top-0 h-px w-full origin-left bg-[#15452e]"
                                 />
-                                <h3 className="m-0 text-[clamp(1.25rem,1.7vw,1.65rem)] font-normal leading-[1.3]">
+                                <h3 className="m-0 text-[#15452e] text-[clamp(1.25rem,1.7vw,1.65rem)] font-normal leading-[1.3]">
                                     {pillar.title}
                                 </h3>
-                                <p className="mb-0 mt-3 max-w-[46ch] text-[clamp(0.95rem,1.05vw,1.1rem)] leading-[1.7]">
+                                <p className="mb-0 mt-3 text-[#15452e] max-w-[46ch] text-[clamp(0.95rem,1.05vw,1.1rem)] leading-[1.7]">
                                     {pillar.text}
                                 </p>
 
@@ -133,7 +133,7 @@ export function OurMissionSection({
                                     <motion.span
                                         aria-hidden="true"
                                         variants={lineVariants}
-                                        className="absolute bottom-0 left-0 h-px w-full origin-left bg-[#252d4a]"
+                                        className="absolute bottom-0 left-0 h-px w-full origin-left bg-[#15452e]"
                                     />
                                 )}
                             </motion.li>

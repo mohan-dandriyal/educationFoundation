@@ -2,14 +2,20 @@
 {
   "logo": "/logo.png",
   "logoAlt": "D. Sullivan",
-  "logoHref": "#top",
+  "logoHref": "/",
   "links": [
     { "label": "Home", "href": "/" },
     { "label": "About", "href": "/about" },
     { "label": "Our Program", "href": "/our-program" },
-    { "label": "Our Impact", "href": "/our-impact" },
-    { "label": "success  Story", "href": "/our-success-story" },
+    { "label": "Our Causes", "href": "/our-causes" },
+    { "label": "Our Team", "href": "/our-team" },
+    { "label": "Donate Now", "href": "/donate" },
+    { "label": "Gallery", "href": "/gallery" },
+    { "label": "Faqs", "href": "/faqs" },
     { "label": "blog", "href": "/blog" }
   ],
-  "cta": { "label": "Let's talk", "href": "/contact-us" }
+  "cta": { "label": "Contact Us", "href": "/contact-us" }
 }
+
+
+

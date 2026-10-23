@@ -1,18 +1,46 @@
 {
   "hero": {
-    "image": { "src": "/program-1.png", "alt": "Children learning together" },
+    "image": {
+      "src": "/program-1.png",
+      "alt": "Children learning together"
+    },
     "title": "Help Every Child Learn",
     "description": "Your donation helps provide children with access to education and learning resources.",
-    "buttons": { "text": "Make a Donation", "linkTo": "#donation-flow" }
+    "buttons": {
+      "text": "Make a Donation",
+      "linkTo": "#donation-flow"
+    },
+    "breadcrum": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Donate Now"
+      }
+    ]
   },
   "whyDonate": {
     "label": "WHY GIVE",
     "title": "Your Support Creates Opportunity",
     "description": "Every contribution helps children learn, grow, and build a brighter future.",
-    "image": { "src": "/program-2.png", "alt": "Children studying together" },
+    "image": {
+      "src": "/program-2.png",
+      "alt": "Children studying together"
+    },
     "goals": [
-      { "id": 1, "title": "Access to learning", "description": "Help children access quality education.", "icon": "GraduationCap" },
-      { "id": 2, "title": "Learning resources", "description": "Provide books and essential school supplies.", "icon": "BookOpen" }
+      {
+        "id": 1,
+        "title": "Access to learning",
+        "description": "Help children access quality education.",
+        "icon": "GraduationCap"
+      },
+      {
+        "id": 2,
+        "title": "Learning resources",
+        "description": "Provide books and essential school supplies.",
+        "icon": "BookOpen"
+      }
     ]
   },
   "donationOptions": {
@@ -21,49 +49,130 @@
     "description": "Select an amount and donation type to continue.",
     "currency": "INR",
     "currencySymbol": "₹",
-    "donationTypes": [{ "id": "once", "label": "One-time" }, { "id": "monthly", "label": "Monthly" }],
-    "amounts": [
-      { "id": 1, "value": 500, "title": "₹500", "description": "Supports learning materials." },
-      { "id": 2, "value": 1000, "title": "₹1,000", "description": "Supports classroom access." },
-      { "id": 3, "value": 2500, "title": "₹2,500", "description": "Supports a child’s learning journey." }
+    "donationTypes": [
+      {
+        "id": "once",
+        "label": "One-time"
+      },
+      {
+        "id": "monthly",
+        "label": "Monthly"
+      }
     ],
-    "customAmount": { "enabled": true, "label": "Custom amount", "placeholder": "Enter amount", "minimumAmount": 100 },
-    "button": { "text": "Continue", "linkTo": "#donor-details" }
+    "amounts": [
+      {
+        "id": 1,
+        "value": 500,
+        "title": "₹500",
+        "description": "Supports learning materials."
+      },
+      {
+        "id": 2,
+        "value": 1000,
+        "title": "₹1,000",
+        "description": "Supports classroom access."
+      },
+      {
+        "id": 3,
+        "value": 2500,
+        "title": "₹2,500",
+        "description": "Supports a child’s learning journey."
+      }
+    ],
+    "customAmount": {
+      "enabled": true,
+      "label": "Custom amount",
+      "placeholder": "Enter amount",
+      "minimumAmount": 100
+    },
+    "button": {
+      "text": "Continue",
+      "linkTo": "#donor-details"
+    }
   },
   "donorDetails": {
     "label": "YOUR DETAILS",
     "title": "Tell Us About You",
     "description": "We use these details to confirm your donation.",
     "fields": [
-      { "name": "name", "label": "Full name", "type": "text", "required": true },
-      { "name": "email", "label": "Email address", "type": "email", "required": true },
-      { "name": "phone", "label": "Phone number", "type": "tel" }
+      {
+        "name": "name",
+        "label": "Full name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email address",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone number",
+        "type": "tel"
+      }
     ],
-    "button": { "text": "Proceed to Payment", "linkTo": "/donate" },
+    "button": {
+      "text": "Proceed to Payment",
+      "linkTo": "/donate"
+    },
     "privacyNote": "Your information is kept private and secure."
   },
   "howDonationsHelp": {
     "label": "YOUR IMPACT",
     "title": "See Where Your Gift Goes",
     "description": "Donations support practical education programs for children and communities.",
-    "items": [{ "id": 1, "title": "Education", "description": "Support access to learning.", "image": { "src": "/program-1.png", "alt": "Children learning" } }]
+    "items": [
+      {
+        "id": 1,
+        "title": "Education",
+        "description": "Support access to learning.",
+        "image": {
+          "src": "/program-1.png",
+          "alt": "Children learning"
+        }
+      }
+    ]
   },
   "transparency": {
     "label": "TRANSPARENCY",
     "title": "Giving You Confidence",
     "description": "We work responsibly and keep our supporters informed.",
-    "points": [{ "id": 1, "title": "Clear reporting", "description": "We share how donations support our work.", "icon": "FileCheck" }]
+    "points": [
+      {
+        "id": 1,
+        "title": "Clear reporting",
+        "description": "We share how donations support our work.",
+        "icon": "FileCheck"
+      }
+    ]
   },
   "donationFaq": {
     "label": "QUESTIONS",
     "title": "Donation FAQs",
-    "items": [{ "id": 1, "question": "Can I make a recurring donation?", "answer": "Yes. Select the monthly donation option." }]
+    "items": [
+      {
+        "id": 1,
+        "question": "Can I make a recurring donation?",
+        "answer": "Yes. Select the monthly donation option."
+      }
+    ]
   },
   "finalCallToAction": {
     "label": "JOIN THE CHANGE",
     "title": "Together, We Can Help More Children",
     "description": "Your support can open the door to a brighter future.",
-    "image": { "src": "/impact-cta.png", "alt": "Children smiling together" },
-    "buttons": [{ "text": "Donate Now", "linkTo": "#donation-flow", "variant": "primary" }]
+    "image": {
+      "src": "/impact-cta.png",
+      "alt": "Children smiling together"
+    },
+    "buttons": [
+      {
+        "text": "Donate Now",
+        "linkTo": "#donation-flow",
+        "variant": "primary"
+      }
+    ]
   }
 }

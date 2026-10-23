@@ -23,7 +23,7 @@ export const PrimaryButton = ({ children, href }: PrimaryButtonProps) => {
     >
       <Link
         href={href ?? "/"}
-        className="group relative flex w-fit items-center gap-3 overflow-hidden bg-[#252d4a] px-10 py-4 text-[clamp(1rem,1.05vw,1.15rem)] text-[#e6f5ae] shadow-md transition-[color,box-shadow] duration-500 hover:text-[#252d4a] hover:shadow-lg hover:ring-1 hover:ring-[#252d4a] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#252d4a]"
+        className="group relative flex w-fit items-center gap-3 overflow-hidden bg-[#15452e] px-10 py-4 text-[clamp(1rem,1.05vw,1.15rem)] text-[#e6f5ae] shadow-md transition-[color,box-shadow] duration-500 hover:text-[#252d4a] hover:shadow-lg hover:ring-1 hover:ring-[#15452e] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#15452e]"
       >
         {/* Lime fill sweeps in from the left on hover */}
         <span

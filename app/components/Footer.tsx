@@ -20,7 +20,7 @@ export function Footer() {
   return (
     <footer className="border-t border-[#3b4d28]/15 bg-[#fdfbf3] text-[#3b4d28]">
       <motion.div initial={reduceMotion ? false : "hidden"} whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={wrapVariants} className="mx-auto max-w-[1366px] px-6 md:px-[5%]">
-        <div className="flex flex-col gap-10 py-16 md:flex-row md:items-end md:justify-between md:py-24">
+        {/* <div className="flex flex-col gap-10 py-16 md:flex-row md:items-end md:justify-between md:py-24">
           <h2 className="m-0 max-w-[12ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(3rem,6vw,6rem)] font-normal leading-[1.02] tracking-[-0.02em] text-[#4a5d2e]">
             <span className="inline-block overflow-hidden pb-[0.15em] align-bottom">
               <motion.span variants={slideVariants} className="inline-block">{footer.heading}</motion.span>
@@ -32,7 +32,7 @@ export function Footer() {
               <span className="relative">{footer.cta.label}</span>
             </Link>
           </motion.div>
-        </div>
+        </div> */}
 
         <motion.div variants={riseVariants} className="grid items-center gap-8 border-t border-[#3b4d28]/15 py-10 md:grid-cols-[1fr_auto_1fr]">
           <Link href={footer.logoHref} aria-label={`${footer.logoAlt} home`} className="flex w-fit items-center gap-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3b4d28]">

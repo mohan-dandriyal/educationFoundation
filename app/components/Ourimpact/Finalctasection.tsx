@@ -5,6 +5,7 @@ import { motion, useReducedMotion, type Variants } from "motion/react";
 import { SectionHeading } from "./Sectionheading";
 import { ActionLink } from "./Actionlink";
 import MainContainer from "../ui/MainContainer";
+import { PrimaryButton } from "../ui/PrimaryButton";
 
 export type CtaButton = {
     text: string;
@@ -54,7 +55,7 @@ export default function FinalCtaSection({ content }: { content: CtaContent }) {
             <MainContainer>
                 <section
                     aria-labelledby="cta-title"
-                    className="grid min-h-[560px] grid-cols-1  text-[#252d4a] md:grid-cols-2"
+                    className="grid min-h-[560px] grid-cols-1  text-[#15452e] md:grid-cols-2"
                 >
 
                     {/* Image: outer wrapper only watches the scroll, inner frame does the clip reveal */}
@@ -62,7 +63,7 @@ export default function FinalCtaSection({ content }: { content: CtaContent }) {
                         initial={initial}
                         whileInView="show"
                         viewport={{ once: true, amount: 0.1 }}
-                        className="relative min-h-[360px] border-b border-[#252d4a] md:min-h-0 md:border-b-0 md:border-r"
+                        className="relative min-h-[360px] border-b border-[#15452e] md:min-h-0 md:border-b-0 md:border-r"
                     >
                         <motion.div
                             variants={frameVariants}
@@ -99,12 +100,9 @@ export default function FinalCtaSection({ content }: { content: CtaContent }) {
                         <div className="mt-10 flex flex-wrap items-center gap-4">
                             {content.buttons.map((button) => (
                                 <motion.div key={button.text} variants={riseVariants}>
-                                    <ActionLink
-                                        href={button.linkTo}
-                                        variant={button.variant === "secondary" ? "secondary" : "primary"}
-                                    >
+                                    <PrimaryButton href={button.linkTo}>
                                         {button.text}
-                                    </ActionLink>
+                                    </PrimaryButton>
                                 </motion.div>
                             ))}
                         </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { PrimaryButton } from "../ui/PrimaryButton";
 import { SectionTitle } from "../ui/SectionTitle";
+import { Breadcrumb } from "../Breadcrumb";
 
 type Img = { src: string; alt: string };
 
@@ -16,6 +17,7 @@ type contactHeroSectionProps = {
     };
     /** The large photo on the right */
     mainImag: Img;
+    breadcrum : [{label : string, href : string}]
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
@@ -49,7 +51,8 @@ export function ContactHeroSection({
     title,
     description,
     mainImag,
-    button
+    button,
+    breadcrum
 }: contactHeroSectionProps) {
     const reduceMotion = useReducedMotion();
     const initial = reduceMotion ? false : "hidden";
@@ -57,7 +60,7 @@ export function ContactHeroSection({
     return (
         <section
             aria-labelledby="about-split-title"
-            className="grid min-h-svh grid-cols-1 bg-[#fdfbf3] text-[#252d4a] md:grid-cols-2"
+            className="grid min-h-svh grid-cols-1  text-[#252d4a] md:grid-cols-2"
         >
             {/* Left column */}
             <motion.div
@@ -67,6 +70,10 @@ export function ContactHeroSection({
                 variants={columnVariants}
                 className="flex flex-col items-center justify-center px-6 py-16 text-center md:py-12"
             >
+                  <div className='flex justify-center pt-20 mb-7'>
+                <Breadcrumb items={breadcrum} />
+            </div>
+
                 <SectionTitle>
                     {title}
                 </SectionTitle>

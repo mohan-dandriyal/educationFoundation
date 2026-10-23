@@ -40,7 +40,7 @@ export default function BlogSection({ eyebrow, heading, post }: BlogSectionProps
     return (
         <section
             aria-labelledby="blog-title"
-            className=" px-6  text-[#0b2a12] md:px-[3.15%] md:py-[52px]"
+            className=" px-6  text-[#0b2a12] md:px-[3.15%] "
         >
             <MainContainer>
                 <div className="">
@@ -76,7 +76,7 @@ export default function BlogSection({ eyebrow, heading, post }: BlogSectionProps
                     </div>
 
                     <div className="flex justify-center ">
-                        <PrimaryButton href="/blog">Show All</PrimaryButton>
+                        <PrimaryButton href="/blog">Explore All Post</PrimaryButton>
                     </div>
                 </div>
             </MainContainer>

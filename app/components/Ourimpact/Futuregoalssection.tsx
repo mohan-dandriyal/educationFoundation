@@ -55,7 +55,7 @@ export default function FutureGoalsSection({ content }: { content: GoalsContent 
     return (
         <section
             aria-labelledby="goals-title"
-            className="bg-[#fdfbf3] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28 "
+            className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-28 "
         >
             <MainContainer>
                 <div className="mx-auto grid  gap-14 lg:grid-cols-2 lg:gap-20">
@@ -80,7 +80,7 @@ export default function FutureGoalsSection({ content }: { content: GoalsContent 
                                     <motion.li key={goal.id} variants={riseVariants}>
                                         <span
                                             aria-hidden="true"
-                                            className="grid h-11 w-11 place-items-center rounded-full border border-[#252d4a]"
+                                            className="grid h-11 w-11 place-items-center rounded-full border border-[#15452e]"
                                         >
                                             <Icon className="h-4 w-4" />
                                         </span>
@@ -105,7 +105,7 @@ export default function FutureGoalsSection({ content }: { content: GoalsContent 
                         initial={initial}
                         whileInView="show"
                         viewport={{ once: true, amount: 0.1 }}
-                        className="relative min-h-[420px] border border-[#252d4a] lg:min-h-0"
+                        className="relative min-h-[420px] border border-[#15452e] lg:min-h-0"
                     >
                         <motion.div
                             variants={frameVariants}
