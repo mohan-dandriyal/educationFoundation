@@ -17,7 +17,7 @@ import {
 import MainContainer from "../ui/MainContainer";
 import { BlogCard, type BlogPost } from "@/app/components/ui/BlogCard"; // adjust path if needed
 import { SectionInnerTitle } from "../ui/SectionTitle";
-import { Breadcrumb } from "../Breadcrumb";
+import { Breadcrumb, type BreadcrumbItem } from "../Breadcrumb";
 
 type BlogSectionProps = {
     /** Small label at the top left (the breadcrumb in the design) */
@@ -27,7 +27,7 @@ type BlogSectionProps = {
     post: BlogPost[];
     /** How many posts show on each page */
     perPage?: number;
-    breadcrum : []
+    breadcrum : BreadcrumbItem[]
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;

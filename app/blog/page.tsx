@@ -7,9 +7,9 @@ import blog from '@/app/data/blog.json'
 function page() {
   return (
     <div>
-         <BlogSection
-                  post={blog.post ?? []}
-                  breadcrum={blog.breadcrum} />
+      <BlogSection
+        post={blog.post ?? []}
+        breadcrum={blog.breadcrum} />
     </div>
   )
 }
