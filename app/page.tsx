@@ -30,7 +30,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="bg-[#f4f4f4]">
+      <div className="bg-[#f4f4f4] pt-20">
         <OurProgram
           eyebrow={home.ourProgram.eyebrow ?? ""}
           heading={home.ourProgram.heading ?? ""}
