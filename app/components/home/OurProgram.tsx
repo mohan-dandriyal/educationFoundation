@@ -68,7 +68,7 @@ export default function OurProgram({ eyebrow, heading, dis, images, program }: O
                     {dis && <p className="mx-auto mt-6 max-w-[72ch] text-base leading-7 text-[#4a5d2e]">{dis}</p>}
                 </motion.header>
 
-                <div className="grid gap-5 md:gap-6">
+                <div className="grid sm:gap-0 gap-4">
                     {programImages.map((item, index) => {
                         const textFirst = index % 2 === 1;
                         const href = item.link ?? (item.slug ? `/our-program/${item.slug}` : "/our-program");
@@ -80,7 +80,7 @@ export default function OurProgram({ eyebrow, heading, dis, images, program }: O
                                 whileInView="show"
                                 viewport={{ once: true, amount: 0.18 }}
                                 variants={cardVariants}
-                                className="grid min-h-[clamp(360px,38vw,200px)] overflow-hidden rounded-[0.65rem] md:grid-cols-2"
+                                className="grid min-h-[clamp(360px,38vw,200px)] overflow-hidden sm:gap-0  md:grid-cols-2"
                             >
                                 <div className={`relative min-h-[200px] overflow-hidden ${textFirst ? "md:order-2" : "md:order-1"}`}>
                                     <motion.div variants={imageVariants} className="absolute inset-0">

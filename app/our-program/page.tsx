@@ -20,7 +20,6 @@ function OurProgramPage() {
         program={program.programsOverview.programs ?? []}
         isShowMoreButton={false} />
 
-      
     </div>
   )
 }
