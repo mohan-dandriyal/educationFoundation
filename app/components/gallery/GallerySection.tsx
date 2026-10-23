@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { SectionInnerTitle, SectionLabel } from "../ui/SectionTitle";
 import MainContainer from "../ui/MainContainer";
-import { Breadcrumb } from "../Breadcrumb";
+import { Breadcrumb, type BreadcrumbItem } from "../Breadcrumb";
 
 type GalleryItem = {
   src: string;
@@ -20,7 +20,7 @@ type GallerySectionProps = {
   heading: string;
   intro: string;
   items: GalleryItem[];
-  breadcrum: [];
+  breadcrum: BreadcrumbItem[];
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;

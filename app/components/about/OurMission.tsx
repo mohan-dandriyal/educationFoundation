@@ -10,26 +10,13 @@ type Pillar = { title: string; text: string };
 type OurMissionSectionProps = {
     eyebrow?: string;
     heading?: string;
-    image?: { src: string; alt: string };
-    pillars?: Pillar[];
+    image?: { src: string; alt: string } | undefined;
+    pillars?: Pillar[] | undefined;
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
 
-const DEFAULT_PILLARS: Pillar[] = [
-    {
-        title: "Access to learning",
-        text: "We open free learning centers where schools are far away or out of reach, so no child is left behind.",
-    },
-    {
-        title: "Quality teaching",
-        text: "We train and support local teachers, and provide books, supplies and digital tools that make lessons stick.",
-    },
-    {
-        title: "Community first",
-        text: "Families, volunteers and local leaders shape every program, so the change lasts long after we leave.",
-    },
-];
+
 
 // Everything appears one after another when the section scrolls into view
 const wrapVariants: Variants = {
@@ -62,7 +49,7 @@ const lineVariants: Variants = {
 
 export function OurMissionSection({
     eyebrow,
-    heading ,
+    heading,
     image,
     pillars,
 }: OurMissionSectionProps) {
@@ -75,11 +62,11 @@ export function OurMissionSection({
         >
             <MainContainer>
                 <div className="flex justify-center flex-col items-center text-center pb-8">
-                     <SectionLabel>
-                            <span className="text-[#15452e]/90">{eyebrow}</span>
-                        </SectionLabel>
+                    <SectionLabel>
+                        <span className="text-[#15452e]/90">{eyebrow}</span>
+                    </SectionLabel>
 
-                        <SectionInnerTitle>{heading}</SectionInnerTitle>
+                    <SectionInnerTitle>{heading}</SectionInnerTitle>
                 </div>
                 <motion.div
                     initial={reduceMotion ? false : "hidden"}
@@ -90,7 +77,7 @@ export function OurMissionSection({
                 >
                     {/* Statement + image */}
                     <div className="flex flex-col items-center text-center">
-                       
+
 
                         {/* Image, after the title */}
                         <motion.div
@@ -98,20 +85,24 @@ export function OurMissionSection({
                             className="relative h-[clamp(320px,38vw,560px)] w-full overflow-hidden md:mt-14"
                         >
                             <motion.div variants={photoVariants} className="absolute  inset-0">
-                                <Image
-                                    src={image.src ?? ""}
-                                    alt={image.alt ?? ""}
-                                    fill
-                                    sizes="(min-width: 768px) 45vw, 100vw"
-                                    className="object-cover"
-                                />
+                                {
+                                    image &&
+                                    <Image
+                                        src={image.src ?? ""}
+                                        alt={image.alt ?? ""}
+                                        fill
+                                        sizes="(min-width: 768px) 45vw, 100vw"
+                                        className="object-cover"
+                                    />
+                                }
                             </motion.div>
                         </motion.div>
                     </div>
 
                     {/* Focus areas */}
                     <ul className="m-0 list-none self-end p-0">
-                        {pillars.map((pillar, i) => (
+
+                        {pillars && pillars.map((pillar, i) => (
                             <motion.li
                                 key={pillar.title}
                                 variants={riseVariants}

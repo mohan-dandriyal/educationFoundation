@@ -115,7 +115,7 @@ export function OurTeamSection({
           variants={gridVariants}
           className="m-0 mt-14 grid list-none grid-cols-2 gap-x-6 gap-y-12 p-0 md:mt-20 md:grid-cols-4 md:gap-x-8"
         >
-          {members.map((member) => (
+          {members && members.map((member) => (
             <motion.li
               key={member.name}
               variants={riseVariants}

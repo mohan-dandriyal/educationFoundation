@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { SectionTitle } from "../ui/SectionTitle";
-import { Breadcrumb } from "../Breadcrumb";
+import { Breadcrumb, type BreadcrumbItem } from "../Breadcrumb";
 
 type Img = { src: string; alt: string };
 
@@ -15,8 +15,8 @@ type AboutSplitSectionProps = {
   /** The two small portrait photos in the middle of the left column */
   thumbs?: [Img, Img];
   /** The large photo on the right */
-  mainImage?: Img;
-  breadCrumb : []
+  mainImage?: { src: string, alt: string } | undefined;
+  breadCrumb: BreadcrumbItem[]
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
@@ -83,7 +83,7 @@ export function AboutSplitSection({
         className="flex flex-col items-center justify-center px-6 py-16 text-center md:py-12"
       >
         <div className="mb-10">
-          <Breadcrumb items={breadCrumb } />
+          <Breadcrumb items={breadCrumb} />
         </div>
 
         <SectionTitle>
@@ -132,14 +132,17 @@ export function AboutSplitSection({
           className="absolute inset-0 overflow-hidden"
         >
           <motion.div variants={mainPhotoVariants} className="absolute inset-0 ">
-            <Image
-              src={mainImage.src}
-              alt={mainImage.alt}
-              fill
-              priority
-              sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
-            />
+            {
+              mainImage &&
+              <Image
+                src={mainImage.src ?? ""}
+                alt={mainImage.alt ?? ''}
+                fill
+                priority
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            }
           </motion.div>
         </motion.div>
       </motion.div>

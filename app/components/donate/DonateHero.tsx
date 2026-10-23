@@ -4,14 +4,14 @@ import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { SectionTitle } from "../ui/SectionTitle";
 import { PrimaryButton } from "../ui/PrimaryButton";
-import { Breadcrumb } from "../Breadcrumb";
+import { Breadcrumb, type BreadcrumbItem } from "../Breadcrumb";
 
 export type DonateHeroContent = {
   image: { src: string; alt: string };
   title: string;
   description: string;
   buttons?: { text: string; linkTo: string };
-  breadcrum : {label : string, href : string}
+  breadcrum :  BreadcrumbItem[]
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;

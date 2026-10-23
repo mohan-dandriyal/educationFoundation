@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { PrimaryButton } from "../ui/PrimaryButton";
 import { SectionTitle } from "../ui/SectionTitle";
-import { Breadcrumb } from "../Breadcrumb";
+import { Breadcrumb, type BreadcrumbItem } from "../Breadcrumb";
 
 type Img = { src: string; alt: string };
 
@@ -17,7 +17,7 @@ type contactHeroSectionProps = {
     };
     /** The large photo on the right */
     mainImag: Img;
-    breadcrum : [{label : string, href : string}]
+    breadcrum : BreadcrumbItem[]
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
