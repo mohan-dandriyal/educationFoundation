@@ -20,11 +20,15 @@ export default function SuccessStoriesPage() {
         imageAlt={stories.hero.imageAlt}
         breadcrumb={stories.breadcrum}
         stats={stories.hero.stats}
-        actions={stories.hero.actions as any}
+        actions={stories.hero.actions as {
+          label: string;
+          href: string;
+          variant?: "primary" | "secondary";
+        }[]}
       />
 
       {/* Main Content driven 100% by success-stories.json */}
-      <SuccessStoriesContent data={stories as any} />
+      <SuccessStoriesContent data={stories} />
     </div>
   );
 }
