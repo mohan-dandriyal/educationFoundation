@@ -1,75 +1,98 @@
 {
-    "breadcrum": [
-      {
-        "label": "Home",
-        "href": "/"
-      },
-      {
-        "label": "Gallery"
-      }
-    ],
-  "eyebrow": "Gallery",
-  "heading": "Small moments. Shared possibility.",
-  "intro": "A look at the people, places, and everyday moments that make our learning community thrive.",
+  "breadcrum": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Gallery"
+    }
+  ],
+  "banner": {
+    "eyebrow": "PHOTO ARCHIVE",
+    "title": "Small Moments, Shared Possibility",
+    "description": "A photographic journey through our classrooms, mobile libraries, digital workshops, and community festivals across 25+ villages.",
+    "image": "/images/banner-gallery.jpg",
+    "imageAlt": "Students exploring books and learning materials in class"
+  },
+  "eyebrow": "MOMENTS FROM THE FIELD",
+  "heading": "Small Moments. Shared Possibility.",
+  "intro": "A look inside the classrooms, digital labs, mobile libraries, and community celebrations that make our learning movement thrive.",
+  "categories": ["All", "Classrooms", "Digital & STEAM", "School Supplies", "Community"],
   "items": [
     {
-      "src": "/about-edu.png",
-      "alt": "Child learning with a teacher",
+      "src": "/images/gallery-1.jpg",
+      "alt": "Children learning with a teacher in a bright classroom",
       "caption": "Learning starts with one curious question.",
+      "category": "Classrooms",
       "height": "440px",
-      "objectPosition": "center top",
+      "objectPosition": "center center",
       "className": "md:row-span-2"
     },
     {
-      "src": "/program-1.png",
-      "alt": "Children learning together in a classroom",
-      "caption": "A classroom built around belonging.",
-      "height": "220px",
-      "objectPosition": "center 35%"
-    },
-    {
-      "src": "/post-1.png",
-      "alt": "Children receiving school supplies",
-      "caption": "The tools to keep going.",
-      "height": "220px",
-      "objectPosition": "center 35%"
-    },
-    {
-      "src": "/program-2.png",
+      "src": "/images/program-digital-learning.jpg",
       "alt": "Students learning computer skills together",
-      "caption": "New skills, wider horizons.",
+      "caption": "First coding workshop at our solar digital lab.",
+      "category": "Digital & STEAM",
+      "height": "220px",
+      "objectPosition": "center 35%"
+    },
+    {
+      "src": "/images/program-school-supplies.jpg",
+      "alt": "Children receiving school supplies and books",
+      "caption": "Fresh notebooks and backpacks at the start of term.",
+      "category": "School Supplies",
+      "height": "220px",
+      "objectPosition": "center 35%"
+    },
+    {
+      "src": "/images/cause-steam-workshop.jpg",
+      "alt": "Students participating in a hands-on science experiment",
+      "caption": "Hands-on STEAM discovery in rural schools.",
+      "category": "Digital & STEAM",
       "height": "220px",
       "objectPosition": "center 45%",
       "className": "md:col-span-2"
     },
     {
-      "src": "/post-2.png",
-      "alt": "Students participating in a group learning activity",
-      "caption": "Growing together, every day.",
+      "src": "/images/cause-mobile-library.jpg",
+      "alt": "Children reading books together at a mobile library",
+      "caption": "Saturday storytelling circle at the Mobile Library.",
+      "category": "Community",
       "height": "220px",
       "objectPosition": "center 40%"
     },
-    
-      {
-      "src": "/about-edu.png",
-      "alt": "Child learning with a teacher",
-      "caption": "Learning starts with one curious question.",
+    {
+      "src": "/images/program-girls-education.jpg",
+      "alt": "Adolescent girls studying together in a mentorship circle",
+      "caption": "Girls' scholarship scholars preparing for exams.",
+      "category": "Classrooms",
       "height": "460px",
       "objectPosition": "center top",
       "className": "md:row-span-2"
     },
-      {
-      "src": "/about-edu.png",
-      "alt": "Child learning with a teacher",
-      "caption": "Learning starts with one curious question.",
+    {
+      "src": "/images/cause-art-gardening.jpg",
+      "alt": "Children tending seedlings in a school garden",
+      "caption": "Growing organic greens in our school kitchen garden.",
+      "category": "Community",
       "height": "460px",
-      "objectPosition": "center top",
+      "objectPosition": "center center",
       "className": "md:row-span-2"
     },
-       {
-      "src": "/post-2.png",
-      "alt": "Students participating in a group learning activity",
-      "caption": "Growing together, every day.",
+    {
+      "src": "/images/program-early-childhood.jpg",
+      "alt": "Young children learning through colorful play",
+      "caption": "Early childhood discovery through play and puzzles.",
+      "category": "Classrooms",
+      "height": "220px",
+      "objectPosition": "center 40%"
+    },
+    {
+      "src": "/images/volunteer-education.jpg",
+      "alt": "Volunteers packing school kits and mentoring students",
+      "caption": "Weekend volunteers packing 1,200 back-to-school kits.",
+      "category": "School Supplies",
       "height": "220px",
       "objectPosition": "center 40%"
     }

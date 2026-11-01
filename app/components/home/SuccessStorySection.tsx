@@ -96,7 +96,7 @@ export function SuccessStorySection({
   return (
     <section
       aria-labelledby="success-story-title"
-      className="overflow-hidden bg-[#fdfbf3] py-16 text-[#15452e] md:py-24"
+      className="overflow-hidden bg-[#fdfbf3] py-16 text-[#15452e] md:py-18"
     >
       <MainContainer>
       <div className="mx-auto grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-16 lg:gap-24">

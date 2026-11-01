@@ -49,7 +49,7 @@ export default function BlogSection({ eyebrow, heading, post }: BlogSectionProps
                         initial={initial}
                         whileInView="show"
                         viewport={{ once: true, amount: 0.4 }}
-                        className="flex flex-col justify-between"
+                        className="flex flex-col justify-between lg:pb-14 pb-8"
                     >
                         <div>
 
@@ -69,7 +69,7 @@ export default function BlogSection({ eyebrow, heading, post }: BlogSectionProps
                     </motion.div>
 
                     {/* Right column: one post, one row */}
-                    <div className=" flex mt-15 gap-10 flex-col lg:flex-row">
+                    <div className=" flex gap-10 flex-col lg:flex-row">
                         {
                             post?.slice(0, 2)?.map((po, i) => (<BlogCard key={i + 1} post={po} />))
                         }

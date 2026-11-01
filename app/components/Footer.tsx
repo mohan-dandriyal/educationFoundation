@@ -3,48 +3,236 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "motion/react";
-import { FaArrowUp } from "react-icons/fa6";
+import {
+  FaArrowRight,
+  FaArrowUp,
+  FaFacebookF,
+  FaHeart,
+  FaInstagram,
+  FaLinkedinIn,
+  FaLocationDot,
+  FaPhone,
+  FaRegClock,
+  FaRegEnvelope,
+  FaXTwitter,
+} from "react-icons/fa6";
 import footer from "@/app/data/footer.json";
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
-const trackedText = "text-[13px] uppercase tracking-[0.2em]";
-const linkClass = `w-fit bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat pb-1 transition-[background-size] duration-500 hover:bg-[length:100%_1px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3b4d28] motion-reduce:transition-none ${trackedText}`;
 
-const wrapVariants: Variants = { hidden: {}, show: { transition: { delayChildren: 0.1, staggerChildren: 0.12 } } };
-const riseVariants: Variants = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: EASE } } };
-const slideVariants: Variants = { hidden: { y: "110%" }, show: { y: "0%", transition: { duration: 0.9, ease: EASE } } };
+const wrapVariants: Variants = {
+  hidden: {},
+  show: { transition: { delayChildren: 0.1, staggerChildren: 0.1 } },
+};
+const riseVariants: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: EASE } },
+};
 
 export function Footer() {
   const reduceMotion = useReducedMotion();
 
-  return (
-    <footer className="border-t border-[#3b4d28]/15 bg-[#fdfbf3] text-[#3b4d28]">
-      <motion.div initial={reduceMotion ? false : "hidden"} whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={wrapVariants} className="mx-auto max-w-[1366px] px-6 md:px-[5%]">
-        {/* <div className="flex flex-col gap-10 py-16 md:flex-row md:items-end md:justify-between md:py-24">
-          <h2 className="m-0 max-w-[12ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(3rem,6vw,6rem)] font-normal leading-[1.02] tracking-[-0.02em] text-[#4a5d2e]">
-            <span className="inline-block overflow-hidden pb-[0.15em] align-bottom">
-              <motion.span variants={slideVariants} className="inline-block">{footer.heading}</motion.span>
-              </span>
-          </h2>
-          <motion.div variants={riseVariants}>
-            <Link href={footer.cta.href} className={`group relative inline-flex items-center overflow-hidden border border-[#3b4d28] px-6 py-3 transition-colors duration-500 hover:text-[#fdfbf3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3b4d28] motion-reduce:transition-none ${trackedText}`}>
-              <span aria-hidden="true" className="absolute inset-0 origin-left scale-x-0 bg-[#3b4d28] transition-transform duration-500 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-x-100 motion-reduce:transition-none" />
-              <span className="relative">{footer.cta.label}</span>
-            </Link>
-          </motion.div>
-        </div> */}
+  const getSocialIcon = (label: string) => {
+    switch (label.toLowerCase()) {
+      case "facebook":
+        return <FaFacebookF className="h-3.5 w-3.5" />;
+      case "instagram":
+        return <FaInstagram className="h-3.5 w-3.5" />;
+      case "linkedin":
+        return <FaLinkedinIn className="h-3.5 w-3.5" />;
+      default:
+        return <FaXTwitter className="h-3.5 w-3.5" />;
+    }
+  };
 
-        <motion.div variants={riseVariants} className="grid items-center gap-8 border-t border-[#3b4d28]/15 py-10 md:grid-cols-[1fr_auto_1fr]">
-          <Link href={footer.logoHref} aria-label={`${footer.logoAlt} home`} className="flex w-fit items-center gap-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3b4d28]">
-          <Image src={footer.logo} alt={footer.logoAlt} width={108} height={88} className="w-50 object-contain" />
-          </Link>
-          <nav aria-label="Footer navigation" className="flex flex-wrap items-center gap-x-10 gap-y-4">{footer.links.map((link) => <Link key={link.href} href={link.href} className={linkClass}>{link.label}</Link>)}</nav>
-          <div className="flex flex-col gap-3 md:items-end"><a href={`mailto:${footer.contact.email}`} className={linkClass}>{footer.contact.email}</a><a href={footer.contact.phoneHref} className={linkClass}>{footer.contact.phone}</a></div>
+  return (
+    <footer className="bg-[#0e2a1d] text-[#fdfbf3]">
+      <motion.div
+        initial={reduceMotion ? false : "hidden"}
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={wrapVariants}
+        className="mx-auto max-w-[1366px] px-6 md:px-[5%]"
+      >
+        {/* Top Call-To-Action Banner */}
+        <motion.div
+          variants={riseVariants}
+          className="flex flex-col justify-between gap-8 border-b border-[#fdfbf3]/15 py-14 lg:flex-row lg:items-end lg:py-20"
+        >
+          <div className="max-w-2xl">
+            <p className="m-0 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-[#e6f5ae]">
+              <span className="h-px w-8 bg-[#e6f5ae]" />
+              {footer.eyebrow}
+            </p>
+            <h2 className="m-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.25rem,4.5vw,4rem)] font-normal leading-[1.06] tracking-[-0.02em] text-[#fdfbf3]">
+              {footer.heading}
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href={footer.cta.href}
+              className="group inline-flex items-center gap-3 rounded-full bg-[#e6f5ae] px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] text-[#15452e] transition-all duration-300 hover:bg-[#b49358] hover:text-[#fdfbf3]"
+            >
+              <FaHeart className="h-4 w-4 text-[#d97706] group-hover:text-[#fdfbf3]" />
+              <span>{footer.cta.label}</span>
+              <FaArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+            {footer.secondaryCta && (
+              <Link
+                href={footer.secondaryCta.href}
+                className="inline-flex items-center gap-2 rounded-full border border-[#fdfbf3]/30 px-7 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#fdfbf3] transition-colors duration-300 hover:border-[#e6f5ae] hover:text-[#e6f5ae]"
+              >
+                {footer.secondaryCta.label}
+              </Link>
+            )}
+          </div>
         </motion.div>
 
-        <motion.div variants={riseVariants} className="flex border-t border-[#3b4d28]/15 py-6 text-xs uppercase tracking-[0.2em]">
-          <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" })} className="group flex w-fit items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#3b4d28]">
-            {footer.backToTopLabel}<FaArrowUp aria-hidden="true" className="h-3 w-3 transition-transform duration-300 group-hover:-translate-y-1 motion-reduce:transition-none" />
+        {/* Main 4-Column Footer Grid */}
+        <motion.div
+          variants={riseVariants}
+          className="grid gap-12 py-14 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.85fr_1fr_1.1fr] lg:py-16"
+        >
+          {/* Column 1: Logo, Mission & Socials */}
+          <div className="flex flex-col justify-between gap-6">
+            <div>
+              <Link
+                href={footer.logoHref}
+                aria-label={`${footer.logoAlt} home`}
+                className="inline-block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e6f5ae]"
+              >
+                <Image
+                  src={footer.logoLight || footer.logo}
+                  alt={footer.logoAlt}
+                  width={230}
+                  height={62}
+                  className="h-auto w-56 object-contain"
+                  unoptimized
+                />
+              </Link>
+              <p className="mb-0 mt-5 max-w-[38ch] text-sm leading-[1.75] text-[#fdfbf3]/75">
+                {footer.description}
+              </p>
+            </div>
+
+            {footer.socials && (
+              <div className="flex items-center gap-3 pt-2">
+                {footer.socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="grid h-10 w-10 place-items-center rounded-full border border-[#fdfbf3]/20 text-[#fdfbf3]/85 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#e6f5ae] hover:bg-[#e6f5ae] hover:text-[#15452e]"
+                  >
+                    {getSocialIcon(s.label)}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Column 2: Quick Links */}
+          <div>
+            <h3 className="m-0 text-xs font-bold uppercase tracking-[0.2em] text-[#e6f5ae]">
+              Explore
+            </h3>
+            <ul className="m-0 mt-6 grid grid-cols-2 gap-x-4 gap-y-3 list-none p-0 text-sm sm:grid-cols-1">
+              {footer.links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="inline-block text-[#fdfbf3]/80 transition-colors hover:text-[#e6f5ae]"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Programs */}
+          <div>
+            <h3 className="m-0 text-xs font-bold uppercase tracking-[0.2em] text-[#e6f5ae]">
+              Our Programs
+            </h3>
+            <ul className="m-0 mt-6 flex flex-col gap-3 list-none p-0 text-sm">
+              {footer.programLinks?.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="inline-block text-[#fdfbf3]/80 transition-colors hover:text-[#e6f5ae]"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Contact Info */}
+          <div>
+            <h3 className="m-0 text-xs font-bold uppercase tracking-[0.2em] text-[#e6f5ae]">
+              Contact Us
+            </h3>
+            <ul className="m-0 mt-6 flex flex-col gap-4 list-none p-0 text-sm text-[#fdfbf3]/80">
+              {footer.contact.address && (
+                <li className="flex items-start gap-3">
+                  <FaLocationDot className="mt-1 h-4 w-4 shrink-0 text-[#e6f5ae]" />
+                  <span>{footer.contact.address}</span>
+                </li>
+              )}
+              <li className="flex items-center gap-3">
+                <FaRegEnvelope className="h-4 w-4 shrink-0 text-[#e6f5ae]" />
+                <a
+                  href={`mailto:${footer.contact.email}`}
+                  className="transition-colors hover:text-[#e6f5ae]"
+                >
+                  {footer.contact.email}
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaPhone className="h-4 w-4 shrink-0 text-[#e6f5ae]" />
+                <a
+                  href={footer.contact.phoneHref}
+                  className="transition-colors hover:text-[#e6f5ae]"
+                >
+                  {footer.contact.phone}
+                </a>
+              </li>
+              {footer.contact.hours && (
+                <li className="flex items-center gap-3">
+                  <FaRegClock className="h-4 w-4 shrink-0 text-[#e6f5ae]" />
+                  <span>{footer.contact.hours}</span>
+                </li>
+              )}
+            </ul>
+          </div>
+        </motion.div>
+
+        {/* Bottom Copyright & Back to Top */}
+        <motion.div
+          variants={riseVariants}
+          className="flex flex-col items-center justify-between gap-4 border-t border-[#fdfbf3]/15 py-7 text-xs text-[#fdfbf3]/65 sm:flex-row"
+        >
+          <p className="m-0 text-center sm:text-left">{footer.copyright}</p>
+
+          <button
+            type="button"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: reduceMotion ? "auto" : "smooth",
+              })
+            }
+            className="group flex items-center gap-2 font-semibold uppercase tracking-[0.18em] text-[#e6f5ae] transition-colors hover:text-[#fdfbf3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e6f5ae]"
+          >
+            <span>{footer.backToTopLabel}</span>
+            <span className="grid h-7 w-7 place-items-center rounded-full border border-[#e6f5ae]/40 transition-transform duration-300 group-hover:-translate-y-1">
+              <FaArrowUp aria-hidden="true" className="h-3 w-3" />
+            </span>
           </button>
         </motion.div>
       </motion.div>

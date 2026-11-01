@@ -1,69 +1,93 @@
 {
-    "hero": {
-        "eyebrow": "D. Sullivan / AgriTech",
-        "title": "Leading the Change",
-        "description": "We develop cutting-edge agritech solutions that enhance sustainability and improve crop yield. Join us in our mission to revolutionize the future of agriculture.",
-        "cta": "Explore More",
-        "ctaHref": "/about",
-        "leftImage": {
-            "src": "/hero-left.png",
-            "alt": "Researcher inspecting healthy crops in a green field"
-        },
-        "rightImage": {
-            "src": "/hero-right.png",
-            "alt": "Drone flying above a sunlit agricultural field"
-        }
+  "hero": {
+    "eyebrow": "EDUCARE FOUNDATION • EST. 2012",
+    "title": "Education Today, Brighter Tomorrow",
+    "description": "We partner with underserved communities to build free learning centers, equip classrooms with digital tools, and ensure every child has the books, mentorship, and confidence to thrive.",
+    "cta": "Support a Child",
+    "ctaHref": "#",
+    "secondaryCta": "Explore Programs",
+    "secondaryCtaHref": "/our-program",
+    "stats": [
+      { "value": "1,200+", "label": "Students Enrolled" },
+      { "value": "25+", "label": "Learning Centers" },
+      { "value": "94%", "label": "School Retention" }
+    ],
+    "leftImage": {
+      "src": "/images/hero-main.jpg",
+      "alt": "Joyful children learning together in a bright community classroom"
     },
-    "about": {
-        "label" : "about us",
-        "title": "Building Brighter Futures Through Education",
-        "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis omnis ipsa ipsum voluptatum veniam. Delectus totam dolores quam. Molestias modi incidunt doloribus illo voluptas fuga beatae, pariatur reprehenderit quasi iure?",
-        "buttonText": "About Us",
-        "href": "/about",
-        "image": {
-            "src": "/about-edu.png",
-            "alt": "Smiling woman in an olive green t-shirt standing on cracked, dry earth"
-        }
-    },
-    "ourProgram": {
-        "eyebrow": "Our Program",
-        "heading": "Empowering Children Through Education",
-        "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis omnis ipsa ipsum voluptatum veniam. Delectus totam dolores quam. Molestias modi incidunt doloribus illo voluptas fuga beatae, pariatur reprehenderit quasi iure?",
-        "images": [
-            {
-                "src": "/program-1.png",
-                "alt": "We introduce children to computers, digital tools."
-            },
-            {
-                "src": "/program-2.png",
-                "alt": "We aim to provide essential learning materials, including books, notebooks, stationery, and school supplies to children who need them."
-            }
-        ]
-    },
-    "ourBlog": {
-        "eyebrow": "Our Post",
-        "heading": "We believe every child deserves an opportunity to learn, grow, and build a brighter ",
-        "post": [
-            {
-                "src": "/program-1.png",
-                "alt": "We introduce children to computers, digital tools.",
-                "title": "Every Child Deserves a Chance to Learn",
-                "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-                "slug": ""
-            },
-            {
-                "src": "/program-2.png",
-                "alt": "We aim to provide essential learning materials, including books, notebooks, stationery, and school supplies to children who need them.",
-                "title": "Sharing School Supplies, Spreading Smiles",
-                "dis": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-                "slug": ""
-            }
-        ]
-    },
-    "ourCauses": {
-    "tag": "OUR CAUSES",
+    "rightImage": {
+      "src": "/images/hero-secondary.jpg",
+      "alt": "Smiling students holding notebooks and learning materials"
+    }
+  },
+  "about": {
+    "label": "ABOUT EDUCARE FOUNDATION",
+    "title": "Building Brighter Futures Through Inclusive Education",
+    "dis": "Founded in 2012 with a single classroom of twenty students, Educare Foundation now operates 25 community learning centers. We work alongside parents, local teachers, and volunteers to remove financial and social barriers so every child can read, curious minds can explore technology, and young leaders can shape their own futures.",
+    "highlights": [
+      {
+        "title": "100% Free Learning",
+        "description": "Zero tuition fees, free nutritious mid-day snacks, and complete stationery kits for every enrolled child."
+      },
+      {
+        "title": "Community-Led Centers",
+        "description": "Local educators trained in modern, child-friendly pedagogy right within the neighborhoods that need them most."
+      },
+      {
+        "title": "Holistic Growth",
+        "description": "Combining foundational literacy and numeracy with digital skills, STEAM workshops, arts, and mentorship."
+      }
+    ],
+    "buttonText": "Discover Our Story",
+    "href": "/about",
+    "image": {
+      "src": "/images/about-main.jpg",
+      "alt": "Teacher guiding students in an interactive classroom session"
+    }
+  },
+  "ourProgram": {
+    "eyebrow": "OUR CORE PROGRAMS",
+    "heading": "Empowering Children Through Practical Learning",
+    "dis": "Our holistic programs meet children where they are—from early childhood play and foundational reading to digital literacy labs and girl-child scholarship support.",
+    "buttonText": "View All 6 Programs",
+    "buttonHref": "/our-program",
+    "images": [
+      {
+        "src": "/images/program-digital-learning.jpg",
+        "alt": "Students learning computer skills and digital tools."
+      },
+      {
+        "src": "/images/program-school-supplies.jpg",
+        "alt": "Essential learning materials, books, notebooks, and stationery kits."
+      }
+    ]
+  },
+  "ourBlog": {
+    "eyebrow": "STORIES & INSIGHTS",
+    "heading": "Updates From Our Classrooms & Field Initiatives",
+    "dis": "Read inspiring stories from our teachers, volunteers, and students across our community learning centers.",
+    "post": [
+      {
+        "src": "/images/blog-1.jpg",
+        "alt": "Children holding their new school supply kits",
+        "title": "Sharing School Supplies, Spreading Smiles",
+        "dis": "How a backpack, fresh notebooks, and pencils transformed classroom attendance this spring.",
+        "slug": "sharing-school-supplies-spreading-smiles"
+      },
+      {
+        "src": "/images/blog-2.jpg",
+        "alt": "Students learning together in a classroom",
+        "title": "How Education Opens Doors to New Dreams",
+        "dis": "Bringing free neighborhood learning centers closer to families so no child drops out.",
+        "slug": "how-education-opens-doors-to-new-dreams"
+      }
+    ]
+  },
+  "ourCauses": {
+    "tag": "ACTIVE CAMPAIGNS",
     "title": "Seeds of Change in Action",
-    "description": "Every child deserves the opportunity to learn, grow, and build a brighter future. Explore the causes that drive our mission.",
+    "description": "Every contribution directly funds classroom equipment, learning kits, and mentor stipends. Choose a cause close to your heart and help us reach our goal.",
     "buttonText": "Explore All Causes",
     "buttonLink": "/our-causes",
     "causes": [
@@ -72,15 +96,15 @@
         "title": "Digital Literacy for All",
         "slug": "digital-literacy",
         "category": "Technology",
-        "description": "Bridging the digital divide by helping children develop essential computer skills and access modern learning resources.",
-        "image": "/program-1.png",
+        "description": "Bridging the digital divide by equipping rural and urban community centers with laptops, internet access, and guided coding sessions.",
+        "image": "/images/program-digital-learning.jpg",
         "imageAlt": "Children learning digital skills on computers",
-        "raised": 45000,
+        "raised": 54000,
         "goal": 75000,
-        "donors": 86,
+        "donors": 112,
         "featured": true,
         "status": "active",
-        "buttonText": "Learn More",
+        "buttonText": "Support Cause",
         "buttonLink": "/our-causes/digital-literacy"
       },
       {
@@ -88,15 +112,15 @@
         "title": "STEAM Workshops in Rural Areas",
         "slug": "steam-workshops",
         "category": "Skill Development",
-        "description": "Inspiring young minds through hands-on science, technology, engineering, arts, and mathematics activities.",
-        "image": "/program-2.png",
+        "description": "Inspiring young minds through hands-on science experiments, robotics kits, engineering challenges, and creative mathematics.",
+        "image": "/images/cause-steam-workshop.jpg",
         "imageAlt": "Students participating in a hands-on science workshop",
-        "raised": 32000,
+        "raised": 41000,
         "goal": 60000,
-        "donors": 64,
+        "donors": 84,
         "featured": true,
         "status": "active",
-        "buttonText": "Learn More",
+        "buttonText": "Support Cause",
         "buttonLink": "/our-causes/steam-workshops"
       },
       {
@@ -104,15 +128,15 @@
         "title": "The Mobile Library Initiative",
         "slug": "mobile-library",
         "category": "Education",
-        "description": "Bringing books, storytelling, and educational resources to children in underserved communities.",
-        "image": "/post-2.png",
+        "description": "Bringing thousands of illustrated storybooks, bilingual readers, and weekly storytelling circles to remote villages.",
+        "image": "/images/cause-mobile-library.jpg",
         "imageAlt": "Children exploring books at a community library",
-        "raised": 28000,
+        "raised": 36500,
         "goal": 50000,
-        "donors": 52,
+        "donors": 69,
         "featured": true,
         "status": "active",
-        "buttonText": "Learn More",
+        "buttonText": "Support Cause",
         "buttonLink": "/our-causes/mobile-library"
       },
       {
@@ -120,15 +144,15 @@
         "title": "Art & Gardening for Empowerment",
         "slug": "art-gardening",
         "category": "Creative Learning",
-        "description": "Encouraging creativity, teamwork, environmental awareness, and confidence through art and gardening.",
-        "image": "/images/art-gardening.jpg",
+        "description": "Encouraging creativity, teamwork, nutrition awareness, and environmental stewardship through school kitchen gardens and art clubs.",
+        "image": "/images/cause-art-gardening.jpg",
         "imageAlt": "Children planting seedlings together in a garden",
-        "raised": 18000,
+        "raised": 26000,
         "goal": 40000,
-        "donors": 39,
+        "donors": 53,
         "featured": true,
         "status": "active",
-        "buttonText": "Learn More",
+        "buttonText": "Support Cause",
         "buttonLink": "/our-causes/art-gardening"
       },
       {
@@ -136,15 +160,15 @@
         "title": "School Supplies for Every Child",
         "slug": "school-supplies",
         "category": "Basic Education",
-        "description": "Providing notebooks, stationery, school bags, and essential learning materials to children who need them.",
-        "image": "/images/school-supplies.jpg",
+        "description": "Providing sturdy backpacks, notebooks, geometry boxes, and stationery kits at the start of every academic term.",
+        "image": "/images/program-school-supplies.jpg",
         "imageAlt": "School bags and stationery prepared for students",
-        "raised": 22000,
+        "raised": 29500,
         "goal": 35000,
-        "donors": 47,
+        "donors": 61,
         "featured": false,
         "status": "active",
-        "buttonText": "Support This Cause",
+        "buttonText": "Support Cause",
         "buttonLink": "/our-causes/school-supplies"
       },
       {
@@ -152,49 +176,59 @@
         "title": "Girls' Education & Opportunity",
         "slug": "girls-education",
         "category": "Equal Opportunity",
-        "description": "Supporting girls with learning resources, mentoring, and opportunities to pursue their educational goals.",
-        "image": "/images/girls-education.jpg",
+        "description": "Supporting adolescent girls with scholarships, mentorship circles, and safe transport so they complete secondary school.",
+        "image": "/images/program-girls-education.jpg",
         "imageAlt": "Girls studying together in a supportive classroom",
-        "raised": 38000,
+        "raised": 48000,
         "goal": 65000,
-        "donors": 73,
+        "donors": 95,
         "featured": false,
         "status": "active",
-        "buttonText": "Support This Cause",
+        "buttonText": "Support Cause",
         "buttonLink": "/our-causes/girls-education"
       }
     ],
     "bottomCta": {
-      "title": "Be a Part of the Story",
-      "description": "Your support can open doors to education, inspire young minds, and help create lasting change in communities.",
+      "title": "Be a Part of Their Learning Journey",
+      "description": "Your support opens doors to classrooms, inspires curious young minds, and creates lasting generational change.",
       "primaryButton": "Donate Now",
-      "primaryLink": "/donate",
+      "primaryLink": "#",
       "secondaryButton": "Become a Volunteer",
-      "secondaryLink": "/volunteer"
+      "secondaryLink": "/contact-us"
     }
   },
-    "testimonials": {
-        "eyebrow": "Testimonials",
-        "heading": "What people say",
-        "items": [
-            {
-                "id": 1,
-                "name": "Roo Jackson",
-                "quote": "Volunteering with this team changed how I see my own community. They listen to families, plan with them, and show up every week. I am proud to be part of it.",
-                "image": { "src": "/pro-1.jpg", "alt": "Portrait of Roo Jackson" }
-            },
-            {
-                "id": 2,
-                "name": "Anita Sharma",
-                "quote": "My daughter now goes to class every day and comes home excited to share what she learned. The teachers are patient and the learning center feels like a second home.",
-                "image": { "src": "/pro-1.jpg", "alt": "Portrait of Anita Sharma" }
-            },
-            {
-                "id": 3,
-                "name": "Daniel Okafor",
-                "quote": "I donate every month because the yearly report shows exactly where the money goes. It is rare to see an organization this open and this effective.",
-                "image": { "src": "/pro-1.jpg", "alt": "Portrait of Daniel Okafor" }
-            }
-        ]
-    }
+  "testimonials": {
+    "eyebrow": "VOICES OF OUR COMMUNITY",
+    "heading": "Stories From Parents, Donors & Volunteers",
+    "items": [
+      {
+        "id": 1,
+        "name": "Anita Sharma",
+        "role": "Parent of a Grade 4 Student",
+        "quote": "My daughter now goes to class every single morning and comes home excited to read aloud to her younger brother. The teachers are patient and the learning center feels like a second home.",
+        "image": { "src": "/images/testimonial-1.jpg", "alt": "Portrait of Anita Sharma" }
+      },
+      {
+        "id": 2,
+        "name": "Daniel Okafor",
+        "role": "Monthly Supporter & Mentor",
+        "quote": "I contribute every month because Educare Foundation shares transparent impact reports showing every classroom kit and computer lab funded. It is rare to see an organization this open and effective.",
+        "image": { "src": "/images/testimonial-2.jpg", "alt": "Portrait of Daniel Okafor" }
+      },
+      {
+        "id": 3,
+        "name": "Roshni Verma",
+        "role": "Weekend Literacy Volunteer",
+        "quote": "Volunteering with this team changed how I see my own community. They listen to families first, plan with local educators, and show up every week without fail. I am proud to be part of it.",
+        "image": { "src": "/images/testimonial-3.jpg", "alt": "Portrait of Roshni Verma" }
+      },
+      {
+        "id": 4,
+        "name": "Grace Mensah",
+        "role": "Community School Partner",
+        "quote": "When the Mobile Library began visiting our neighborhood, children who had never owned a storybook started borrowing two books a week. Reading has become a joyful habit for the whole village.",
+        "image": { "src": "/images/testimonial-4.jpg", "alt": "Portrait of Grace Mensah" }
+      }
+    ]
+  }
 }

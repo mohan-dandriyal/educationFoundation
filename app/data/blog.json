@@ -1,222 +1,409 @@
 {
-      "breadcrum": [
-      {
-        "label": "Home",
-        "href": "/"
-      },
-      {
-        "label": "Blog"
-      }
-    ],
-    "post": [
-        {
-            "id": 1,
-            "slug": "sharing-school-supplies-spreading-smiles",
-            "title": "Sharing School Supplies, Spreading Smiles",
-            "author": "Admin",
-            "date": "2025-03-20",
-            "dateLabel": "Mar 20, 2025",
-            "readTime": "2 min read",
-            "image": {
-                "src": "/post-1.png",
-                "alt": "Close-up of a hiking boot on a city street covered in autumn leaves at sunset"
-            },
-            "views": 379,
-            "href": "/blog/sharing-school-supplies-spreading-smiles"
-        },
-        {
-            "id": 2,
-            "slug": "how-education-opens-doors-to-new-dreams",
-            "title": "How Education Opens Doors to New Dreams",
-            "author": "Admin",
-            "date": "2025-03-20",
-            "dateLabel": "Mar 20, 2025",
-            "readTime": "2 min read",
-            "image": {
-                "src": "/post-2.png",
-                "alt": "Sunset over a pebbly beach with waves rolling in under a cloudy sky"
-            },
-            "views": 177,
-            "href": "/blog/how-education-opens-doors-to-new-dreams"
-        },
-        {
-            "id": 3,
-            "slug": "sustainable-living-tips-reduce-waste-and-conserve-energy",
-            "title": "Sustainable Living Tips: Reduce Waste and Conserve Energy",
-            "author": "Admin",
-            "date": "2025-03-20",
-            "dateLabel": "Mar 20, 2025",
-            "readTime": "2 min read",
-            "image": {
-                "src": "/program-1.png",
-                "alt": "Woman in a black puffer jacket standing on a blurred city street"
-            },
-            "views": 81,
-            "href": "/blog/sustainable-living-tips-reduce-waste-and-conserve-energy"
-        }
-    ],
-    "details": [
-        {
-            "id": 1,
-            "slug": "sharing-school-supplies-spreading-smiles",
-            "title": "Sharing School Supplies, Spreading Smiles",
-            "author": {
-                "name": "Admin",
-                "initials": "AD"
-            },
-            "date": "2025-03-20",
-            "dateLabel": "Mar 20, 2025",
-            "readTime": "2 min read",
-            "image": {
-                "src": "/post-1.png",
-                "alt": "Children holding their new school supply kits at a learning center"
-            },
-            "views": 379,
-            "comments": 2,
-            "likes": 24,
-            "content": [
-                {
-                    "type": "paragraph",
-                    "text": "A new notebook, a sharp pencil and a sturdy bag may look like small things. For a child who has none of them, they can decide whether she sits at the back of the class or takes part in every lesson."
-                },
-                {
-                    "type": "paragraph",
-                    "text": "This spring our volunteers and supporters packed more than 1,200 school kits and delivered them to our learning centers. Every kit holds notebooks, pencils, a ruler, a water bottle and a backpack, so no child has to share a single pencil or write on scraps of paper."
-                },
-                {
-                    "type": "image",
-                    "src": "/post-1.png",
-                    "alt": "Children holding their new school supply kits at a learning center",
-                    "caption": "Kits handed out at one of our learning centers."
-                },
-                {
-                    "type": "heading",
-                    "text": "Why a small kit makes a big difference"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "Our teachers report that children with their own supplies arrive on time more often, finish more of their work and speak up more in class. Owning the tools to learn tells a child that she belongs there."
-                },
-                {
-                    "type": "quote",
-                    "text": "She held her new bag all morning and refused to put it down. That was the day she started raising her hand.",
-                    "cite": "A teacher at one of our learning centers"
-                },
-                {
-                    "type": "heading",
-                    "text": "How you can help"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "You can sponsor a kit, organize a supply drive at your school or workplace, or volunteer at our next packing day. Every kit costs less than a lunch out and stays with a child for the whole school year."
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "slug": "how-education-opens-doors-to-new-dreams",
-            "title": "How Education Opens Doors to New Dreams",
-            "author": {
-                "name": "Admin",
-                "initials": "AD"
-            },
-            "date": "2025-03-20",
-            "dateLabel": "Mar 20, 2025",
-            "readTime": "2 min read",
-            "image": {
-                "src": "/post-2.png",
-                "alt": "Students learning together in a classroom at one of our centers"
-            },
-            "views": 177,
-            "comments": 0,
-            "likes": 18,
-            "content": [
-                {
-                    "type": "paragraph",
-                    "text": "Ask a child what she wants to be when she grows up and the answers are bold: a doctor, a pilot, a teacher, an engineer. Education is the bridge between those dreams and the life that makes them possible."
-                },
-                {
-                    "type": "paragraph",
-                    "text": "In the communities we serve, many children leave school early because of distance, cost or a lack of support at home. Our learning centers bring free classes close to home, so a child can learn without walking for hours or choosing between school and helping her family."
-                },
-                {
-                    "type": "image",
-                    "src": "/post-2.png",
-                    "alt": "Students learning together in a classroom at one of our centers",
-                    "caption": "A morning class at one of our learning centers."
-                },
-                {
-                    "type": "heading",
-                    "text": "More than lessons"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "Alongside reading, writing and math, our mentors help children build confidence, curiosity and the habit of asking questions. These skills stay with them long after the school day ends."
-                },
-                {
-                    "type": "heading",
-                    "text": "Dreams that spread"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "When one child finishes school, her whole family benefits. Graduates return as tutors and volunteers, and younger children see what is possible. That is how a single classroom can change a community."
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "slug": "sustainable-living-tips-reduce-waste-and-conserve-energy",
-            "title": "Sustainable Living Tips: Reduce Waste and Conserve Energy",
-            "author": {
-                "name": "Admin",
-                "initials": "AD"
-            },
-            "date": "2025-03-20",
-            "dateLabel": "Mar 20, 2025",
-            "readTime": "2 min read",
-            "image": {
-                "src": "/program-1.png",
-                "alt": "Girl in a school uniform holding a chalkboard that reads Right to Education"
-            },
-            "views": 81,
-            "comments": 1,
-            "likes": 9,
-            "content": [
-                {
-                    "type": "paragraph",
-                    "text": "Living sustainably does not mean changing everything at once. Small habits, repeated every day at home and at school, add up to real savings in waste and energy."
-                },
-                {
-                    "type": "heading",
-                    "text": "Reduce waste"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "Carry a reusable water bottle and lunch box, choose refillable or loose items over single-use packaging, and give notebooks and uniforms a second life by passing them on. Compost food scraps where you can."
-                },
-                {
-                    "type": "image",
-                    "src": "/program-2.png",
-                    "alt": "Students sorting recycling at a school eco club",
-                    "caption": "Students sorting recycling at a school eco club."
-                },
-                {
-                    "type": "heading",
-                    "text": "Conserve energy"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "Switch off lights and chargers when you leave a room, open curtains instead of turning on lamps, and dry clothes in the sun. In classrooms, a simple checklist handed to students makes saving energy a shared habit."
-                },
-                {
-                    "type": "heading",
-                    "text": "Learn it together"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "Children who learn these habits early teach them to their families. That is why our programs include eco clubs, where students plan small projects and track how much waste and energy they save."
-                }
-            ]
-        }
+  "breadcrum": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog"
+    }
+  ],
+  "hero": {
+    "eyebrow": "JOURNAL & FIELD NOTES",
+    "heading": "Stories of Learning, Hope & Community",
+    "description": "Explore field dispatches, educator insights, and student milestones from our 25+ community learning centers.",
+    "image": "/images/banner-blog.jpg",
+    "imageAlt": "Books, study materials, and classroom notes",
+    "stats": [
+      { "value": "6", "label": "Feature Articles" },
+      { "value": "25+", "label": "Villages Covered" },
+      { "value": "Weekly", "label": "New Stories" }
     ]
+  },
+  "post": [
+    {
+      "id": 1,
+      "slug": "sharing-school-supplies-spreading-smiles",
+      "title": "Sharing School Supplies, Spreading Smiles Across 25 Villages",
+      "category": "Field Update",
+      "excerpt": "How a sturdy backpack, fresh notebooks, and pencils transformed first-day classroom attendance for 1,200 students this term.",
+      "author": "Priya Nair",
+      "date": "2026-03-20",
+      "dateLabel": "Mar 20, 2026",
+      "readTime": "3 min read",
+      "image": {
+        "src": "/images/blog-1.jpg",
+        "alt": "Children smiling with their new school supply kits in a classroom"
+      },
+      "views": 412,
+      "href": "/blog/sharing-school-supplies-spreading-smiles"
+    },
+    {
+      "id": 2,
+      "slug": "how-education-opens-doors-to-new-dreams",
+      "title": "How Neighborhood Learning Centers Open Doors to New Dreams",
+      "category": "Education",
+      "excerpt": "When free classes are within walking distance, children no longer have to choose between helping their families and going to school.",
+      "author": "Samuel Mensah",
+      "date": "2026-04-08",
+      "dateLabel": "Apr 8, 2026",
+      "readTime": "4 min read",
+      "image": {
+        "src": "/images/blog-2.jpg",
+        "alt": "Students raising their hands during a morning lesson"
+      },
+      "views": 289,
+      "href": "/blog/how-education-opens-doors-to-new-dreams"
+    },
+    {
+      "id": 3,
+      "slug": "sustainable-living-tips-reduce-waste-and-conserve-energy",
+      "title": "Student Eco-Clubs: Learning Sustainability Through School Gardens",
+      "category": "Eco & STEAM",
+      "excerpt": "Inside our Art & Gardening clubs where students compost, grow organic vegetables, and lead zero-waste habits at home.",
+      "author": "Elena Duarte",
+      "date": "2026-05-14",
+      "dateLabel": "May 14, 2026",
+      "readTime": "3 min read",
+      "image": {
+        "src": "/images/blog-3.jpg",
+        "alt": "Children collaborating on an outdoor community activity"
+      },
+      "views": 195,
+      "href": "/blog/sustainable-living-tips-reduce-waste-and-conserve-energy"
+    },
+    {
+      "id": 4,
+      "slug": "bridging-the-rural-digital-divide-with-solar-labs",
+      "title": "Bridging the Rural Digital Divide With Solar-Powered Computer Labs",
+      "category": "Digital Literacy",
+      "excerpt": "How offline educational servers and solar laptops are helping village students write their first lines of code.",
+      "author": "David Chen",
+      "date": "2026-06-22",
+      "dateLabel": "Jun 22, 2026",
+      "readTime": "4 min read",
+      "image": {
+        "src": "/images/blog-4.jpg",
+        "alt": "Students collaborating around laptops in a digital learning session"
+      },
+      "views": 334,
+      "href": "/blog/bridging-the-rural-digital-divide-with-solar-labs"
+    },
+    {
+      "id": 5,
+      "slug": "why-mobile-libraries-spark-a-lifelong-reading-habit",
+      "title": "Why Mobile Libraries Spark a Lifelong Reading Habit",
+      "category": "Literacy",
+      "excerpt": "When our storybook van rolls in every Saturday, reading transforms from a school exam task into a shared village celebration.",
+      "author": "Meera Krishnan",
+      "date": "2026-07-19",
+      "dateLabel": "Jul 19, 2026",
+      "readTime": "3 min read",
+      "image": {
+        "src": "/images/blog-5.jpg",
+        "alt": "Open storybooks and reading materials at a community library"
+      },
+      "views": 248,
+      "href": "/blog/why-mobile-libraries-spark-a-lifelong-reading-habit"
+    },
+    {
+      "id": 6,
+      "slug": "mentoring-adolescent-girls-to-complete-high-school",
+      "title": "Mentoring Adolescent Girls to Complete Secondary School & Lead",
+      "category": "Girls' Education",
+      "excerpt": "Meet the local female mentors and scholars achieving a 96% secondary school continuation rate across our partner communities.",
+      "author": "Dr. Kavita Rao",
+      "date": "2026-08-30",
+      "dateLabel": "Aug 30, 2026",
+      "readTime": "5 min read",
+      "image": {
+        "src": "/images/blog-6.jpg",
+        "alt": "Young women smiling and discussing goals in a mentorship circle"
+      },
+      "views": 518,
+      "href": "/blog/mentoring-adolescent-girls-to-complete-high-school"
+    }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "slug": "sharing-school-supplies-spreading-smiles",
+      "title": "Sharing School Supplies, Spreading Smiles Across 25 Villages",
+      "author": {
+        "name": "Priya Nair",
+        "initials": "PN"
+      },
+      "date": "2026-03-20",
+      "dateLabel": "Mar 20, 2026",
+      "readTime": "3 min read",
+      "image": {
+        "src": "/images/blog-1.jpg",
+        "alt": "Children holding their new school supply kits at a learning center"
+      },
+      "views": 412,
+      "comments": 6,
+      "likes": 48,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A new notebook, a sharp pencil, and a sturdy weather-resistant bag may look like small things. For a child who has none of them, they often decide whether she sits quietly at the back of the room or takes part in every single lesson."
+        },
+        {
+          "type": "paragraph",
+          "text": "This spring, our volunteers and supporters packed more than 1,200 back-to-school kits and delivered them across all 25 of our community learning centers. Every kit holds grade-specific notebooks, pencils, pens, a geometry set, crayons, a steel water bottle, and a durable backpack."
+        },
+        {
+          "type": "image",
+          "src": "/images/program-school-supplies.jpg",
+          "alt": "School supply kits and books prepared for students",
+          "caption": "Back-to-school kits distributed across our partner learning centers."
+        },
+        {
+          "type": "heading",
+          "text": "Why a small kit makes a big difference"
+        },
+        {
+          "type": "paragraph",
+          "text": "Our teachers report that children with their own supplies arrive on time more consistently, finish their practice exercises with pride, and speak up more often in class. Owning the tools to learn tells a child that she belongs in the classroom."
+        },
+        {
+          "type": "quote",
+          "text": "She held her new school bag all morning and refused to put it down. That was the very day she started sitting in the front row and raising her hand.",
+          "cite": "Sunita Devi, Educator at Sunshine Learning Center"
+        },
+        {
+          "type": "heading",
+          "text": "How you can help"
+        },
+        {
+          "type": "paragraph",
+          "text": "You can sponsor a complete school kit for ₹1,500, organize a stationery drive at your workplace, or join our volunteers on our next packing Saturday. Every kit stays with a child for the entire academic year."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "how-education-opens-doors-to-new-dreams",
+      "title": "How Neighborhood Learning Centers Open Doors to New Dreams",
+      "author": {
+        "name": "Samuel Mensah",
+        "initials": "SM"
+      },
+      "date": "2026-04-08",
+      "dateLabel": "Apr 8, 2026",
+      "readTime": "4 min read",
+      "image": {
+        "src": "/images/blog-2.jpg",
+        "alt": "Students learning together in a classroom at one of our centers"
+      },
+      "views": 289,
+      "comments": 4,
+      "likes": 36,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Ask a nine-year-old at one of our centers what she wants to become when she grows up and the answers are bold: a doctor, a train engineer, a teacher, a scientist. Education is the bridge between those childhood dreams and the skills that make them real."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the communities we serve, many children leave school early because of long travel distances, hidden schooling costs, or a lack of homework support at home. Our neighborhood learning centers bring free, joyful classes right to their doorstep."
+        },
+        {
+          "type": "image",
+          "src": "/images/program-free-education.jpg",
+          "alt": "Morning reading circle at one of our learning centers",
+          "caption": "A morning bilingual reading circle at our community center."
+        },
+        {
+          "type": "heading",
+          "text": "More than textbooks and exams"
+        },
+        {
+          "type": "paragraph",
+          "text": "Alongside foundational reading, writing, and mathematics, our mentors help children build self-confidence, critical curiosity, and the habit of asking thoughtful questions. These life skills stay with them long after the school bell rings."
+        },
+        {
+          "type": "heading",
+          "text": "Dreams that ripple through a village"
+        },
+        {
+          "type": "paragraph",
+          "text": "When one first-generation learner finishes secondary school, her entire family is uplifted. Older students return as paid youth tutors, and younger siblings grow up knowing that graduation is within reach."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "sustainable-living-tips-reduce-waste-and-conserve-energy",
+      "title": "Student Eco-Clubs: Learning Sustainability Through School Gardens",
+      "author": {
+        "name": "Elena Duarte",
+        "initials": "ED"
+      },
+      "date": "2026-05-14",
+      "dateLabel": "May 14, 2026",
+      "readTime": "3 min read",
+      "image": {
+        "src": "/images/blog-3.jpg",
+        "alt": "Students working together in an eco-club garden"
+      },
+      "views": 195,
+      "comments": 3,
+      "likes": 29,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Environmental education is most powerful when children can touch the soil, plant a seed, and watch their own schoolyard transform. That is why every Educare learning center runs a student-led Eco & Gardening Club."
+        },
+        {
+          "type": "heading",
+          "text": "Zero-waste habits in the classroom"
+        },
+        {
+          "type": "paragraph",
+          "text": "Students carry reusable steel water bottles, compost fruit peels from their mid-day snacks, and pass gently used textbooks to younger grades at the end of each year."
+        },
+        {
+          "type": "image",
+          "src": "/images/cause-art-gardening.jpg",
+          "alt": "Students tending seedlings in a school garden",
+          "caption": "Students tending organic vegetable beds at our rural learning center."
+        },
+        {
+          "type": "heading",
+          "text": "Science and nutrition in action"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the school kitchen garden, biology and math come alive. Children measure plant growth, track rainfall, learn about pollinators, and harvest fresh spinach and tomatoes to share with their families."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "bridging-the-rural-digital-divide-with-solar-labs",
+      "title": "Bridging the Rural Digital Divide With Solar-Powered Computer Labs",
+      "author": {
+        "name": "David Chen",
+        "initials": "DC"
+      },
+      "date": "2026-06-22",
+      "dateLabel": "Jun 22, 2026",
+      "readTime": "4 min read",
+      "image": {
+        "src": "/images/blog-4.jpg",
+        "alt": "Students learning on laptops"
+      },
+      "views": 334,
+      "comments": 5,
+      "likes": 42,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In a world shaped by technology, a child who has never touched a keyboard faces an unfair barrier before even entering the workforce. Yet rural power outages and lack of broadband often keep computer labs out of village schools."
+        },
+        {
+          "type": "paragraph",
+          "text": "Our Digital Learning Labs solve both challenges by pairing energy-efficient laptops with rooftop solar panels and offline educational servers packed with interactive math, science, and coding lessons."
+        },
+        {
+          "type": "image",
+          "src": "/images/program-digital-learning.jpg",
+          "alt": "Students coding in a digital lab",
+          "caption": "Afternoon digital literacy session at our community lab."
+        },
+        {
+          "type": "heading",
+          "text": "From curiosity to creation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Within weeks of their first typing lesson, students collaborate in pairs to design digital stories, build science presentations, and solve visual coding puzzles."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "why-mobile-libraries-spark-a-lifelong-reading-habit",
+      "title": "Why Mobile Libraries Spark a Lifelong Reading Habit",
+      "author": {
+        "name": "Meera Krishnan",
+        "initials": "MK"
+      },
+      "date": "2026-07-19",
+      "dateLabel": "Jul 19, 2026",
+      "readTime": "3 min read",
+      "image": {
+        "src": "/images/blog-5.jpg",
+        "alt": "Books at a mobile library"
+      },
+      "views": 248,
+      "comments": 2,
+      "likes": 31,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When children only encounter books as exam textbooks, reading can feel like a chore. When they can choose a colorful picture book about space, animals, or folklore, reading becomes an adventure."
+        },
+        {
+          "type": "image",
+          "src": "/images/cause-mobile-library.jpg",
+          "alt": "Children reading together at the mobile library",
+          "caption": "Young readers exploring new arrivals during Saturday book club."
+        },
+        {
+          "type": "heading",
+          "text": "Bringing 12,000+ books to the community"
+        },
+        {
+          "type": "paragraph",
+          "text": "Our Mobile Library visits 18 villages on a fixed weekly schedule. Trained storytellers host interactive read-aloud circles before helping every child check out two books for the week."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "mentoring-adolescent-girls-to-complete-high-school",
+      "title": "Mentoring Adolescent Girls to Complete Secondary School & Lead",
+      "author": {
+        "name": "Dr. Kavita Rao",
+        "initials": "KR"
+      },
+      "date": "2026-08-30",
+      "dateLabel": "Aug 30, 2026",
+      "readTime": "5 min read",
+      "image": {
+        "src": "/images/blog-6.jpg",
+        "alt": "Girls in a mentorship circle"
+      },
+      "views": 518,
+      "comments": 9,
+      "likes": 64,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The transition from primary to secondary school is the moment when adolescent girls are most at risk of dropping out. Distance to high schools, exam fees, and household duties often stand in the way."
+        },
+        {
+          "type": "image",
+          "src": "/images/program-girls-education.jpg",
+          "alt": "Girls studying together in class",
+          "caption": "Scholars in our Girls' Education Initiative preparing for board examinations."
+        },
+        {
+          "type": "quote",
+          "text": "When my mentor visited my parents and showed them my science marks, my father promised I would finish Grade 12 and go to nursing college.",
+          "cite": "Meera, Age 15, Girls' Education Scholar"
+        },
+        {
+          "type": "heading",
+          "text": "A circle of support"
+        },
+        {
+          "type": "paragraph",
+          "text": "By combining tuition scholarships, bicycles for safe group travel, and weekly leadership sessions with female role models, 96% of our scholars stay in school and graduate."
+        }
+      ]
+    }
+  ]
 }

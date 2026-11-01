@@ -56,7 +56,7 @@ export default function OurProgram({ eyebrow, heading, dis, images, program }: O
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
                     variants={cardVariants}
-                    className="mx-auto mb-14 max-w-[42rem] text-center md:mb-20"
+                    className="mx-auto  max-w-[42rem] text-center pt-4 pb-10 "
                 >
                     <div className="text-center flex justify-center">
                         <SectionLabel>{eyebrow}</SectionLabel>

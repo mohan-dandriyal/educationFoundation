@@ -1,27 +1,39 @@
-import React from 'react'
-import OurCausesSection from '../components/home/Ourcausessection'
+import React from 'react';
+import OurCausesSection from '../components/home/Ourcausessection';
+import cause from '@/app/data/cause.json';
+import PageBanner from '../components/ui/PageBanner';
 
-import cause from '@/app/data/cause.json'
-import { Breadcrumb } from '../components/Breadcrumb'
+export const metadata = {
+  title: "Our Causes & Active Campaigns | Educare Foundation",
+  description: "Directly support causes like digital literacy labs, STEAM kits, girl-child scholarships, school supplies, and village mobile libraries.",
+};
 
-function page() {
+function CausesPage() {
   return (
-    <div>
-      
-      <div>
-           <div className="py-20 bg-[#fdfbf3]">
-             <div className='flex justify-center mb-7'>
-                    <Breadcrumb items={cause.breadcrum} />
-                  </div>
+    <div className="bg-[#fdfbf3]">
+      {/* Dedicated Page Hero Banner */}
+      <PageBanner
+        eyebrow={cause.banner.eyebrow}
+        title={cause.banner.title}
+        description={cause.banner.description}
+        image={cause.banner.image}
+        imageAlt={cause.banner.imageAlt}
+        breadcrumb={cause.breadcrum}
+        stats={cause.banner.stats}
+        actions={[
+          { label: "Donate Now", href: "#", variant: "primary" },
+          { label: "Volunteer", href: "/contact-us", variant: "secondary" },
+        ]}
+      />
 
-                <OurCausesSection
-                  currencySymbol=""
-                  content={{ ...cause.ourCauses, causes: cause.ourCauses.causes }}
-                />
-              </div>
+      <div className="py-16">
+        <OurCausesSection
+          currencySymbol="₹"
+          content={{ ...cause.ourCauses, causes: cause.ourCauses.causes }}
+        />
       </div>
     </div>
-  )
+  );
 }
 
-export default page
+export default CausesPage;

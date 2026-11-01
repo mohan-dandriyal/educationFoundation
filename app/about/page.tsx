@@ -1,36 +1,50 @@
+import React from 'react';
+import { AboutSplitSection } from '../components/about/Aboutsplitsection';
+import { OurMissionSection } from '../components/about/OurMission';
+import { OurJourneySection } from '../components/about/JourneySection';
+import about from '@/app/data/about.json';
+import { OurVision } from '../components/about/Ourvision';
+import PageBanner from '../components/ui/PageBanner';
 
-import React from 'react'
-import { AboutSplitSection } from '../components/about/Aboutsplitsection'
-import { OurMissionSection } from '../components/about/OurMission'
-import { OurJourneySection } from '../components/about/JourneySection'
-import about from '@/app/data/about.json'
-import { OurVision } from '../components/about/Ourvision'
+export const metadata = {
+  title: "About Us | Educare Foundation",
+  description: "Learn about Educare Foundation's mission, story, leadership, and our journey from one classroom to 25+ centers.",
+};
 
 function AboutPage() {
   return (
-    <div>
+    <div className="bg-[#fdfbf3]">
+      {/* Dedicated Page Hero Banner */}
+      <PageBanner
+        eyebrow={about.banner.eyebrow}
+        title={about.banner.title}
+        description={about.banner.description}
+        image={about.banner.image}
+        imageAlt={about.banner.imageAlt}
+        breadcrumb={about.breadcrum}
+        stats={about.banner.stats}
+        actions={about.banner.actions as any}
+      />
 
-        <div>
-            <AboutSplitSection
-              {...about.aboutSplit}
-              thumbs={about.aboutSplit.thumbs as [{ src: string; alt: string }, { src: string; alt: string }]}
-              breadCrumb ={ about.breadcrum}
-           />
-        </div>
+      {/* Modern, attractive About Story Collage */}
+      <AboutSplitSection
+        eyebrow={about.aboutSplit.eyebrow}
+        title={about.aboutSplit.title}
+        description={about.aboutSplit.description}
+        cta={about.aboutSplit.cta}
+        ctaHref={about.aboutSplit.ctaHref}
+        stats={about.aboutSplit.stats}
+        thumbs={about.aboutSplit.thumbs}
+        mainImage={about.aboutSplit.mainImage}
+      />
 
-        <div>
-            <OurMissionSection {...about.mission} />
-        </div>
+      <OurMissionSection {...about.mission} />
 
-        <div>
-          <OurVision content={about.ourVision} />
-        </div>
+      <OurVision content={about.ourVision} />
 
-         <div className=''>
-            <OurJourneySection {...about.journey} />
-        </div>
+      <OurJourneySection {...about.journey} />
     </div>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;

@@ -58,10 +58,10 @@ export function OurMissionSection({
     return (
         <section
             aria-labelledby="mission-title"
-            className="bg-[#fdfbf3]  md:px-[6%] px-6  py-16 text-[#252d4a] md:py-28"
+            className="bg-[#fdfbf3]  md:px-[6%] px-6  py-16 text-[#252d4a] md:py-18"
         >
             <MainContainer>
-                <div className="flex justify-center flex-col items-center text-center pb-8">
+                <div className="flex justify-center flex-col items-center text-center lg:pb-14 pb-8">
                     <SectionLabel>
                         <span className="text-[#15452e]/90">{eyebrow}</span>
                     </SectionLabel>

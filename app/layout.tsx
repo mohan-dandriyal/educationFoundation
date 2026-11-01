@@ -7,15 +7,16 @@ import { Suspense } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "D. Sullivan — Leading the Change",
-  description: "Technology for a more resilient future of agriculture.",
+  title: "Educare Foundation — Education Today, Brighter Tomorrow",
+  description:
+    "Empowering children in underserved communities through free learning centers, digital literacy labs, school supply kits, and girl-child education.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-screen flex-col">
-          <ScrollToTop />
+      <body className="flex min-h-screen flex-col bg-[#fdfbf3] text-[#15452e]">
+        <ScrollToTop />
         <Suspense fallback={<LoadingScreen />}>
           <Header />
           <main className="flex-1">{children}</main>

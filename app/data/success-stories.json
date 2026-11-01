@@ -1,46 +1,103 @@
 {
+  "breadcrum": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Success Stories"
+    }
+  ],
   "hero": {
     "label": "REAL STORIES, REAL HOPE",
-    "title": "Every child has a story worth sharing.",
-    "description": "Meet the children, families, educators, and volunteers turning access to learning into new possibilities.",
-    "image": "/about-edu.png",
-    "imageAlt": "Student smiling during a learning activity"
+    "title": "Every Child Has a Story Worth Sharing",
+    "description": "Meet the children, families, educators, and volunteers turning access to neighborhood classrooms and learning kits into extraordinary new possibilities.",
+    "image": "/images/banner-stories.jpg",
+    "imageAlt": "Students smiling during a learning activity",
+    "stats": [
+      { "value": "1,200+", "label": "Journeys" },
+      { "value": "25+", "label": "Communities" },
+      { "value": "94%", "label": "Graduation" }
+    ],
+    "actions": [
+      { "label": "Sponsor a Student", "href": "#", "variant": "primary" },
+      { "label": "Our Programs", "href": "/our-program", "variant": "secondary" }
+    ]
   },
   "featured": {
     "label": "FEATURED STORY",
     "title": "A school kit became a reason to raise her hand.",
-    "person": "Maya, learning center student",
-    "quote": "She held her new bag all morning and refused to put it down. That was the day she started raising her hand.",
-    "description": "With her own notebooks, pencils, and a quiet place to study, Maya found the confidence to take part in every lesson. Today, she helps younger students prepare their schoolwork.",
-    "image": "/post-1.png",
+    "person": "Maya, Grade 5 Student • Sunshine Learning Center",
+    "quote": "She held her new school bag all morning and refused to put it down. That was the very day she started sitting in the front row and raising her hand.",
+    "description": "Before joining our neighborhood learning center, Maya shared a single notebook with her two siblings and often missed class when her parents traveled for seasonal work. With her own backpack, bilingual storybooks, and a patient mentor, Maya rose to the top of her reading group and now helps younger students practice phonics every afternoon.",
+    "image": "/images/program-school-supplies.jpg",
     "imageAlt": "Children holding their new school supply kits"
+  },
+  "storiesSection": {
+    "label": "COMMUNITY VOICES",
+    "title": "Change Grows One Story At A Time"
   },
   "stories": [
     {
-      "title": "A classroom that feels like home",
-      "description": "After joining an after-school learning group, Anita began reading every day and now looks forward to helping her classmates practise.",
-      "tag": "Learning support",
-      "image": "/program-1.png",
+      "title": "A classroom that feels like a second home",
+      "person": "Anita, Age 9",
+      "description": "After joining our after-school learning circle, Anita overcame her fear of reading aloud. Today she borrows two storybooks every week and reads to her grandmother every evening.",
+      "tag": "After-School Support",
+      "image": "/images/program-free-education.jpg",
       "imageAlt": "Children learning together in a classroom"
     },
     {
-      "title": "From first click to first project",
-      "description": "Daniel discovered computers through a digital learning session and built his first presentation about the future he wants to create.",
-      "tag": "Digital learning",
-      "image": "/program-2.png",
+      "title": "From first mouse click to coding a science project",
+      "person": "Rohan, Age 13",
+      "description": "Rohan touched a computer for the first time at our Digital Learning Lab. Within eight months, he designed an interactive presentation on solar energy that won his district school fair.",
+      "tag": "Digital Literacy",
+      "image": "/images/program-digital-learning.jpg",
       "imageAlt": "Students learning computer skills together"
     },
     {
-      "title": "A mentor makes room for possibility",
-      "description": "When local teachers joined our training program, more children received patient guidance and a learning plan shaped around their needs.",
-      "tag": "Community partnership",
-      "image": "/post-2.png",
-      "imageAlt": "Students participating in a group learning activity"
+      "title": "First girl in her family to enter high school",
+      "person": "Meera, Age 15",
+      "description": "Supported by our Girls' Education scholarship and weekly mentor circle, Meera passed her Grade 10 board exams with distinction and dreams of becoming a pediatric nurse.",
+      "tag": "Girls' Education",
+      "image": "/images/program-girls-education.jpg",
+      "imageAlt": "Girls studying together in a classroom"
+    },
+    {
+      "title": "When the Mobile Library rolled into the village",
+      "person": "Kabir & Friends, Village Reading Club",
+      "description": "In a village 18 kilometers from the nearest town library, forty children now gather under the banyan tree every Saturday to exchange books and perform stories.",
+      "tag": "Mobile Library",
+      "image": "/images/cause-mobile-library.jpg",
+      "imageAlt": "Children reading books together"
+    },
+    {
+      "title": "Learning fractions and ecology in the school garden",
+      "person": "Aarav, Age 11",
+      "description": "Through our Art & Gardening club, Aarav learned measurement, soil science, and teamwork while helping his classmates grow fresh vegetables for their mid-day meals.",
+      "tag": "Creative Learning",
+      "image": "/images/cause-art-gardening.jpg",
+      "imageAlt": "Children tending seedlings in a school garden"
+    },
+    {
+      "title": "A local mother becomes a certified community teacher",
+      "person": "Sunita Devi, Educator Fellow",
+      "description": "After completing Educare Foundation's teacher training fellowship, Sunita opened an early childhood classroom in her own neighborhood that now nurtures 35 young learners.",
+      "tag": "Teacher Fellowship",
+      "image": "/images/about-main.jpg",
+      "imageAlt": "Teacher smiling with students in class"
     }
   ],
   "impact": [
     { "value": "1,200+", "label": "children supported" },
-    { "value": "24", "label": "learning centers" },
-    { "value": "80+", "label": "active volunteers" }
-  ]
+    { "value": "25+", "label": "learning centers" },
+    { "value": "94%", "label": "school retention rate" }
+  ],
+  "ctaSection": {
+    "label": "OUR IMPACT",
+    "heading": "Help Create The Next Success Story",
+    "primaryButton": "Get Involved",
+    "primaryHref": "/contact-us",
+    "secondaryButton": "Explore Our Programs →",
+    "secondaryHref": "/our-program"
+  }
 }

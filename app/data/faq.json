@@ -1,38 +1,75 @@
 {
-    "hero": {
-        "title": "",
-        "dis": "",
-        "image": ""
+  "hero": {
+    "eyebrow": "GOT QUESTIONS?",
+    "title": "Frequently Asked Questions",
+    "dis": "Find answers about our free learning centers, how donations are utilized, tax-exemption certificates, and how you can volunteer with Educare Foundation.",
+    "image": "/images/banner-faq.jpg",
+    "stats": [
+      { "value": "100%", "label": "Transparency" },
+      { "value": "80G", "label": "Tax Exemption" },
+      { "value": "24-48h", "label": "Support Reply" }
+    ]
+  },
+  "breadcrum": [
+    {
+      "label": "Home",
+      "href": "/"
     },
-      "breadcrum": [
+    {
+      "label": "FAQs"
+    }
+  ],
+  "faqs": {
+    "eyebrow": "COMMON QUESTIONS",
+    "title": "Everything You Need to Know",
+    "dis": "Transparency and open communication are at the heart of our work. Choose a question below or reach out to our team directly.",
+    "faqsItems": [
       {
-        "label": "Home",
-        "href": "/"
+        "category": "About & Programs",
+        "question": "Who does Educare Foundation support and where do you work?",
+        "answer": "We support out-of-school and first-generation learners aged 3 to 16 across 25+ underserved urban neighborhoods and rural villages. All classes, learning materials, digital labs, and mid-day nutritious snacks are provided 100% free of cost to families."
       },
       {
-        "label": "Faq's"
+        "category": "About & Programs",
+        "question": "How do your Neighborhood Learning Centers work alongside formal schools?",
+        "answer": "Our centers serve two roles: we help out-of-school children build foundational literacy and numeracy so they can enroll in age-appropriate formal school grades, and we provide daily after-school tutoring, digital skills, and STEAM workshops so enrolled students never drop out."
+      },
+      {
+        "category": "Donations & Tax",
+        "question": "How much of my donation goes directly to educating children?",
+        "answer": "88% of every contribution goes directly to classroom operations, school supply kits, computer labs, and local educator fellowships. Only 12% is used for essential administration and compliance. Our audited financial statements are published every year."
+      },
+      {
+        "category": "Donations & Tax",
+        "question": "Are donations to Educare Foundation eligible for 80G tax exemption?",
+        "answer": "Yes! Educare Foundation is a registered non-profit with valid 12A and 80G certifications. All Indian taxpayers receive an official 80G receipt via email, making your contribution eligible for a 50% tax deduction."
+      },
+      {
+        "category": "Donations & Tax",
+        "question": "Can I sponsor a specific child's annual education or school kit?",
+        "answer": "Yes. A contribution of ₹1,500 equips one child with a complete back-to-school backpack and stationery kit, while ₹6,000 sponsors a child's full year of after-school tuition, books, and digital lab sessions."
+      },
+      {
+        "category": "Volunteering",
+        "question": "How can I volunteer my time or skills with Educare Foundation?",
+        "answer": "You can join us as a weekend reading mentor, teach basic computer skills at our digital labs, help pack school supply kits, or assist with storytelling circles. Visit our Contact Us page and select 'Volunteering' to get started."
+      },
+      {
+        "category": "Volunteering",
+        "question": "Can schools, colleges, or companies organize a book or supply drive?",
+        "answer": "Absolutely! Over 30 schools and corporate teams partner with us each year to host storybook collection drives, laptop donation campaigns, and stationery packing days. Our partnerships team provides full toolkits and coordination."
+      },
+      {
+        "category": "About & Programs",
+        "question": "Can I visit one of your learning centers in person?",
+        "answer": "We love welcoming supporters and prospective volunteers! To protect classroom learning hours and child safety, visits are arranged by appointment on Friday afternoons and Saturdays. Simply drop us a message on our Contact page."
       }
     ],
-    "faqs": {
-        "title": "FAQs",
-        "dis": "",
-        "faqsItems": [
-            {
-                "question": "Why is Sustainability So Important for the Future?",
-                "answer": "Sustainability is crucial for ensuring a healthy planet for future generations. It involves responsible resource management and reducing environmental impact."
-            },
-            {
-                "question": "How Can I Effectively Reduce Plastic Use?",
-                "answer": "Reducing single-use plastics and opting for reusable alternatives are effective ways to minimize plastic waste and protect the environment for the long term."
-            },
-            {
-                "question": "How Does Deforestation Affect the Environment?",
-                "answer": "Deforestation leads to habitat loss, biodiversity decline, soil erosion, and significantly contributes to climate change by releasing stored carbon into the atmosphere."
-            },
-            {
-                "question": "How can I help protect the environment?",
-                "answer": "Individual actions like reducing waste, supporting eco-friendly businesses, and advocating for policies can significantly impact protection."
-            }
-        ]
+    "cta": {
+      "title": "Still have a question?",
+      "description": "Our team is happy to help with questions about donations, CSR partnerships, or volunteering.",
+      "buttonText": "Contact Our Team",
+      "buttonHref": "/contact-us"
     }
+  }
 }

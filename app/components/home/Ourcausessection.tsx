@@ -116,15 +116,8 @@ export default function OurCausesSection({
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
                     variants={headerVariants}
-                    className="flex flex-col items-center gap-8 text-center"
+                    className="flex flex-col items-center gap-6 text-center lg:pb-10 pb-8"
                 >
-                    {/* <SectionHeading
-            id="causes-title"
-            label={content.tag}
-            title={content.title}
-            description={content.description}
-            className="max-w-[780px]"
-          /> */}
 
                     <div className="flex max-w-[58ch] flex-col items-center">
                         <SectionLabel>
@@ -145,7 +138,7 @@ export default function OurCausesSection({
                 </motion.div>
 
                 {/* Causes */}
-                <ul className="m-0 mt-14 grid list-none gap-8 p-0 sm:grid-cols-2 md:mt-20 lg:grid-cols-3">
+                <ul className="m-0 grid list-none gap-8 p-0 sm:grid-cols-2 lg:grid-cols-3">
                     {causes?.slice(0.3).map((cause) => {
                         const pct = Math.min(
                             100,

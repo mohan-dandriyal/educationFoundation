@@ -5,91 +5,137 @@
       "href": "/"
     },
     {
-      "label": "About us"
+      "label": "About Us"
     }
   ],
-  "aboutSplit": {
+  "banner": {
+    "eyebrow": "ABOUT EDUCARE FOUNDATION",
     "title": "Building Brighter Futures Together",
-    "description": "We create practical learning opportunities so every child can learn, grow, and lead.",
-    "cta": "Explore our programs",
+    "description": "Founded with a single room and twenty children, Educare Foundation now powers 25+ neighborhood learning centers, ensuring free access to quality education, digital skills, and community mentorship.",
+    "image": "/images/banner-about.jpg",
+    "imageAlt": "Dedicated teachers and students in a bright community learning space",
+    "stats": [
+      { "value": "14+", "label": "Years Active" },
+      { "value": "25+", "label": "Learning Centers" },
+      { "value": "1,200+", "label": "Students" },
+      { "value": "94%", "label": "School Retention" }
+    ],
+    "actions": [
+      { "label": "Explore Programs", "href": "/our-program", "variant": "primary" },
+      { "label": "Donate Today", "href": "#", "variant": "secondary" }
+    ]
+  },
+  "aboutSplit": {
+    "eyebrow": "WHO WE ARE",
+    "title": "Building Brighter Futures Together",
+    "description": "We create practical, community-driven learning opportunities so every child—regardless of background—can learn, grow, and lead with confidence.",
+    "cta": "Explore Our Programs",
     "ctaHref": "/our-program",
+    "stats": [
+      { "value": "14+", "label": "Years of Impact" },
+      { "value": "25+", "label": "Learning Centers" },
+      { "value": "1,200+", "label": "Children Enrolled" }
+    ],
     "thumbs": [
       {
-        "src": "/program-1.png",
-        "alt": "Aerial view of a green learning community"
+        "src": "/images/about-thumb-1.jpg",
+        "alt": "Children reading and learning together in a classroom"
       },
       {
-        "src": "/program-2.png",
-        "alt": "Children learning together"
+        "src": "/images/about-thumb-2.jpg",
+        "alt": "Student writing and smiling during a lesson"
       }
     ],
     "mainImage": {
-      "src": "/about-edu.png",
-      "alt": "Child learning with a teacher"
+      "src": "/images/about-main.jpg",
+      "alt": "Dedicated teacher guiding children in an interactive classroom"
     }
   },
   "mission": {
-    "eyebrow": "Our Mission",
-    "heading": "Empowering Tomorrow's Leaders Today.",
+    "eyebrow": "OUR MISSION",
+    "heading": "Empowering Tomorrow's Leaders Today",
+    "description": "Our mission is to eliminate barriers to foundational and digital education by establishing safe, joyful neighborhood learning spaces run alongside local educators and families.",
     "image": {
-      "src": "/program-2.png",
-      "alt": "Children learning together with school supplies"
+      "src": "/images/featured-program.jpg",
+      "alt": "Teacher helping a student read at a community learning center"
     },
     "pillars": [
       {
-        "title": "Access to learning",
-        "text": "We open learning centers where schools are far away or out of reach."
+        "title": "Universal Access to Learning",
+        "text": "We open free neighborhood learning centers where schools are distant, overcrowded, or financially out of reach for working families."
       },
       {
-        "title": "Quality teaching",
-        "text": "We support local teachers with books, supplies, and practical tools."
+        "title": "Quality Pedagogy & Teacher Support",
+        "text": "We equip local educators with structured curricula, bilingual storybooks, STEAM activity kits, and continuous training."
       },
       {
-        "title": "Community first",
-        "text": "Families, volunteers, and local leaders shape every program."
+        "title": "Community-First Ownership",
+        "text": "Parents, local youth volunteers, and village leaders co-design every program so learning stays rooted in community needs."
+      },
+      {
+        "title": "Digital & Future Readiness",
+        "text": "Beyond reading and math, we introduce children to computers, coding basics, environmental stewardship, and life skills."
       }
     ]
   },
   "ourVision": {
     "tag": "OUR VISION",
     "title": "Cultivating Knowledge, Nurturing Futures",
-    "description": "We envision a world where every child has access to quality education, equal opportunities, and the confidence to achieve their dreams. Through learning, innovation, and community support, we are building a brighter future for generations to come.",
+    "description": "We envision a world where every child has access to quality education, equal opportunities, and the confidence to achieve their dreams. Through joyful learning, digital innovation, and deep community partnerships, we are building a brighter future for generations to come.",
     "highlight": "Education for All, Opportunity for Everyone",
-    "image": "/hero-right.png",
-    "imageAlt": "Children learning together and building a brighter future",
-    "buttonText": "",
-    "buttonLink": ""
+    "image": "/images/vision-banner.jpg",
+    "imageAlt": "Children raising hands and smiling together in class",
+    "buttonText": "Support Our Vision",
+    "buttonLink": "#"
   },
   "journey": {
-    "eyebrow": "Our Journey",
-    "heading": "From one classroom to a movement.",
-    "intro": "Every step began with a child who wanted to learn and a community that wanted to help.",
+    "eyebrow": "OUR JOURNEY",
+    "heading": "From One Classroom to a Movement",
+    "intro": "Every milestone began with a child who wanted to learn, a teacher who cared, and a community that stepped forward to help.",
     "milestones": [
       {
         "year": "2012",
-        "title": "The first classroom",
-        "text": "One room and twenty children began learning together.",
+        "title": "The First Classroom",
+        "text": "One room, one volunteer teacher, and twenty children began learning together with donated storybooks and slates.",
         "image": {
-          "src": "/program-2.png",
-          "alt": "Children learning together"
+          "src": "/images/program-free-education.jpg",
+          "alt": "Children learning together in our first classroom"
+        }
+      },
+      {
+        "year": "2015",
+        "title": "Five Free Learning Centers",
+        "text": "We expanded to five underserved neighborhoods, providing free tuition, school uniforms, stationery kits, and nutritious mid-day snacks.",
+        "image": {
+          "src": "/images/program-school-supplies.jpg",
+          "alt": "Students with notebooks and school supplies"
         }
       },
       {
         "year": "2018",
-        "title": "Teacher training",
-        "text": "Local teachers joined our training program so good lessons could reach more villages.",
+        "title": "Community Teacher Training",
+        "text": "Over 45 local women and youth joined our educator fellowship so child-friendly lessons could reach rural villages.",
         "image": {
-          "src": "/post-1.png",
-          "alt": "Teacher helping a student"
+          "src": "/images/about-main.jpg",
+          "alt": "Teacher guiding students in a classroom"
         }
       },
       {
-        "year": "2024",
-        "title": "A growing movement",
-        "text": "Today, learning centers support more than 1,200 students.",
+        "year": "2021",
+        "title": "Digital Literacy & Mobile Libraries",
+        "text": "We launched solar-powered computer labs and a mobile library van to keep children learning and connected.",
         "image": {
-          "src": "/program-1.png",
-          "alt": "Children smiling in a classroom"
+          "src": "/images/program-digital-learning.jpg",
+          "alt": "Students learning computer skills at a digital lab"
+        }
+      },
+      {
+        "year": "2026",
+        "title": "A Thriving Movement of 25+ Centers",
+        "text": "Today, 25+ learning centers and 80+ active volunteers support more than 1,200 students with a 94% school retention rate.",
+        "image": {
+          "src": "/images/student-success.jpg",
+          "alt": "Students smiling and celebrating their learning achievements"
         }
       }
     ]

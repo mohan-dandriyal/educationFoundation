@@ -1,18 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "motion/react";
+import { FaArrowRight, FaHeart } from "react-icons/fa6";
 import type { HeroContent } from "../data/home";
 
 type HeroProps = { content: HeroContent };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
 
-// One orchestrated entrance: heading words rise out of a mask,
-// then the description and CTA follow. Nothing loops afterwards.
 const textVariants: Variants = {
   hidden: {},
-  show: { transition: { delayChildren: 0.35, staggerChildren: 0.12 } },
+  show: { transition: { delayChildren: 0.2, staggerChildren: 0.1 } },
 };
 
 const wordVariants: Variants = {
@@ -30,50 +30,59 @@ export function Hero({ content }: HeroProps) {
   const words = content.title.split(" ");
 
   return (
-    <main className="bg-[#fdfbf3] text-[#15452e]">
-      <section
-        className="relative isolate flex min-h-dvh items-end overflow-hidden bg-[#0e2a1d]"
-        aria-labelledby="hero-title"
+    <section
+      className="relative isolate flex min-h-[88dvh] items-end overflow-hidden bg-[#0e2a1d] text-[#fdfbf3]"
+      aria-labelledby="hero-title"
+    >
+      {/* Background Hero Photo */}
+      <motion.div
+        className="absolute inset-0 -z-20"
+        initial={reduceMotion ? false : { scale: 1.08, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5, ease: EASE }}
       >
-        {/* Image: settles in once on load */}
-        <motion.div
-          className="absolute inset-0 -z-20"
-          initial={reduceMotion ? false : { scale: 1.08, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.6, ease: EASE }}
-        >
-          <Image
-            src={content.leftImage.src}
-            alt={content.leftImage.alt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-        </motion.div>
-
-        {/* Scrim is heavier where the text sits (bottom-left) and fades out
-            toward the top-right so the photo stays visible. */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[linear-gradient(to_top_right,rgba(14,42,29,0.92)_0%,rgba(14,42,29,0.6)_45%,rgba(14,42,29,0.1)_100%)]"
+        <Image
+          src={content.leftImage.src}
+          alt={content.leftImage.alt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
+      </motion.div>
 
-        <div className="mx-auto w-full max-w-7xl px-5 pb-14 pt-0 sm:px-8 sm:pb-20 lg:pb-24">
+      {/* Rich layered gradient scrim for high contrast & warmth */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(110deg,rgba(10,32,21,0.94)_0%,rgba(14,42,29,0.78)_48%,rgba(14,42,29,0.35)_100%)]"
+      />
+
+      <div className="mx-auto w-full max-w-[1366px] px-5 pb-16 pt-28 sm:px-8 sm:pb-20 lg:pb-24">
+        <div className="grid items-end gap-12 lg:grid-cols-[1.25fr_0.75fr]">
+          {/* Left Content Column */}
           <motion.div
             variants={textVariants}
             initial={reduceMotion ? false : "hidden"}
             animate="show"
-            className="max-w-3xl text-left text-[#fdfbf3]"
+            className="max-w-3xl text-left"
           >
+            {content.eyebrow && (
+              <motion.div
+                variants={riseVariants}
+                className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-[#e6f5ae]/30 bg-[#15452e]/70 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-[#e6f5ae] backdrop-blur-sm"
+              >
+                <span className="h-2 w-2 rounded-full bg-[#f59e0b]" />
+                <span>{content.eyebrow}</span>
+              </motion.div>
+            )}
+
             <h1
               id="hero-title"
               aria-label={content.title}
-              className="m-0 max-w-[13ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(3rem,8.5vw,7.5rem)] font-normal leading-[0.95] tracking-[-0.04em]"
+              className="m-0 max-w-[14ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.8rem,7vw,6.2rem)] font-normal leading-[0.98] tracking-[-0.035em] text-[#fdfbf3]"
             >
               {words.map((word, i) => (
                 <span key={i} aria-hidden="true">
-                  {/* mask clips each word while it slides up; padding keeps descenders */}
                   <span className="mb-[-0.15em] inline-block overflow-hidden pb-[0.15em] align-bottom">
                     <motion.span variants={wordVariants} className="inline-block">
                       {word}
@@ -84,36 +93,86 @@ export function Hero({ content }: HeroProps) {
               ))}
             </h1>
 
-            {/* Gold rule ties the hero to the header's underline accent */}
             <motion.span
               aria-hidden="true"
               variants={riseVariants}
-              className="mt-8 block h-[2px] w-16 bg-[#b49358]"
+              className="mt-7 block h-[3px] w-20 rounded-full bg-[#b49358]"
             />
 
             <motion.p
               variants={riseVariants}
-              className="mb-0 mt-6 max-w-[48ch] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7] text-[#fdfbf3]/90"
+              className="mb-0 mt-6 max-w-[54ch] text-[clamp(1.02rem,1.2vw,1.22rem)] leading-[1.75] text-[#fdfbf3]/90"
             >
               {content.description}
             </motion.p>
 
-            <motion.a
-              href={content.ctaHref}
+            {/* Action Buttons */}
+            <motion.div
               variants={riseVariants}
-              whileTap={{ scale: 0.97 }}
-              className="group relative isolate mt-10 inline-flex items-center overflow-hidden rounded-full bg-[#fdfbf3] px-8 py-3.5 font-[Arial,Helvetica,sans-serif] text-[0.95rem] font-semibold tracking-[0.03em] text-[#15452e] transition-colors duration-500 hover:text-[#fdfbf3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b49358]"
+              className="mt-9 flex flex-wrap items-center gap-4"
             >
-              {/* green fill sweeps in from the left on hover */}
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 z-0 origin-left scale-x-0 bg-[#15452e] transition-transform duration-500 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-x-100 motion-reduce:transition-none"
-              />
-              <span className="relative z-10">{content.cta}</span>
-            </motion.a>
+              <Link
+                href={content.ctaHref}
+                className="group relative isolate inline-flex items-center gap-3 overflow-hidden rounded-full bg-[#e6f5ae] px-8 py-4 text-[0.95rem] font-bold tracking-[0.03em] text-[#15452e] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#b49358] hover:text-[#fdfbf3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e6f5ae]"
+              >
+                <FaHeart className="h-4 w-4 text-[#d97706] transition-colors group-hover:text-[#fdfbf3]" />
+                <span>{content.cta}</span>
+                <FaArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+
+              {content.secondaryCta && content.secondaryCtaHref && (
+                <Link
+                  href={content.secondaryCtaHref}
+                  className="inline-flex items-center gap-2 rounded-full border border-[#fdfbf3]/40 bg-[#fdfbf3]/10 px-7 py-4 text-[0.95rem] font-semibold tracking-[0.03em] text-[#fdfbf3] backdrop-blur-sm transition-all duration-300 hover:border-[#e6f5ae] hover:bg-[#fdfbf3]/20"
+                >
+                  <span>{content.secondaryCta}</span>
+                </Link>
+              )}
+            </motion.div>
+          </motion.div>
+
+          {/* Right Spotlight Card + Stats */}
+          <motion.div
+            initial={reduceMotion ? false : { opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.45, ease: EASE }}
+            className="flex flex-col gap-5 rounded-3xl border border-[#fdfbf3]/15 bg-[#0e2a1d]/80 p-6 backdrop-blur-md sm:p-7"
+          >
+            {content.rightImage?.src && (
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-[#fdfbf3]/15">
+                <Image
+                  src={content.rightImage.src}
+                  alt={content.rightImage.alt}
+                  fill
+                  sizes="(min-width: 1024px) 32vw, 90vw"
+                  className="object-cover"
+                />
+                <div className="absolute bottom-3 left-3 rounded-full bg-[#15452e]/90 px-3.5 py-1 text-xs font-semibold text-[#e6f5ae] backdrop-blur-sm">
+                  100% Free Community Classrooms
+                </div>
+              </div>
+            )}
+
+            {content.stats && content.stats.length > 0 && (
+              <dl className="m-0 grid grid-cols-3 gap-4 divide-x divide-[#fdfbf3]/15 pt-2">
+                {content.stats.map((stat, idx) => (
+                  <div
+                    key={stat.label}
+                    className={idx > 0 ? "pl-4" : ""}
+                  >
+                    <dd className="m-0 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.6rem,2.4vw,2.35rem)] font-bold leading-none text-[#e6f5ae]">
+                      {stat.value}
+                    </dd>
+                    <dt className="mt-2 text-xs font-medium uppercase tracking-wider text-[#fdfbf3]/75">
+                      {stat.label}
+                    </dt>
+                  </div>
+                ))}
+              </dl>
+            )}
           </motion.div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }

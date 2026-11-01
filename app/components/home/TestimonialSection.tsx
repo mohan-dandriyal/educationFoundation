@@ -36,7 +36,7 @@ export function TestimonialSection({
   return (
     <section
       aria-labelledby="testimonials-title"
-      className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-24"
+      className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-18"
     >
       <motion.div
         initial={reduceMotion ? false : { opacity: 0, y: 28 }}
@@ -53,14 +53,14 @@ export function TestimonialSection({
           </SectionLabel>
         </div>
 
-        <div className="text-center flex justify-center">
+        <div className="text-center flex justify-center lg:pb-14 pb-8">
           <SectionInnerTitle>
             {heading}
           </SectionInnerTitle>
         </div>
 
         {/* Slider */}
-        <div className="relative mt-14 md:mt-20">
+        <div className="relative mt-0">
           <Swiper
             modules={[A11y, Autoplay, EffectFade, Navigation, Pagination]}
             effect="fade"

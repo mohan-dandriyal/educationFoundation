@@ -1,428 +1,440 @@
 {
-      "breadcrum": [
+  "breadcrum": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Our Causes"
+    }
+  ],
+  "banner": {
+    "eyebrow": "URGENT CAMPAIGNS",
+    "title": "Seeds of Change in Action",
+    "description": "Every child deserves the opportunity to learn, grow, and build a brighter future. Explore our active fundraising causes and see how your generosity creates direct classroom impact.",
+    "image": "/images/banner-causes.jpg",
+    "imageAlt": "Students receiving educational materials and books",
+    "stats": [
+      { "value": "6", "label": "Active Causes" },
+      { "value": "88%", "label": "Direct Impact" },
+      { "value": "80G", "label": "Tax Exempt" }
+    ]
+  },
+  "ourCauses": {
+    "tag": "OUR CAUSES",
+    "title": "Seeds of Change in Action",
+    "description": "Every child deserves the opportunity to learn, grow, and build a brighter future. Explore our active fundraising causes and see how your generosity creates direct classroom impact.",
+    "causes": [
       {
-        "label": "Home",
-        "href": "/"
+        "id": 1,
+        "title": "Digital Literacy for All",
+        "slug": "digital-literacy",
+        "category": "Technology",
+        "description": "Bridging the digital divide by helping children develop essential computer skills and access modern learning resources.",
+        "image": "/images/program-digital-learning.jpg",
+        "imageAlt": "Children learning digital skills on computers",
+        "raised": 54000,
+        "goal": 75000,
+        "donors": 112,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/digital-literacy"
       },
       {
-        "label": "Our Cause"
+        "id": 2,
+        "title": "STEAM Workshops in Rural Areas",
+        "slug": "steam-workshops",
+        "category": "Skill Development",
+        "description": "Inspiring young minds through hands-on science, technology, engineering, arts, and mathematics activities.",
+        "image": "/images/cause-steam-workshop.jpg",
+        "imageAlt": "Students participating in a hands-on science workshop",
+        "raised": 41000,
+        "goal": 60000,
+        "donors": 84,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/steam-workshops"
+      },
+      {
+        "id": 3,
+        "title": "The Mobile Library Initiative",
+        "slug": "mobile-library",
+        "category": "Education",
+        "description": "Bringing books, storytelling, and educational resources to children in underserved communities.",
+        "image": "/images/cause-mobile-library.jpg",
+        "imageAlt": "Children exploring books at a community library",
+        "raised": 36500,
+        "goal": 50000,
+        "donors": 69,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/mobile-library"
+      },
+      {
+        "id": 4,
+        "title": "Art & Gardening for Empowerment",
+        "slug": "art-gardening",
+        "category": "Creative Learning",
+        "description": "Encouraging creativity, teamwork, environmental awareness, and confidence through art and gardening.",
+        "image": "/images/cause-art-gardening.jpg",
+        "imageAlt": "Children planting seedlings together in a garden",
+        "raised": 26000,
+        "goal": 40000,
+        "donors": 53,
+        "featured": true,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/art-gardening"
+      },
+      {
+        "id": 5,
+        "title": "School Supplies for Every Child",
+        "slug": "school-supplies",
+        "category": "Basic Education",
+        "description": "Providing notebooks, stationery, school bags, and essential learning materials to children who need them.",
+        "image": "/images/program-school-supplies.jpg",
+        "imageAlt": "School bags and stationery prepared for students",
+        "raised": 29500,
+        "goal": 35000,
+        "donors": 61,
+        "featured": false,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/school-supplies"
+      },
+      {
+        "id": 6,
+        "title": "Girls' Education & Opportunity",
+        "slug": "girls-education",
+        "category": "Equal Opportunity",
+        "description": "Supporting girls with learning resources, mentoring, and opportunities to pursue their educational goals.",
+        "image": "/images/program-girls-education.jpg",
+        "imageAlt": "Girls studying together in a supportive classroom",
+        "raised": 48000,
+        "goal": 65000,
+        "donors": 95,
+        "featured": false,
+        "status": "active",
+        "buttonText": "Support This Cause",
+        "buttonLink": "/our-causes/girls-education"
       }
     ],
-    "ourCauses": {
-        "tag": "OUR CAUSES",
-        "title": "Seeds of Change in Action",
-        "description": "Every child deserves the opportunity to learn, grow, and build a brighter future. Explore the causes that drive our mission.",
-        "causes": [
-            {
-                "id": 1,
-                "title": "Digital Literacy for All",
-                "slug": "digital-literacy",
-                "category": "Technology",
-                "description": "Bridging the digital divide by helping children develop essential computer skills and access modern learning resources.",
-                "image": "/program-1.png",
-                "imageAlt": "Children learning digital skills on computers",
-                "raised": 45000,
-                "goal": 75000,
-                "donors": 86,
-                "featured": true,
-                "status": "active",
-                "buttonText": "Learn More",
-                "buttonLink": "/our-causes/digital-literacy"
-            },
-            {
-                "id": 2,
-                "title": "STEAM Workshops in Rural Areas",
-                "slug": "steam-workshops",
-                "category": "Skill Development",
-                "description": "Inspiring young minds through hands-on science, technology, engineering, arts, and mathematics activities.",
-                "image": "/program-2.png",
-                "imageAlt": "Students participating in a hands-on science workshop",
-                "raised": 32000,
-                "goal": 60000,
-                "donors": 64,
-                "featured": true,
-                "status": "active",
-                "buttonText": "Learn More",
-                "buttonLink": "/our-causes/steam-workshops"
-            },
-            {
-                "id": 3,
-                "title": "The Mobile Library Initiative",
-                "slug": "mobile-library",
-                "category": "Education",
-                "description": "Bringing books, storytelling, and educational resources to children in underserved communities.",
-                "image": "/post-2.png",
-                "imageAlt": "Children exploring books at a community library",
-                "raised": 28000,
-                "goal": 50000,
-                "donors": 52,
-                "featured": true,
-                "status": "active",
-                "buttonText": "Learn More",
-                "buttonLink": "/our-causes/mobile-library"
-            },
-            {
-                "id": 4,
-                "title": "Art & Gardening for Empowerment",
-                "slug": "art-gardening",
-                "category": "Creative Learning",
-                "description": "Encouraging creativity, teamwork, environmental awareness, and confidence through art and gardening.",
-                "image": "/hero-right.png",
-                "imageAlt": "Children planting seedlings together in a garden",
-                "raised": 18000,
-                "goal": 40000,
-                "donors": 39,
-                "featured": true,
-                "status": "active",
-                "buttonText": "Learn More",
-                "buttonLink": "/our-causes/art-gardening"
-            },
-            {
-                "id": 5,
-                "title": "School Supplies for Every Child",
-                "slug": "school-supplies",
-                "category": "Basic Education",
-                "description": "Providing notebooks, stationery, school bags, and essential learning materials to children who need them.",
-                "image": "/post-2.png",
-                "imageAlt": "School bags and stationery prepared for students",
-                "raised": 22000,
-                "goal": 35000,
-                "donors": 47,
-                "featured": false,
-                "status": "active",
-                "buttonText": "Support This Cause",
-                "buttonLink": "/our-causes/school-supplies"
-            },
-            {
-                "id": 6,
-                "title": "Girls' Education & Opportunity",
-                "slug": "girls-education",
-                "category": "Equal Opportunity",
-                "description": "Supporting girls with learning resources, mentoring, and opportunities to pursue their educational goals.",
-                "image": "/post-1.png",
-                "imageAlt": "Girls studying together in a supportive classroom",
-                "raised": 38000,
-                "goal": 65000,
-                "donors": 73,
-                "featured": false,
-                "status": "active",
-                "buttonText": "Support This Cause",
-                "buttonLink": "/our-causes/girls-education"
-            }
+    "causeDetails": [
+      {
+        "slug": "digital-literacy",
+        "tagline": "Every child should be able to use technology to learn, not be left behind by it.",
+        "overview": [
+          "Many children grow up without ever using a computer, which makes it harder for them to find information, complete schoolwork, and prepare for the jobs of the future.",
+          "Digital Literacy for All brings solar-powered computers and trained facilitators into the communities that need them most, so children can build practical skills in a safe, supported setting."
         ],
-        "causeDetails": [
+        "challenge": {
+          "title": "The digital divide holds children back",
+          "text": "Without access to devices or guidance, children miss out on modern learning resources. The gap grows every year, and it is widest in communities with the fewest resources."
+        },
+        "approach": {
+          "title": "How this cause works",
+          "steps": [
             {
-                "slug": "digital-literacy",
-                "tagline": "Every child should be able to use technology to learn, not be left behind by it.",
-                "overview": [
-                    "Many children grow up without ever using a computer, which makes it harder for them to find information, complete schoolwork, and prepare for the jobs of the future.",
-                    "Digital Literacy for All brings computers and trained facilitators into the communities that need them most, so children can build practical skills in a safe, supported setting."
-                ],
-                "challenge": {
-                    "title": "The digital divide holds children back",
-                    "text": "Without access to devices or guidance, children miss out on modern learning resources. The gap grows every year, and it is widest in communities with the fewest resources."
-                },
-                "approach": {
-                    "title": "How this cause works",
-                    "steps": [
-                        {
-                            "title": "Set up learning spaces",
-                            "description": "We equip community centres and partner schools with computers and a reliable place to learn."
-                        },
-                        {
-                            "title": "Teach the essentials",
-                            "description": "Trained facilitators lead hands-on sessions covering typing, safe internet use, and everyday digital tools."
-                        },
-                        {
-                            "title": "Connect children to learning resources",
-                            "description": "Children learn to find educational content, practise their school subjects, and explore new interests online."
-                        }
-                    ]
-                },
-                "outcomes": [
-                    "Children gain confidence using computers and the internet",
-                    "Students can complete schoolwork and research independently",
-                    "Communities gain a lasting space for digital learning"
-                ],
-                "whoWeHelp": "Children in underserved communities who have little or no access to computers.",
-                "donationTiers": [
-                    {
-                        "amount": 500,
-                        "label": "Learning materials",
-                        "description": "Helps provide learning materials for a child's digital skills sessions."
-                    },
-                    {
-                        "amount": 2500,
-                        "label": "Class support",
-                        "description": "Helps run a series of facilitated computer sessions for a group of children."
-                    },
-                    {
-                        "amount": 10000,
-                        "label": "Learning corner",
-                        "description": "Helps equip a community learning corner with devices and resources."
-                    }
-                ]
+              "title": "Set up learning spaces",
+              "description": "We equip community centres and partner schools with laptops, offline digital libraries, and a reliable place to learn."
             },
             {
-                "slug": "steam-workshops",
-                "tagline": "Curiosity grows when children get to build, test, and make things with their own hands.",
-                "overview": [
-                    "In many rural areas, science and technology are taught from textbooks alone, with few chances to experiment. Hands-on learning helps ideas make sense and sparks interest that lasts.",
-                    "Our STEAM workshops bring practical activities in science, technology, engineering, arts, and mathematics to children who rarely get this kind of experience."
-                ],
-                "challenge": {
-                    "title": "Limited hands-on learning in rural schools",
-                    "text": "Schools in remote areas often lack lab equipment, trained mentors, and project materials, so children have fewer chances to explore and discover their strengths."
-                },
-                "approach": {
-                    "title": "How this cause works",
-                    "steps": [
-                        {
-                            "title": "Bring workshops to the community",
-                            "description": "Facilitators travel to schools and village centres with the materials needed for each session."
-                        },
-                        {
-                            "title": "Learn by making",
-                            "description": "Children work in small teams on simple experiments, models, and creative projects."
-                        },
-                        {
-                            "title": "Encourage questions",
-                            "description": "Each workshop ends with children presenting what they built and what they learned."
-                        }
-                    ]
-                },
-                "outcomes": [
-                    "Children develop problem-solving and teamwork skills",
-                    "Students show more interest in science, technology, and the arts",
-                    "Rural schools gain activity ideas and materials they can keep using"
-                ],
-                "whoWeHelp": "School-age children in rural areas with limited access to hands-on learning.",
-                "donationTiers": [
-                    {
-                        "amount": 500,
-                        "label": "Activity kit",
-                        "description": "Helps provide materials for a child to take part in a workshop."
-                    },
-                    {
-                        "amount": 2500,
-                        "label": "Workshop session",
-                        "description": "Helps run a full workshop session for a group of students."
-                    },
-                    {
-                        "amount": 10000,
-                        "label": "School visit",
-                        "description": "Helps bring a series of workshops to a rural school."
-                    }
-                ]
+              "title": "Teach the essentials",
+              "description": "Trained facilitators lead hands-on sessions covering typing, visual coding, safe internet use, and everyday digital tools."
             },
             {
-                "slug": "mobile-library",
-                "tagline": "When children can't get to books, we bring the books to them.",
-                "overview": [
-                    "Reading is the foundation of all other learning, yet many children live far from a library or have no books at home.",
-                    "The Mobile Library Initiative travels to underserved communities with books, storytelling sessions, and learning resources, so reading becomes part of everyday life."
-                ],
-                "challenge": {
-                    "title": "Too few books within reach",
-                    "text": "Children without regular access to books fall behind in reading and find it harder to enjoy learning. Distance and cost keep libraries out of reach for many families."
-                },
-                "approach": {
-                    "title": "How this cause works",
-                    "steps": [
-                        {
-                            "title": "Travel to the community",
-                            "description": "The mobile library visits on a regular schedule so children know when to expect it."
-                        },
-                        {
-                            "title": "Share stories together",
-                            "description": "Storytelling and reading sessions help children enjoy books and build confidence."
-                        },
-                        {
-                            "title": "Lend books to take home",
-                            "description": "Children borrow books to read at home and share with their families."
-                        }
-                    ]
-                },
-                "outcomes": [
-                    "Children read more often and enjoy it",
-                    "Families gain access to books and learning resources",
-                    "Communities build a regular, shared reading habit"
-                ],
-                "whoWeHelp": "Children in underserved communities who live far from a library or have few books at home.",
-                "donationTiers": [
-                    {
-                        "amount": 500,
-                        "label": "New books",
-                        "description": "Helps add new books to the mobile library collection."
-                    },
-                    {
-                        "amount": 2500,
-                        "label": "Storytelling sessions",
-                        "description": "Helps fund a series of storytelling and reading sessions."
-                    },
-                    {
-                        "amount": 10000,
-                        "label": "Community visits",
-                        "description": "Helps keep the library visiting a community over several months."
-                    }
-                ]
-            },
-            {
-                "slug": "art-gardening",
-                "tagline": "Creating something and watching it grow teaches children patience, teamwork, and pride.",
-                "overview": [
-                    "Art and gardening give children room to express themselves and learn through doing. They also build care for the environment and for each other.",
-                    "Art & Gardening for Empowerment combines creative sessions with garden projects, helping children grow in confidence while they learn about nature."
-                ],
-                "challenge": {
-                    "title": "Few chances for creative, outdoor learning",
-                    "text": "Many children have little opportunity to express themselves creatively or spend time learning outdoors. These experiences help build confidence and emotional well-being."
-                },
-                "approach": {
-                    "title": "How this cause works",
-                    "steps": [
-                        {
-                            "title": "Create together",
-                            "description": "Children take part in group art sessions that encourage imagination and teamwork."
-                        },
-                        {
-                            "title": "Plant and care for a garden",
-                            "description": "They plant seedlings, look after them, and learn how plants grow."
-                        },
-                        {
-                            "title": "Share what they've made",
-                            "description": "Children show their artwork and garden to their families and community."
-                        }
-                    ]
-                },
-                "outcomes": [
-                    "Children gain confidence and learn to work as a team",
-                    "Students develop awareness of the environment",
-                    "Schools and communities gain a green space they can keep growing"
-                ],
-                "whoWeHelp": "Children who would benefit from creative and outdoor learning, including those with limited access to such activities.",
-                "donationTiers": [
-                    {
-                        "amount": 500,
-                        "label": "Seeds and art supplies",
-                        "description": "Helps provide seeds, tools, and art materials for a child."
-                    },
-                    {
-                        "amount": 2500,
-                        "label": "Group sessions",
-                        "description": "Helps run a series of art and gardening sessions for a group."
-                    },
-                    {
-                        "amount": 10000,
-                        "label": "Community garden",
-                        "description": "Helps set up a garden space for a school or community."
-                    }
-                ]
-            },
-            {
-                "slug": "school-supplies",
-                "tagline": "A notebook and a school bag can be the difference between attending class and staying home.",
-                "overview": [
-                    "For many families, the cost of notebooks, stationery, and school bags is a real barrier. Children without these basics can struggle to keep up or feel left out.",
-                    "School Supplies for Every Child provides essential learning materials so students can attend class prepared and focus on learning."
-                ],
-                "challenge": {
-                    "title": "Basic supplies are out of reach for many families",
-                    "text": "When families can't afford school essentials, children may attend without what they need, or stop attending at all."
-                },
-                "approach": {
-                    "title": "How this cause works",
-                    "steps": [
-                        {
-                            "title": "Identify children in need",
-                            "description": "We work with schools and communities to find the students who need support."
-                        },
-                        {
-                            "title": "Prepare supply kits",
-                            "description": "Each kit includes notebooks, stationery, and a school bag."
-                        },
-                        {
-                            "title": "Hand over kits at the start of term",
-                            "description": "Students receive their supplies so they can begin the school year ready to learn."
-                        }
-                    ]
-                },
-                "outcomes": [
-                    "Children attend class with the materials they need",
-                    "Families face less financial pressure at the start of the school year",
-                    "Students feel included and ready to learn"
-                ],
-                "whoWeHelp": "School-age children whose families cannot afford essential learning materials.",
-                "donationTiers": [
-                    {
-                        "amount": 500,
-                        "label": "Stationery set",
-                        "description": "Helps provide notebooks and stationery for a child."
-                    },
-                    {
-                        "amount": 1500,
-                        "label": "Full school kit",
-                        "description": "Helps provide a school bag and a full set of supplies for a child."
-                    },
-                    {
-                        "amount": 7500,
-                        "label": "Classroom support",
-                        "description": "Helps provide supplies for a group of students."
-                    }
-                ]
-            },
-            {
-                "slug": "girls-education",
-                "tagline": "When a girl can learn, her whole community benefits.",
-                "overview": [
-                    "Girls often face extra barriers to education, from limited resources to expectations that hold them back. Support and encouragement can change what feels possible.",
-                    "Girls' Education & Opportunity supports girls with learning resources, mentoring, and guidance so they can pursue their educational goals with confidence."
-                ],
-                "challenge": {
-                    "title": "Girls face extra barriers to staying in school",
-                    "text": "Cost, distance, and social expectations can keep girls from continuing their education, even when they are eager to learn."
-                },
-                "approach": {
-                    "title": "How this cause works",
-                    "steps": [
-                        {
-                            "title": "Provide learning resources",
-                            "description": "Girls receive books, supplies, and study support to help them keep up in school."
-                        },
-                        {
-                            "title": "Offer mentoring",
-                            "description": "Mentors guide girls in setting goals and planning the next step in their education."
-                        },
-                        {
-                            "title": "Build a supportive circle",
-                            "description": "Group sessions bring girls together to learn, share, and encourage each other."
-                        }
-                    ]
-                },
-                "outcomes": [
-                    "More girls stay engaged in their education",
-                    "Girls gain confidence and clearer goals for the future",
-                    "Families and communities see the value of educating girls"
-                ],
-                "whoWeHelp": "Girls who need learning resources, mentoring, and encouragement to continue their education.",
-                "donationTiers": [
-                    {
-                        "amount": 500,
-                        "label": "Learning resources",
-                        "description": "Helps provide books and study materials for a girl."
-                    },
-                    {
-                        "amount": 2500,
-                        "label": "Mentoring support",
-                        "description": "Helps fund mentoring sessions for a group of girls."
-                    },
-                    {
-                        "amount": 10000,
-                        "label": "Education support",
-                        "description": "Helps support a girl's learning needs over a longer period."
-                    }
-                ]
+              "title": "Connect children to learning resources",
+              "description": "Children learn to find educational content, practise their school subjects, and explore new interests."
             }
+          ]
+        },
+        "outcomes": [
+          "Children gain confidence using computers and digital tools",
+          "Students can complete schoolwork and research independently",
+          "Communities gain a lasting space for digital learning"
+        ],
+        "whoWeHelp": "Children in underserved rural and urban communities who have little or no access to computers.",
+        "donationTiers": [
+          {
+            "amount": 500,
+            "label": "Digital workbook kit",
+            "description": "Helps provide printed coding guides and learning materials for a child's digital skills sessions."
+          },
+          {
+            "amount": 2500,
+            "label": "Monthly lab support",
+            "description": "Helps run a series of facilitated computer sessions for a group of 15 children."
+          },
+          {
+            "amount": 10000,
+            "label": "Community learning corner",
+            "description": "Helps equip a community learning corner with refurbished laptops and offline educational software."
+          }
         ]
-    }
+      },
+      {
+        "slug": "steam-workshops",
+        "tagline": "Curiosity grows when children get to build, test, and make things with their own hands.",
+        "overview": [
+          "In many rural areas, science and mathematics are taught from chalkboards alone, with few chances to experiment. Hands-on learning makes abstract ideas click and sparks curiosity that lasts.",
+          "Our STEAM workshops bring practical activities in science, technology, engineering, arts, and mathematics to children who rarely get this kind of experience."
+        ],
+        "challenge": {
+          "title": "Limited hands-on learning in rural schools",
+          "text": "Schools in remote areas often lack lab equipment, trained mentors, and project materials, so children have fewer chances to explore and discover their strengths."
+        },
+        "approach": {
+          "title": "How this cause works",
+          "steps": [
+            {
+              "title": "Bring portable labs to the village",
+              "description": "Facilitators travel to schools and village centres with portable science and maker kits needed for each session."
+            },
+            {
+              "title": "Learn by making",
+              "description": "Children work in small teams on simple circuits, microscopes, bridge models, and creative experiments."
+            },
+            {
+              "title": "Encourage questions & showcases",
+              "description": "Each workshop ends with children presenting what they built and explaining how it works to their peers."
+            }
+          ]
+        },
+        "outcomes": [
+          "Children develop problem-solving, inquiry, and teamwork skills",
+          "Students show higher enthusiasm for science, math, and engineering",
+          "Rural schools gain reusable activity kits and teacher guides"
+        ],
+        "whoWeHelp": "School-age children in rural areas with limited access to science labs and hands-on learning.",
+        "donationTiers": [
+          {
+            "amount": 500,
+            "label": "Experiment kit",
+            "description": "Provides hands-on science and maker materials for a student to take part in a workshop."
+          },
+          {
+            "amount": 2500,
+            "label": "Full workshop session",
+            "description": "Funds a full day of interactive STEAM workshops for a classroom of 30 students."
+          },
+          {
+            "amount": 10000,
+            "label": "Rural school STEAM box",
+            "description": "Equips a village school with a permanent multi-grade science and mathematics experiment kit."
+          }
+        ]
+      },
+      {
+        "slug": "mobile-library",
+        "tagline": "When children can't get to books, we bring the books to them.",
+        "overview": [
+          "Reading is the foundation of all other learning, yet many children live far from a library or have no storybooks at home.",
+          "The Mobile Library Initiative travels to underserved communities with vibrant bilingual books, storytelling sessions, and reading games, so reading becomes part of everyday life."
+        ],
+        "challenge": {
+          "title": "Too few storybooks within reach",
+          "text": "Children without regular access to age-appropriate books fall behind in reading comprehension and find it harder to enjoy school."
+        },
+        "approach": {
+          "title": "How this cause works",
+          "steps": [
+            {
+              "title": "Visit on a weekly schedule",
+              "description": "Our mobile library van and bicycle librarians visit each community every week so children look forward to book day."
+            },
+            {
+              "title": "Share stories aloud together",
+              "description": "Interactive read-alouds and puppetry sessions help young children enjoy stories and build vocabulary."
+            },
+            {
+              "title": "Lend books to take home",
+              "description": "Every child borrows books free of charge to read at home with siblings and parents."
+            }
+          ]
+        },
+        "outcomes": [
+          "Children read more frequently and develop a lifelong love for books",
+          "Families gain free access to bilingual storybooks and encyclopedias",
+          "Communities build a regular, shared reading culture"
+        ],
+        "whoWeHelp": "Children in remote or underserved neighborhoods who live far from a library.",
+        "donationTiers": [
+          {
+            "amount": 500,
+            "label": "5 Storybooks",
+            "description": "Adds five durable, illustrated bilingual storybooks to the mobile library collection."
+          },
+          {
+            "amount": 2500,
+            "label": "Storytelling circle",
+            "description": "Funds a month of weekly read-aloud and literacy sessions in a village."
+          },
+          {
+            "amount": 10000,
+            "label": "Community book trunk",
+            "description": "Establishes a rotating trunk of 150 books for an underserved neighborhood."
+          }
+        ]
+      },
+      {
+        "slug": "art-gardening",
+        "tagline": "Creating something and watching it grow teaches children patience, teamwork, and pride.",
+        "overview": [
+          "Art and gardening give children room to express themselves and learn through doing. They also build care for the natural environment and for one another.",
+          "Art & Gardening for Empowerment combines creative painting and craft sessions with organic school kitchen gardens, helping children grow in confidence while learning about ecology and nutrition."
+        ],
+        "challenge": {
+          "title": "Few chances for creative, outdoor learning",
+          "text": "Many children in dense or underserved areas have little opportunity to express themselves artistically or learn hands-on environmental stewardship."
+        },
+        "approach": {
+          "title": "How this cause works",
+          "steps": [
+            {
+              "title": "Create together",
+              "description": "Children take part in weekly art, mural painting, and craft sessions that nurture imagination and emotional expression."
+            },
+            {
+              "title": "Plant and care for a garden",
+              "description": "Students plant native seedlings and vegetables, compost organic waste, and observe plant life cycles firsthand."
+            },
+            {
+              "title": "Share the harvest & exhibition",
+              "description": "Children showcase their artwork to parents and share fresh garden produce in school meals."
+            }
+          ]
+        },
+        "outcomes": [
+          "Children gain creative confidence and collaborative teamwork skills",
+          "Students develop practical awareness of nutrition, soil, and ecology",
+          "Schools and communities gain vibrant green spaces they sustain together"
+        ],
+        "whoWeHelp": "Children who benefit from creative expression, nature connection, and outdoor hands-on learning.",
+        "donationTiers": [
+          {
+            "amount": 500,
+            "label": "Seeds & art kit",
+            "description": "Provides organic seeds, child-safe garden tools, paints, and sketchbooks for a student."
+          },
+          {
+            "amount": 2500,
+            "label": "Group eco-workshop",
+            "description": "Funds a series of art and composting workshops for a learning center."
+          },
+          {
+            "amount": 10000,
+            "label": "School kitchen garden",
+            "description": "Sets up raised garden beds, drip irrigation, and art easels for a community school."
+          }
+        ]
+      },
+      {
+        "slug": "school-supplies",
+        "tagline": "A notebook and a school bag can be the difference between attending class and staying home.",
+        "overview": [
+          "For many daily-wage families, the cost of notebooks, uniforms, geometry boxes, and school bags is a real barrier. Children without these basics often feel left out or drop out.",
+          "School Supplies for Every Child provides complete, high-quality learning kits at the start of every school year so students walk into class prepared and proud."
+        ],
+        "challenge": {
+          "title": "Basic supplies are out of reach for many families",
+          "text": "When families cannot afford school essentials at the start of term, children fall behind from day one or stop attending altogether."
+        },
+        "approach": {
+          "title": "How this cause works",
+          "steps": [
+            {
+              "title": "Partner with local teachers",
+              "description": "We work directly with village schools and learning centers to identify every child needing a kit."
+            },
+            {
+              "title": "Pack grade-specific supply kits",
+              "description": "Each kit includes a weather-resistant backpack, ruled and unruled notebooks, pencils, pens, a geometry set, and a water bottle."
+            },
+            {
+              "title": "Distribute before term begins",
+              "description": "Students receive their kits ahead of the first day of class so everyone starts on an equal footing."
+            }
+          ]
+        },
+        "outcomes": [
+          "Children attend class daily with all the materials they need to write and draw",
+          "Families experience immediate financial relief at the start of the academic year",
+          "Students feel a strong sense of belonging, dignity, and readiness"
+        ],
+        "whoWeHelp": "School-age children from low-income families who cannot afford essential stationery and bags.",
+        "donationTiers": [
+          {
+            "amount": 500,
+            "label": "Stationery refill pack",
+            "description": "Provides notebooks, pencils, pens, crayons, and a geometry box for one child."
+          },
+          {
+            "amount": 1500,
+            "label": "Complete school kit",
+            "description": "Provides a sturdy backpack, full year of notebooks, stationery, and a steel water bottle."
+          },
+          {
+            "amount": 7500,
+            "label": "Sponsor 5 students",
+            "description": "Equips five children with complete back-to-school kits for the entire academic year."
+          }
+        ]
+      },
+      {
+        "slug": "girls-education",
+        "tagline": "When a girl can learn, her whole community rises with her.",
+        "overview": [
+          "Adolescent girls often face compounded barriers to education, from household responsibilities and financial constraints to a lack of safe transport and female mentors.",
+          "Girls' Education & Opportunity supports girls with study scholarships, bicycle/transport support, hygiene kits, and weekly mentorship so they graduate secondary school with confidence."
+        ],
+        "challenge": {
+          "title": "Girls face extra barriers to staying in school",
+          "text": "Distance to secondary schools, cost of exam fees, and social expectations often pressure girls to leave school early despite their talent and determination."
+        },
+        "approach": {
+          "title": "How this cause works",
+          "steps": [
+            {
+              "title": "Provide scholarships & learning kits",
+              "description": "Girls receive textbooks, exam fee coverage, uniforms, and study materials so cost never forces them out of class."
+            },
+            {
+              "title": "Lead weekly mentorship circles",
+              "description": "Trained female mentors guide girls in goal-setting, financial literacy, health awareness, and career planning."
+            },
+            {
+              "title": "Engage parents as champions",
+              "description": "Regular family meetings build community pride and support for girls pursuing higher education."
+            }
+          ]
+        },
+        "outcomes": [
+          "Over 96% of enrolled girls continue into upper-secondary education",
+          "Girls gain self-confidence, leadership skills, and clear career pathways",
+          "Mothers and fathers become vocal advocates for girls' education in their villages"
+        ],
+        "whoWeHelp": "Adolescent girls from underserved communities who need scholarships and mentorship to finish school.",
+        "donationTiers": [
+          {
+            "amount": 500,
+            "label": " exam & book pack",
+            "description": "Covers exam registration fees and reference guides for a secondary school girl."
+          },
+          {
+            "amount": 2500,
+            "label": "Mentorship & study support",
+            "description": "Funds a term of after-school tutoring and leadership circles for a group of girls."
+          },
+          {
+            "amount": 10000,
+            "label": "Annual girl scholarship",
+            "description": "Supports a girl's full year of books, supplies, safe transport, and mentorship."
+          }
+        ]
+      }
+    ]
+  }
 }

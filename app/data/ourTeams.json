@@ -1,55 +1,110 @@
 {
-    "hero": {
-        "title": "",
-        "dis": "",
-        "image": "",
-        "breadcrum": [
-            {
-                "label": "Home",
-                "href": "/"
-            },
-            {
-                "label": "Our Team's"
-            }
-        ]
-    },
-    "team": {
-        "eyebrow": "Our Team",
-        "heading": "The people behind every classroom.",
-        "intro": "Teachers, mentors, and organizers who give their time so every child has a place to learn.",
-        "members": [
-            {
-                "name": "Rohit Nair",
-                "role": "Founder and Director",
-                "image": {
-                    "src": "/pro-1.jpg",
-                    "alt": "Portrait of Priya Nair"
-                }
-            },
-            {
-                "name": "Samuel Mensah",
-                "role": "Head of Programs",
-                "image": {
-                    "src": "/pro-2.jpg",
-                    "alt": "Portrait of Samuel Mensah"
-                }
-            },
-            {
-                "name": "Elena Duarte",
-                "role": "Teacher Training Lead",
-                "image": {
-                    "src": "/pro-3.jpg",
-                    "alt": "Portrait of Elena Duarte"
-                }
-            },
-            {
-                "name": "Amir Hassan",
-                "role": "Community Partnerships",
-                "image": {
-                    "src": "/pro-1.jpg",
-                    "alt": "Portrait of Amir Hassan"
-                }
-            }
-        ]
-    }
+  "hero": {
+    "eyebrow": "LEADERSHIP & EDUCATORS",
+    "title": "The People Behind Every Classroom",
+    "dis": "Meet the dedicated educators, program leaders, community organizers, and mentors who work alongside families every day so every child has a joyful place to learn.",
+    "image": "/images/banner-team.jpg",
+    "stats": [
+      { "value": "8+", "label": "Leadership Team" },
+      { "value": "80+", "label": "Volunteers" },
+      { "value": "120+", "label": "Educators Trained" }
+    ],
+    "breadcrum": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Our Team"
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "OUR TEAM",
+    "heading": "Passionate Minds, Dedicated Hearts",
+    "intro": "Our team brings together grassroots educators, curriculum designers, child-welfare specialists, and community leaders committed to educational equity.",
+    "members": [
+      {
+        "name": "Priya Nair",
+        "role": "Founder & Executive Director",
+        "bio": "Former public school educator with 18+ years of experience building community-led learning centers across rural and urban districts.",
+        "image": {
+          "src": "/images/team-1.jpg",
+          "alt": "Portrait of Priya Nair"
+        }
+      },
+      {
+        "name": "Samuel Mensah",
+        "role": "Head of Education Programs",
+        "bio": "Specializes in foundational literacy, bilingual curriculum design, and scalable after-school mentorship models.",
+        "image": {
+          "src": "/images/team-2.jpg",
+          "alt": "Portrait of Samuel Mensah"
+        }
+      },
+      {
+        "name": "Elena Duarte",
+        "role": "Teacher Training & Curriculum Lead",
+        "bio": "Leads our Educator Fellowship, training over 120 local women and youth in child-centered, play-based pedagogy.",
+        "image": {
+          "src": "/images/team-3.jpg",
+          "alt": "Portrait of Elena Duarte"
+        }
+      },
+      {
+        "name": "Amir Hassan",
+        "role": "Community Partnerships Director",
+        "bio": "Works closely with village councils, parent committees, and public schools to ensure every learning center is community-owned.",
+        "image": {
+          "src": "/images/team-4.jpg",
+          "alt": "Portrait of Amir Hassan"
+        }
+      },
+      {
+        "name": "Dr. Kavita Rao",
+        "role": "Girls' Education & Inclusion Lead",
+        "bio": "Champions adolescent girls' scholarships, health awareness, and secondary school continuation across 25+ communities.",
+        "image": {
+          "src": "/images/team-5.jpg",
+          "alt": "Portrait of Dr. Kavita Rao"
+        }
+      },
+      {
+        "name": "David Chen",
+        "role": "Digital Literacy & STEAM Lead",
+        "bio": "Designs solar-powered computer labs and portable hands-on science kits for rural classrooms.",
+        "image": {
+          "src": "/images/team-6.jpg",
+          "alt": "Portrait of David Chen"
+        }
+      },
+      {
+        "name": "Meera Krishnan",
+        "role": "Volunteer & Youth Engagement Lead",
+        "bio": "Coordinates 80+ weekend volunteers, reading buddies, and corporate supply-packing drives.",
+        "image": {
+          "src": "/images/team-7.jpg",
+          "alt": "Portrait of Meera Krishnan"
+        }
+      },
+      {
+        "name": "Arjun Mehta",
+        "role": "Impact Evaluation & Finance Lead",
+        "bio": "Ensures 100% financial transparency, donor reporting, and quarterly student learning assessments.",
+        "image": {
+          "src": "/images/team-8.jpg",
+          "alt": "Portrait of Arjun Mehta"
+        }
+      }
+    ]
+  },
+  "joinCta": {
+    "eyebrow": "VOLUNTEER OR TEACH WITH US",
+    "title": "Share Your Time, Transform a Classroom",
+    "description": "We are always looking for passionate weekend mentors, storytellers, digital trainers, and field coordinators to join our growing movement.",
+    "primaryButton": "Apply to Volunteer",
+    "primaryHref": "/contact-us",
+    "secondaryButton": "Support Our Work",
+    "secondaryHref": "#"
+  }
 }

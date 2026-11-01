@@ -332,7 +332,7 @@ export default function ContactSection({
                 whileInView="show"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={columnVariants}
-                className="border-b border-[#15452e] bg-[#fdfbf3] px-6 py-16 md:border-b-0 md:border-r md:px-[8%] md:py-24"
+                className="border-b border-[#15452e] bg-[#fdfbf3] px-6 py-16 md:border-b-0 md:border-r md:px-[8%] md:py-18"
             >
 
 
@@ -397,7 +397,7 @@ export default function ContactSection({
                 whileInView="show"
                 viewport={{ once: true, amount: 0.15 }}
                 variants={riseVariants}
-                className="bg-[#fdfbf3] px-6 py-16 md:px-[8%] md:py-24"
+                className="bg-[#fdfbf3] px-6 py-16 md:px-[8%] md:py-18"
             >
                 <AnimatePresence mode="wait" initial={false}>
                     {status === "success" ? (

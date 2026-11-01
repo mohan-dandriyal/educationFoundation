@@ -92,7 +92,7 @@ export function OurTeamSection({
           whileInView="show"
           viewport={{ once: true, amount: 0.4 }}
           variants={headerVariants}
-          className="mx-auto flex max-w-[58rem] flex-col items-center gap-7 text-center md:gap-8"
+          className="mx-auto flex max-w-[58rem] flex-col items-center gap-6 text-center lg:pb-14 pb-8"
         >
           <div className="flex flex-col items-center">
             <SectionLabel>{eyebrow}</SectionLabel>

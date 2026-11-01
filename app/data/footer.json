@@ -1,19 +1,112 @@
 {
-  "logo": "/logo.png",
-  "logoAlt": "D. Sullivan",
+  "logo": "/logo.svg",
+  "logoLight": "/logo-light.svg",
+  "logoAlt": "Educare Foundation",
   "logoHref": "/",
-  "heading": "Leading the change.",
-  "cta": { "label": "Let's talk", "href": "/contact-us" },
+  "eyebrow": "JOIN THE MOVEMENT",
+  "heading": "Every child deserves a classroom full of hope.",
+  "description": "Educare Foundation is a non-profit organization dedicated to bridging educational inequality through free community learning centers, digital literacy labs, school supply drives, and girl-child mentorship.",
+  "cta": {
+    "label": "Donate Today",
+    "href": "#"
+  },
+  "secondaryCta": {
+    "label": "Partner With Us",
+    "href": "/contact-us"
+  },
   "links": [
-    { "label": "Home", "href": "/" },
-    { "label": "Our program", "href": "/our-program" },
-    { "label": "Blog", "href": "/blog" },
-    { "label": "Contact", "href": "/contact-us" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Our Programs",
+      "href": "/our-program"
+    },
+    {
+      "label": "Our Causes",
+      "href": "/our-causes"
+    },
+    {
+      "label": "Success Stories",
+      "href": "/our-success-story"
+    },
+    {
+      "label": "Our Team",
+      "href": "/our-team"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery"
+    },
+    {
+      "label": "FAQs",
+      "href": "/faqs"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact-us"
+    }
+  ],
+  "programLinks": [
+    {
+      "label": "Free Education for All",
+      "href": "/our-program/free-education"
+    },
+    {
+      "label": "Digital Learning Labs",
+      "href": "/our-program/digital-learning"
+    },
+    {
+      "label": "Books & School Supplies",
+      "href": "/our-program/books-school-supplies"
+    },
+    {
+      "label": "Girls' Education Initiative",
+      "href": "/our-program/girls-education"
+    },
+    {
+      "label": "After-School Mentorship",
+      "href": "/our-program/after-school-learning"
+    },
+    {
+      "label": "Early Childhood Learning",
+      "href": "/our-program/early-childhood-learning"
+    }
   ],
   "contact": {
-    "email": "hello@dsullivan.org",
-    "phone": "+1 (000) 000-0000",
-    "phoneHref": "tel:+10000000000"
+    "email": "info@xyz.com",
+    "phone": "+1 000000000",
+    "phoneHref": "tel:+1000000000",
+    "address": "3170 Rosewood Lane Unit 200 , Beverly Hills, CA 90210",
+    "hours": "Mon – Sat: 9:00 AM – 6:00 PM"
   },
+  "socials": [
+    {
+      "label": "Facebook",
+      "href": "https://facebook.com"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com"
+    }
+  ],
+  "copyright": "© 2026 Educare Foundation. All Rights Reserved. Powered by Lestow",
   "backToTopLabel": "Back to top"
 }

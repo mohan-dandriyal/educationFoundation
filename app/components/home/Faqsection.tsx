@@ -31,21 +31,16 @@ export function FaqSection() {
   return (
     <section
       aria-labelledby="faq-title"
-      className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-24"
+      className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-18"
     >
       <MainContainer>
-        {/* Heading */}
-
-         <div className='flex justify-center mb-7'>
-        <Breadcrumb items={data.breadcrum} />
-      </div>
-
-        <div className="flex justify-center items-center flex-col">
+       
+        <div className="flex lg:justify-center items-center flex-col lg:pb-14 pb-8">
           <SectionInnerTitle>{data.faqs.title}</SectionInnerTitle>
 
           {
             data?.faqs.dis &&
-            <p className="mx-auto mt-7 max-w-[72ch] text-base leading-7 text-[#4a5d2e]">{data?.faqs.dis} </p>
+            <p className="lg:mx-auto lg:text-center mt-7 max-w-[72ch] text-base leading-7 text-[#4a5d2e]">{data?.faqs.dis} </p>
           }
         </div>
 
@@ -55,7 +50,7 @@ export function FaqSection() {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           variants={gridVariants}
-          className="mt-14 grid grid-cols-1 items-start gap-5 md:mt-20 md:grid-cols-1 md:gap-6"
+          className="grid grid-cols-1 items-start gap-5 md:grid-cols-1 md:gap-6"
         >
           {items.map((item, index) => (
             <motion.article

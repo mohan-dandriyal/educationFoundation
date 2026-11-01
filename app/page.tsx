@@ -58,7 +58,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="bg-[#f4f4f4] md:py-28 py-10">
+      <div className="bg-[#f4f4f4] md:py-18 py-10">
         <BlogSection
           eyebrow={home.ourBlog.eyebrow ?? ""}
           heading={home.ourBlog.heading ?? ""}

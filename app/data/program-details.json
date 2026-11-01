@@ -1,70 +1,165 @@
 {
+  "labels": {
+    "backLink": "← All Programs",
+    "whyItMattersLabel": "WHY IT MATTERS",
+    "whyItMattersHeading": "Learning creates lasting possibility.",
+    "outcomesLabel": "PROGRAM OUTCOMES",
+    "outcomesHeading": "A stronger start for every child.",
+    "ctaButton": "Support This Program",
+    "ctaHref": "#",
+    "secondaryCtaButton": "Volunteer With Us",
+    "secondaryCtaHref": "/contact-us"
+  },
   "programs": [
     {
       "slug": "free-education",
       "title": "Free Education for All",
-      "category": "Education",
-      "image": "/program-1.png",
+      "category": "Foundational Education",
+      "image": "/images/program-free-education.jpg",
       "imageAlt": "Children studying together in a classroom",
-      "intro": "Every child deserves a safe, supportive place to learn. Our free education program helps remove the cost and access barriers that keep children out of school.",
-      "story": "We work with local educators and families to provide consistent lessons, patient support, and the confidence children need to keep learning.",
-      "features": ["Learning support", "Basic education", "Academic guidance"],
-      "outcomes": ["Stronger reading and numeracy", "Improved school attendance", "More confidence in the classroom"]
+      "intro": "Every child deserves a safe, supportive place to learn. Our Free Education for All program removes the tuition, uniform, and access barriers that keep children out of school.",
+      "story": "We partner with local educators and families to run welcoming neighborhood classrooms. Through small group instruction, bilingual storybooks, and individualized attention, children who had fallen behind quickly catch up and rediscover the joy of learning.",
+      "stats": [
+        { "value": "650+", "label": "Students in daily classes" },
+        { "value": "94%", "label": "Transition to formal school" },
+        { "value": "15", "label": "Community classrooms" }
+      ],
+      "features": [
+        "Daily foundational literacy & numeracy",
+        "Zero tuition & free mid-day nutrition",
+        "Individualized learning assessments",
+        "Parent-teacher monthly circles"
+      ],
+      "outcomes": [
+        "Stronger reading fluency and grade-level numeracy",
+        "Consistent 94%+ school attendance and retention",
+        "Greater self-confidence and curiosity in class"
+      ]
     },
     {
       "slug": "digital-learning",
-      "title": "Digital Learning",
-      "category": "Technology",
-      "image": "/program-2.png",
+      "title": "Digital Learning Labs",
+      "category": "Technology & Coding",
+      "image": "/images/program-digital-learning.jpg",
       "imageAlt": "Students learning computer skills together",
-      "intro": "Digital skills open doors to education, work, and connection. We give children practical experience with computers and technology in a welcoming environment.",
-      "story": "Our mentors make technology approachable through guided projects that build curiosity, problem-solving, and the confidence to try something new.",
-      "features": ["Computer education", "Digital literacy", "Technology awareness"],
-      "outcomes": ["Stronger computer confidence", "Practical digital skills", "Greater access to online learning"]
+      "intro": "Digital fluency opens doors to higher education, modern careers, and global connection. We give children hands-on experience with laptops, coding, and safe internet research.",
+      "story": "Our trained tech mentors make technology approachable through project-based learning. From typing their first story to building interactive Scratch animations and researching science topics, students become confident digital creators rather than passive consumers.",
+      "stats": [
+        { "value": "420+", "label": "Students trained annually" },
+        { "value": "12", "label": "Solar-powered computer labs" },
+        { "value": "100%", "label": "Hands-on project curriculum" }
+      ],
+      "features": [
+        "Computer fundamentals & typing mastery",
+        "Visual coding & logic workshops",
+        "Safe internet research & digital citizenship",
+        "Offline educational server access"
+      ],
+      "outcomes": [
+        "High confidence using computers and productivity tools",
+        "Practical problem-solving and computational thinking",
+        "Equal access to online scholarship and study resources"
+      ]
     },
     {
       "slug": "books-school-supplies",
       "title": "Books and School Supplies",
-      "category": "Resources",
-      "image": "/post-1.png",
+      "category": "Learning Resources",
+      "image": "/images/program-school-supplies.jpg",
       "imageAlt": "Books, notebooks, and school supplies ready for students",
-      "intro": "The right tools can change how a child feels about school. We provide books, notebooks, stationery, and learning materials so every student can take part with confidence.",
-      "story": "From a first school kit to a new set of reading books, each resource is chosen with teachers and communities so it meets a real need.",
-      "features": ["Books and notebooks", "Stationery kits", "Learning materials"],
-      "outcomes": ["Better participation in lessons", "More independent study", "Fewer barriers to completing schoolwork"]
+      "intro": "The right tools can transform how a child feels walking into school. We provide sturdy backpacks, textbooks, notebooks, geometry sets, and art supplies so every student participates with pride.",
+      "story": "When families struggle to afford basic stationery, children often share a single pencil or skip school out of embarrassment. Each term, our volunteers pack and distribute comprehensive learning kits tailored to each grade level.",
+      "stats": [
+        { "value": "3,000+", "label": "School kits distributed" },
+        { "value": "12,000+", "label": "Storybooks in circulation" },
+        { "value": "25+", "label": "Partner schools & centers" }
+      ],
+      "features": [
+        "Complete start-of-term backpack & stationery kits",
+        "Bilingual storybooks and graded readers",
+        "Hands-on math and science learning aids",
+        "Reusable water bottles and hygiene essentials"
+      ],
+      "outcomes": [
+        "Higher daily classroom participation and readiness",
+        "More independent reading and homework completion at home",
+        "Reduced financial stress for low-income families"
+      ]
     },
     {
       "slug": "girls-education",
-      "title": "Girls' Education",
-      "category": "Inclusion",
-      "image": "/post-2.png",
+      "title": "Girls' Education Initiative",
+      "category": "Inclusion & Equity",
+      "image": "/images/program-girls-education.jpg",
       "imageAlt": "Girls participating in a learning activity",
-      "intro": "When girls can learn, communities grow stronger. This program supports equal access to education and helps girls pursue their goals with confidence.",
-      "story": "We pair learning support with encouragement, mentorship, and family conversations that help girls stay engaged in school and imagine new possibilities.",
-      "features": ["Equal learning opportunities", "Educational guidance", "Confidence building"],
-      "outcomes": ["Increased participation in learning", "Stronger self-belief", "More pathways to future study"]
+      "intro": "When girls stay in school, entire communities grow healthier and more resilient. This program champions equal educational access and supports girls through secondary school and beyond.",
+      "story": "We pair academic scholarships and study supplies with weekly mentorship circles, career exposure visits, and regular family dialogues. By addressing both practical and social barriers, adolescent girls stay engaged in school and chart bold futures.",
+      "stats": [
+        { "value": "580+", "label": "Girls supported with scholarships" },
+        { "value": "96%", "label": "Secondary school continuation" },
+        { "value": "30+", "label": "Female role-model mentors" }
+      ],
+      "features": [
+        "Secondary school scholarships & exam support",
+        "Weekly leadership and life-skills mentorship",
+        "Safe group transport & study spaces",
+        "Parent and community advocacy workshops"
+      ],
+      "outcomes": [
+        "Dramatic reduction in adolescent girl dropout rates",
+        "Stronger self-advocacy, leadership, and career ambition",
+        "Lasting shift in community attitudes toward girls' schooling"
+      ]
     },
     {
       "slug": "after-school-learning",
       "title": "After-School Learning",
-      "category": "Learning Support",
-      "image": "/program-1.png",
+      "category": "Academic Support",
+      "image": "/images/program-after-school.jpg",
       "imageAlt": "Children taking part in an after-school lesson",
-      "intro": "A little extra time and support can make a lasting difference. Our after-school sessions help children practise, ask questions, and enjoy learning at their own pace.",
-      "story": "Mentors create calm, encouraging sessions where homework becomes manageable and reading becomes something children look forward to.",
-      "features": ["Homework assistance", "Reading practice", "Mentoring sessions"],
-      "outcomes": ["Improved understanding of core subjects", "Consistent study habits", "More positive learning experiences"]
+      "intro": "For first-generation learners without academic help at home, two hours of patient evening guidance makes all the difference. Our after-school clubs turn struggle into mastery.",
+      "story": "Every afternoon, our neighborhood centers come alive with reading circles, math games, and homework tutoring. Mentors work with small groups of 8–10 students so every question is welcomed and no child falls behind.",
+      "stats": [
+        { "value": "480+", "label": "Evening learners daily" },
+        { "value": "2 hrs", "label": "Guided support every weekday" },
+        { "value": "85%", "label": "Improvement in term grades" }
+      ],
+      "features": [
+        "Small-group homework and subject tutoring",
+        "Interactive aloud reading and vocabulary games",
+        "Peer-to-peer study buddies",
+        "Monthly creative project showcases"
+      ],
+      "outcomes": [
+        "Measurable gains in school exam scores and comprehension",
+        "Consistent daily study habits in a calm environment",
+        "Joyful peer friendships and positive mentor bonds"
+      ]
     },
     {
       "slug": "early-childhood-learning",
       "title": "Early Childhood Learning",
       "category": "Early Education",
-      "image": "/program-2.png",
+      "image": "/images/program-early-childhood.jpg",
       "imageAlt": "Young children learning through play",
-      "intro": "The early years shape a child’s relationship with learning. We use play, stories, and hands-on activities to build strong foundations for school and life.",
-      "story": "Children learn best when they feel safe and curious, so our educators create joyful spaces where every question and discovery is welcome.",
-      "features": ["Creative activities", "Early literacy", "Foundational skills"],
-      "outcomes": ["Stronger language development", "Improved social skills", "A positive start to education"]
+      "intro": "Over 85% of brain development happens before age six. We use play, music, storytelling, and sensory discovery to give young children a joyful head start before primary school.",
+      "story": "Children learn best when they feel safe, loved, and curious. Our early childhood educators create colorful, stimulating classrooms where toddlers build language, motor skills, and social confidence through guided play.",
+      "stats": [
+        { "value": "310+", "label": "Young learners aged 3–6" },
+        { "value": "10", "label": "Early childhood play centers" },
+        { "value": "100%", "label": "Primary school readiness" }
+      ],
+      "features": [
+        "Play-based phonics, counting, and storytelling",
+        "Fine-motor art, puzzles, and building blocks",
+        "Social-emotional learning and sharing activities",
+        "Early nutrition and parent play-at-home guides"
+      ],
+      "outcomes": [
+        "Strong vocabulary and early pre-reading skills",
+        "Healthy social skills, empathy, and classroom readiness",
+        "Enthusiastic, tear-free transition into Grade 1"
+      ]
     }
   ]
 }

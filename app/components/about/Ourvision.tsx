@@ -27,7 +27,7 @@ export function OurVision({ content }: OurVisionProps) {
         <section
             id="our-vision"
             aria-labelledby="our-vision-title"
-            className="bg-[#fdfbf3] px-5 py-20 text-[#15452e] sm:px-8 lg:py-15"
+            className="bg-[#ffffff] px-5 py-16 mb-4 text-[#15452e] sm:px-8"
         >
             {/* One reveal for the whole section, played once when it scrolls into view */}
             <motion.div

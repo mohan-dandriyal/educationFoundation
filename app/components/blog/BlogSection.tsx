@@ -196,10 +196,6 @@ export default function BlogSection({
                         {heading}
                     </SectionInnerTitle>
 
-                     <div className='mt-4'>
-                        <Breadcrumb items={breadcrum} />
-      </div>
-
                     {/* Posts */}
                     <div ref={listRef} className="mt-14 scroll-mt-24 md:mt-10">
                         {/* Announces results to screen readers */}

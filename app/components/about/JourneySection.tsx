@@ -119,7 +119,7 @@ export function OurJourneySection({
     return (
         <section
             aria-labelledby="journey-title"
-            className="border-b border-[#15452e] bg-[#f4f4f4] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-28"
+            className="border-b border-[#15452e] bg-[#f4f4f4] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-18"
         >
             <MainContainer>
                 <div className="mx-auto grid  gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-20">

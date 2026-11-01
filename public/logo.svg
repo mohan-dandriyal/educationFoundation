@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" fill="none">
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#15452e" />
+      <stop offset="100%" stop-color="#2e6f40" />
+    </linearGradient>
+    <linearGradient id="leafLeft" x1="20" y1="50" x2="55" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9dc164" />
+      <stop offset="100%" stop-color="#6f984b" />
+    </linearGradient>
+    <linearGradient id="leafRight" x1="55" y1="50" x2="90" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6f984b" />
+      <stop offset="100%" stop-color="#3b6e38" />
+    </linearGradient>
+    <linearGradient id="starGrad" x1="42" y1="10" x2="66" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Circle Arc -->
+  <path
+    d="M 88 24 A 42 42 0 1 0 91 74"
+    stroke="url(#ringGrad)"
+    stroke-width="4.5"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <circle cx="54" cy="50" r="36" fill="#15452e" fill-opacity="0.05" />
+
+  <!-- Rising Star of Knowledge -->
+  <path
+    d="M54 13 L57.2 20.1 L65 21 L59.1 26.2 L60.7 33.8 L54 29.8 L47.3 33.8 L48.9 26.2 L43 21 L50.8 20.1 Z"
+    fill="url(#starGrad)"
+  />
+
+  <!-- Child Figure Reaching Up -->
+  <circle cx="54" cy="40" r="6.2" fill="#15452e" />
+  <path
+    d="M34 33 C41 40 47 45 54 45 C61 45 67 40 74 33 C69 44 62 51 58 60 L54 71 L50 60 C46 51 39 44 34 33 Z"
+    fill="#15452e"
+  />
+
+  <!-- Open Book / Leaves Upper Layer -->
+  <path
+    d="M25 50 C37 50 47 56 53 69 C42 63 31 61 25 50 Z"
+    fill="url(#leafLeft)"
+  />
+  <path
+    d="M83 50 C71 50 61 56 55 69 C66 63 77 61 83 50 Z"
+    fill="url(#leafRight)"
+  />
+
+  <!-- Open Book / Leaves Base Layer -->
+  <path
+    d="M28 65 C39 65 48 70 53 79 C41 76 33 73 28 65 Z"
+    fill="#295939"
+  />
+  <path
+    d="M80 65 C69 65 60 70 55 79 C67 76 75 73 80 65 Z"
+    fill="#15452e"
+  />
+
+  <!-- Brand Name: Educare -->
+  <text
+    x="110"
+    y="52"
+    font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif"
+    font-size="44"
+    font-weight="700"
+    letter-spacing="-0.02em"
+    fill="#15452e"
+  >
+    Educare
+  </text>
+
+  <!-- Brand Subtitle: Foundation -->
+  <text
+    x="112"
+    y="81"
+    font-family="'Segoe UI', Arial, Helvetica, sans-serif"
+    font-size="25"
+    font-weight="600"
+    letter-spacing="0.14em"
+    fill="#5a8743"
+  >
+    FOUNDATION
+  </text>
+
+  <!-- Accent Divider & Tagline -->
+  <line x1="112" y1="90" x2="402" y2="90" stroke="#15452e" stroke-opacity="0.18" stroke-width="1" />
+  <text
+    x="112"
+    y="103"
+    font-family="'Segoe UI', Arial, Helvetica, sans-serif"
+    font-size="9.5"
+    font-weight="700"
+    letter-spacing="0.2em"
+    fill="#8a6b36"
+  >
+    EDUCATION TODAY  •  BRIGHTER TOMORROW
+  </text>
+</svg>

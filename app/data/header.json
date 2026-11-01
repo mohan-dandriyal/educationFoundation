@@ -1,21 +1,31 @@
-
 {
-  "logo": "/logo.png",
-  "logoAlt": "D. Sullivan",
+  "logo": "/logo.svg",
+  "logoLight": "/logo-light.svg",
+  "logoAlt": "Educare Foundation",
   "logoHref": "/",
+  "topBar": {
+    "announcement": "Empowering 1,200+ children across 25+ underserved communities through free quality education.",
+    "email": "info@xyz.com",
+    "phone": "+1 000000000",
+    "phoneHref": "tel:+1000000000"
+  },
   "links": [
     { "label": "Home", "href": "/" },
-    { "label": "About", "href": "/about" },
-    { "label": "Our Program", "href": "/our-program" },
+    { "label": "About Us", "href": "/about" },
+    { "label": "Our Programs", "href": "/our-program" },
     { "label": "Our Causes", "href": "/our-causes" },
+    { "label": "Success Stories", "href": "/our-success-story" },
     { "label": "Our Team", "href": "/our-team" },
-    { "label": "Donate Now", "href": "/donate" },
     { "label": "Gallery", "href": "/gallery" },
-    { "label": "Faqs", "href": "/faqs" },
-    { "label": "blog", "href": "/blog" }
+    { "label": "FAQs", "href": "/faqs" },
+    { "label": "Blog", "href": "/blog" }
   ],
-  "cta": { "label": "Contact Us", "href": "/contact-us" }
+  "secondaryCta": {
+    "label": "Contact Us",
+    "href": "/contact-us"
+  },
+  "cta": {
+    "label": "Donate Now",
+    "href": "#"
+  }
 }
-
-
-
