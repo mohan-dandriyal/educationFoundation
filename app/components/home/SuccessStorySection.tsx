@@ -99,79 +99,79 @@ export function SuccessStorySection({
       className="overflow-hidden bg-[#fdfbf3] py-14 text-[#15452e] md:py-16"
     >
       <MainContainer>
-      <div className="mx-auto grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-16 lg:gap-24">
-        {/* Image: outer wrapper only watches the scroll, inner frame does the clip reveal */}
-        <motion.div
-          initial={initial}
-          whileInView="show"
-          viewport={{ once: true, amount: 0.15 }}
-          className="relative min-h-[360px] md:min-h-[740px]"
-        >
+        <div className="mx-auto grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-16 lg:gap-24">
+          {/* Image: outer wrapper only watches the scroll, inner frame does the clip reveal */}
           <motion.div
-            variants={frameVariants}
-            className="absolute inset-0 overflow-hidden"
+            initial={initial}
+            whileInView="show"
+            viewport={{ once: true, amount: 0.15 }}
+            className="relative min-h-[360px] md:min-h-[740px]"
           >
-            <motion.div variants={photoVariants} className="absolute inset-0">
-              <Image
-                src={content.featured.image}
-                alt={content.featured.imageAlt}
-                fill
-                sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover"
-              />
+            <motion.div
+              variants={frameVariants}
+              className="absolute inset-0 overflow-hidden"
+            >
+              <motion.div variants={photoVariants} className="absolute inset-0">
+                <Image
+                  src={content.featured.image}
+                  alt={content.featured.imageAlt}
+                  fill
+                  sizes="(min-width: 768px) 40vw, 100vw"
+                  className="object-cover"
+                />
+              </motion.div>
             </motion.div>
           </motion.div>
-        </motion.div>
 
-        {/* Text */}
-        <motion.div
-          initial={initial}
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={columnVariants}
-          className="px-5 "
-        >
-          <div className="md:block flex flex-col items-center">
-
-          <SectionLabel className="">{content.featured.label}</SectionLabel>
-
-          <SectionInnerTitle className="">
-            {content.featured.title}
-          </SectionInnerTitle>
-
-          <motion.p
-            variants={riseVariants}
-            className="mb-0 md:mt-7 mt-4 md:max-w-[48ch] max-w-[72ch] md:text-start text-center text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.7]"
+          {/* Text */}
+          <motion.div
+            initial={initial}
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={columnVariants}
+            className="px-5 "
           >
-            {content.featured.description}
-            {/*
+            <div className="md:block flex flex-col items-center text-center md:text-start">
+
+              <SectionLabel className="">{content.featured.label}</SectionLabel>
+
+              <SectionInnerTitle className="">
+                {content.featured.title}
+              </SectionInnerTitle>
+
+              <motion.p
+                variants={riseVariants}
+                className="mb-0 md:mt-7 mt-4 md:max-w-[48ch] max-w-[72ch] md:text-start text-center text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.7]"
+              >
+                {content.featured.description}
+                {/*
             right supplies, she found her confidence again—and now helps her
             younger classmates do the same.
             */}
-          </motion.p>
-          </div>
+              </motion.p>
+            </div>
 
-          <motion.dl
-            variants={riseVariants}
-            className="m-0 mt-10 grid grid-cols-3 gap-4 border-y border-[#15452e] py-6 sm:gap-8"
-          >
-            {content.impact.map((stat) => (
-              <div key={stat.label} className="flex min-w-0 flex-col-reverse justify-end">
-                <dt className="mt-2 max-w-[14ch] text-sm leading-5">
-                  {stat.label}
-                </dt>
-                <dd className="m-0 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.75rem,2.8vw,2.75rem)] font-normal leading-none text-[#4a5d2e]">
-                  <CountUp value={stat.value} />
-                </dd>
-              </div>
-            ))}
-          </motion.dl>
+            <motion.dl
+              variants={riseVariants}
+              className="m-0 mt-10 grid grid-cols-3 gap-4 border-y border-[#15452e] py-6 sm:gap-8"
+            >
+              {content.impact.map((stat) => (
+                <div key={stat.label} className="flex min-w-0 flex-col-reverse justify-end">
+                  <dt className="mt-2 max-w-[14ch] text-sm leading-5">
+                    {stat.label}
+                  </dt>
+                  <dd className="m-0 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.75rem,2.8vw,2.75rem)] font-normal leading-none text-[#4a5d2e]">
+                    <CountUp value={stat.value} />
+                  </dd>
+                </div>
+              ))}
+            </motion.dl>
 
-          <motion.div variants={riseVariants}>
-            <PrimaryButton href="/our-program">Read More Stories</PrimaryButton>
+            <motion.div variants={riseVariants}>
+              <PrimaryButton href="/our-program">Read More Stories</PrimaryButton>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      </div>
+        </div>
       </MainContainer>
     </section>
   );

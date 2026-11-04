@@ -49,7 +49,7 @@ export default function BlogSection({ eyebrow, heading, post }: BlogSectionProps
                         initial={initial}
                         whileInView="show"
                         viewport={{ once: true, amount: 0.4 }}
-                        className="flex flex-col justify-between  md:items-start items-center lg:pb-14 pb-8"
+                        className="flex flex-col text-center md:text-start justify-between  md:items-start items-center lg:pb-14 pb-8"
                     >
                         <div >
 

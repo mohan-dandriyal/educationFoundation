@@ -119,7 +119,7 @@ export default function OurCausesSection({
                     className="flex flex-col items-center gap-6 text-center "
                 >
 
-                    <div className="flex max-w-[58ch] flex-col items-center pb-10">
+                    <div className="flex max-w-[72ch] flex-col items-center pb-10">
                         <SectionLabel className="">
                             {content.tag}
                         </SectionLabel>

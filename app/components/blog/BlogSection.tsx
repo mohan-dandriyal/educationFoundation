@@ -66,7 +66,6 @@ export default function BlogSection({
     perPage = 6,
 }: BlogSectionProps) {
     const reduceMotion = useReducedMotion();
-    const initial = reduceMotion ? false : "hidden";
 
     const [page, setPage] = useState(1);
     const [query, setQuery] = useState("");
