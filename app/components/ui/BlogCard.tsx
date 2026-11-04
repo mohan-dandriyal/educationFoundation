@@ -74,7 +74,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
       </Link>
 
       {/* Details */}
-      <motion.div variants={detailsVariants} className="px-6 pt-8">
+      <motion.div variants={detailsVariants} className="px-6  lg:py-4 py-4 flex flex-col justify-center py-3">
         <motion.div variants={detailVariants} className="text-xs leading-[1.5]">
           <p className="m-0">{post.author}</p>
           <p className="m-0 flex items-center gap-2">
@@ -99,7 +99,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
         {/* Footer: views + like */}
         <motion.div
           variants={detailVariants}
-          className="mt-10 flex items-center justify-between border-t border-[#1f4a2c]/30 pt-5 text-xs"
+          className="mt-4 flex items-center justify-between border-t border-[#1f4a2c]/30 pt-5 text-xs"
         >
           <span className="flex items-center gap-2">
             <FaRegEye aria-hidden="true" className="h-4 w-4" />
