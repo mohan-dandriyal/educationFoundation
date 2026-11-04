@@ -167,7 +167,7 @@ export function SuccessStorySection({
               ))}
             </motion.dl>
 
-            <motion.div variants={riseVariants}>
+            <motion.div variants={riseVariants} className="md:block flex justify-center">
               <PrimaryButton href="/our-program">Read More Stories</PrimaryButton>
             </motion.div>
           </motion.div>
