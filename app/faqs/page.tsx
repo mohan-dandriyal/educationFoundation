@@ -22,7 +22,6 @@ function Faq() {
         stats={data.hero.stats}
         actions={[
           { label: "Have a Question? Contact Us", href: "/contact-us", variant: "primary" },
-          { label: "Donate", href: "#", variant: "secondary" },
         ]}
       />
 

@@ -69,7 +69,7 @@ export function Hero({ content }: HeroProps) {
             {content.eyebrow && (
               <motion.div
                 variants={riseVariants}
-                className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-[#e6f5ae]/30 bg-[#15452e]/70 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-[#e6f5ae] backdrop-blur-sm"
+                className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-[#e6f5ae]/30 bg-[#15452e]/70 px-4 py-1.5 sm:text-xs text-[9px] font-bold uppercase tracking-[0.2em] text-[#e6f5ae] backdrop-blur-sm"
               >
                 <span className="h-2 w-2 rounded-full bg-[#f59e0b]" />
                 <span>{content.eyebrow}</span>
@@ -79,7 +79,7 @@ export function Hero({ content }: HeroProps) {
             <h1
               id="hero-title"
               aria-label={content.title}
-              className="m-0 max-w-[14ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.8rem,7vw,6.2rem)] font-normal leading-[0.98] tracking-[-0.035em] text-[#fdfbf3]"
+              className="m-0 max-w-[16ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,5vw,3.75rem)] font-normal leading-[1.05] tracking-[-0.03em] break-words text-[#fdfbf3]"
             >
               {words.map((word, i) => (
                 <span key={i} aria-hidden="true">
@@ -101,7 +101,7 @@ export function Hero({ content }: HeroProps) {
 
             <motion.p
               variants={riseVariants}
-              className="mb-0 mt-6 max-w-[54ch] text-[clamp(1.02rem,1.2vw,1.22rem)] leading-[1.75] text-[#fdfbf3]/90"
+              className="mb-0 mt-6 max-w-[54ch] text-[clamp(15px,16px,16px)] leading-[1.75] text-[#fdfbf3]/90"
             >
               {content.description}
             </motion.p>
@@ -113,7 +113,7 @@ export function Hero({ content }: HeroProps) {
             >
               <Link
                 href={content.ctaHref}
-                className="group relative isolate inline-flex items-center gap-3 overflow-hidden rounded-full bg-[#e6f5ae] px-8 py-4 text-[0.95rem] font-bold tracking-[0.03em] text-[#15452e] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#b49358] hover:text-[#fdfbf3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e6f5ae]"
+                className="group relative isolate inline-flex items-center gap-3 overflow-hidden rounded-full bg-[#e6f5ae] px-8 py-4 text-sm sm:text-[15px] font-bold tracking-[0.03em] text-[#15452e] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#b49358] hover:text-[#fdfbf3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e6f5ae]"
               >
                 <FaHeart className="h-4 w-4 text-[#d97706] transition-colors group-hover:text-[#fdfbf3]" />
                 <span>{content.cta}</span>
@@ -123,7 +123,7 @@ export function Hero({ content }: HeroProps) {
               {content.secondaryCta && content.secondaryCtaHref && (
                 <Link
                   href={content.secondaryCtaHref}
-                  className="inline-flex items-center gap-2 rounded-full border border-[#fdfbf3]/40 bg-[#fdfbf3]/10 px-7 py-4 text-[0.95rem] font-semibold tracking-[0.03em] text-[#fdfbf3] backdrop-blur-sm transition-all duration-300 hover:border-[#e6f5ae] hover:bg-[#fdfbf3]/20"
+                  className="inline-flex items-center gap-2 rounded-full border border-[#fdfbf3]/40 bg-[#fdfbf3]/10 px-7 py-4 sm:text-[15px] text-sm font-semibold tracking-[0.03em] text-[#fdfbf3] backdrop-blur-sm transition-all duration-300 hover:border-[#e6f5ae] hover:bg-[#fdfbf3]/20"
                 >
                   <span>{content.secondaryCta}</span>
                 </Link>

@@ -18,9 +18,9 @@ export default function GalleryPage() {
         image={gallery.banner?.image || "/images/banner-gallery.jpg"}
         imageAlt="Educare Foundation field photography"
         breadcrumb={gallery.breadcrum}
+        stats={gallery.banner?.stats}
         actions={[
-          { label: "Donate Today", href: "#", variant: "primary" },
-          { label: "Volunteer", href: "/contact-us", variant: "secondary" },
+          { label: "Volunteer With Us", href: "/contact-us", variant: "primary" },
         ]}
       />
 

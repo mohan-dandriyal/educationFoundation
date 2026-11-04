@@ -56,19 +56,19 @@ export default function OurProgram({ eyebrow, heading, dis, images, program }: O
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
                     variants={cardVariants}
-                    className="mx-auto  max-w-[42rem] text-center pt-4 pb-10 "
+                    className="mx-auto  max-w-[42rem] text-center "
                 >
                     <div className="text-center flex justify-center">
-                        <SectionLabel>{eyebrow}</SectionLabel>
+                        <SectionLabel className="">{eyebrow}</SectionLabel>
                     </div>
 
                     <div className="mt-4">
-                        <SectionInnerTitle>{heading}</SectionInnerTitle>
+                        <SectionInnerTitle className="">{heading}</SectionInnerTitle>
                     </div>
-                    {dis && <p className="mx-auto mt-6 max-w-[72ch] text-base leading-7 text-[#4a5d2e]">{dis}</p>}
+                    {dis && <p className="mx-auto mt-4 max-w-[72ch] text-base leading-7 text-[#4a5d2e]">{dis}</p>}
                 </motion.header>
 
-                <div className="grid sm:gap-0 gap-4">
+                <div className="grid sm:gap-0 gap-4 mt-10">
                     {programImages.map((item, index) => {
                         const textFirst = index % 2 === 1;
                         const href = item.link ?? (item.slug ? `/our-program/${item.slug}` : "/our-program");
@@ -96,7 +96,7 @@ export default function OurProgram({ eyebrow, heading, dis, images, program }: O
                                         {item.category &&
                                             <p className="m-0 text-xs font-bold uppercase tracking-[0.2em] text-[#687451]">{item.category}</p>}
 
-                                        <h3 className="mt-5 max-w-[12ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.6rem,5vw,3.6rem)] font-normal leading-[0.9] tracking-[-0.045em] text-[#15452e]">
+                                        <h3 className="mt-5 max-w-full font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.5rem,2.5vw,2.25rem)] font-normal leading-[1.18] tracking-[-0.025em] break-words text-[#15452e]">
                                             {item.title}
                                         </h3>
 

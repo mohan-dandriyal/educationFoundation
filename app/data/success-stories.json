@@ -11,17 +11,29 @@
   "hero": {
     "label": "REAL STORIES, REAL HOPE",
     "title": "Every Child Has a Story Worth Sharing",
-    "description": "Meet the children, families, educators, and volunteers turning access to neighborhood classrooms and learning kits into extraordinary new possibilities.",
+    "description": "Real stories of children, families, and mentors turning free education into bright futures.",
     "image": "/images/banner-stories.jpg",
     "imageAlt": "Students smiling during a learning activity",
     "stats": [
-      { "value": "1,200+", "label": "Journeys" },
-      { "value": "25+", "label": "Communities" },
-      { "value": "94%", "label": "Graduation" }
+      {
+        "value": "1,200+",
+        "label": "Journeys"
+      },
+      {
+        "value": "25+",
+        "label": "Communities"
+      },
+      {
+        "value": "94%",
+        "label": "Graduation"
+      }
     ],
     "actions": [
-      { "label": "Sponsor a Student", "href": "#", "variant": "primary" },
-      { "label": "Our Programs", "href": "/our-program", "variant": "secondary" }
+      {
+        "label": "Support Our Students",
+        "href": "/contact-us",
+        "variant": "primary"
+      }
     ]
   },
   "featured": {
@@ -88,9 +100,18 @@
     }
   ],
   "impact": [
-    { "value": "1,200+", "label": "children supported" },
-    { "value": "25+", "label": "learning centers" },
-    { "value": "94%", "label": "school retention rate" }
+    {
+      "value": "1,200+",
+      "label": "children supported"
+    },
+    {
+      "value": "25+",
+      "label": "learning centers"
+    },
+    {
+      "value": "94%",
+      "label": "school retention rate"
+    }
   ],
   "ctaSection": {
     "label": "OUR IMPACT",

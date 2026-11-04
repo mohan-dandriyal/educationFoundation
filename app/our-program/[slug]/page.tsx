@@ -67,8 +67,7 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
         ]}
         stats={program.stats}
         actions={[
-          { label: "Support This Program", href: "#", variant: "primary" },
-          { label: "Partner With Us", href: "/contact-us", variant: "secondary" },
+          { label: "Partner With Us", href: "/contact-us", variant: "primary" },
         ]}
       />
 
@@ -88,9 +87,9 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
             </div>
 
             <div className="lg:col-span-6">
-              <SectionLabel>{details.labels.whyItMattersLabel}</SectionLabel>
+              <SectionLabel className="">{details.labels.whyItMattersLabel}</SectionLabel>
               <div className="mt-2">
-                <SectionInnerTitle>{details.labels.whyItMattersHeading}</SectionInnerTitle>
+                <SectionInnerTitle className="">{details.labels.whyItMattersHeading}</SectionInnerTitle>
               </div>
 
               <p className="mt-6 text-lg leading-8 text-[#15452e]/85">
@@ -117,10 +116,10 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
       <section className="border-t border-[#15452e]/15 bg-[#f4f7f2] px-6 py-18 md:px-[6%]">
         <MainContainer>
           <div className="mx-auto max-w-[1200px]">
-            <div className="text-center max-w-2xl mx-auto lg:pb-14 pb-8">
-              <SectionLabel>{details.labels.outcomesLabel}</SectionLabel>
+            <div className="text-center flex  flex-col items-center max-w-2xl mx-auto lg:pb-14 pb-8">
+              <SectionLabel className="">{details.labels.outcomesLabel}</SectionLabel>
               <div className="mt-2">
-                <SectionInnerTitle>{details.labels.outcomesHeading}</SectionInnerTitle>
+                <SectionInnerTitle className="">{details.labels.outcomesHeading}</SectionInnerTitle>
               </div>
             </div>
 
@@ -140,7 +139,7 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
               ))}
             </div>
 
-            <div className="mt-14 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-3 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <PrimaryButton href="/contact-us">{details.labels.secondaryCtaButton}</PrimaryButton>
             </div>
           </div>

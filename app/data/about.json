@@ -11,18 +11,33 @@
   "banner": {
     "eyebrow": "ABOUT EDUCARE FOUNDATION",
     "title": "Building Brighter Futures Together",
-    "description": "Founded with a single room and twenty children, Educare Foundation now powers 25+ neighborhood learning centers, ensuring free access to quality education, digital skills, and community mentorship.",
+    "description": "Empowering 1,200+ children across 25+ centers with quality schooling, digital labs, and mentorship.",
     "image": "/images/banner-about.jpg",
     "imageAlt": "Dedicated teachers and students in a bright community learning space",
     "stats": [
-      { "value": "14+", "label": "Years Active" },
-      { "value": "25+", "label": "Learning Centers" },
-      { "value": "1,200+", "label": "Students" },
-      { "value": "94%", "label": "School Retention" }
+      {
+        "value": "14+",
+        "label": "Years Active"
+      },
+      {
+        "value": "25+",
+        "label": "Learning Centers"
+      },
+      {
+        "value": "1,200+",
+        "label": "Students"
+      },
+      {
+        "value": "94%",
+        "label": "School Retention"
+      }
     ],
     "actions": [
-      { "label": "Explore Programs", "href": "/our-program", "variant": "primary" },
-      { "label": "Donate Today", "href": "#", "variant": "secondary" }
+      {
+        "label": "Explore Programs",
+        "href": "/our-program",
+        "variant": "primary"
+      }
     ]
   },
   "aboutSplit": {
@@ -32,9 +47,18 @@
     "cta": "Explore Our Programs",
     "ctaHref": "/our-program",
     "stats": [
-      { "value": "14+", "label": "Years of Impact" },
-      { "value": "25+", "label": "Learning Centers" },
-      { "value": "1,200+", "label": "Children Enrolled" }
+      {
+        "value": "14+",
+        "label": "Years of Impact"
+      },
+      {
+        "value": "25+",
+        "label": "Learning Centers"
+      },
+      {
+        "value": "1,200+",
+        "label": "Children Enrolled"
+      }
     ],
     "thumbs": [
       {
@@ -86,7 +110,7 @@
     "image": "/images/vision-banner.jpg",
     "imageAlt": "Children raising hands and smiling together in class",
     "buttonText": "Support Our Vision",
-    "buttonLink": "#"
+    "buttonLink": "/our-program"
   },
   "journey": {
     "eyebrow": "OUR JOURNEY",

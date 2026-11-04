@@ -11,13 +11,22 @@
   "banner": {
     "eyebrow": "URGENT CAMPAIGNS",
     "title": "Seeds of Change in Action",
-    "description": "Every child deserves the opportunity to learn, grow, and build a brighter future. Explore our active fundraising causes and see how your generosity creates direct classroom impact.",
+    "description": "Support grassroots education campaigns creating direct, lasting classroom impact for children.",
     "image": "/images/banner-causes.jpg",
     "imageAlt": "Students receiving educational materials and books",
     "stats": [
-      { "value": "6", "label": "Active Causes" },
-      { "value": "88%", "label": "Direct Impact" },
-      { "value": "80G", "label": "Tax Exempt" }
+      {
+        "value": "6",
+        "label": "Active Causes"
+      },
+      {
+        "value": "88%",
+        "label": "Direct Impact"
+      },
+      {
+        "value": "80G",
+        "label": "Tax Exempt"
+      }
     ]
   },
   "ourCauses": {

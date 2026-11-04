@@ -82,8 +82,7 @@ export default async function CauseDetailPage({ params }: PageProps) {
           { value: `${cause.donors}`, label: "Generous Donors" },
         ]}
         actions={[
-          { label: "Donate Now", href: "#", variant: "primary" },
-          { label: "Volunteer", href: "/contact-us", variant: "secondary" },
+          { label: "Volunteer For This Cause", href: "/contact-us", variant: "primary" },
         ]}
       />
 
@@ -114,7 +113,7 @@ export default async function CauseDetailPage({ params }: PageProps) {
               )}
             </div>
 
-            <h2 className="mb-0 mt-5 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,3.8vw,3.25rem)] font-normal leading-[1.1] tracking-[-0.03em] text-[#15452e]">
+            <h2 className="mb-0 mt-5 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.75rem,3.2vw,2.5rem)] font-normal leading-[1.1] tracking-[-0.03em] text-[#15452e]">
               {cause.title}
             </h2>
 
@@ -141,13 +140,13 @@ export default async function CauseDetailPage({ params }: PageProps) {
         </div>
 
         {/* Why this work matters & Challenge */}
-        <section className="mt-20 border-t border-[#15452e]/15 pt-16 lg:mt-24 lg:pt-18">
+        <section className=" border-t border-[#15452e]/15 pt-16 mt-16 lg:pt-16">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)] lg:gap-20">
             <div>
               <p className="mb-0 font-[Arial,Helvetica,sans-serif] text-sm font-bold uppercase tracking-[0.16em] text-[#8a6b36]">
                 {causeDetail.tagline}
               </p>
-              <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,3.5vw,3rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">
+              <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.65rem,3vw,2.4rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">
                 Why This Work Matters
               </h2>
               <div className="mt-6 space-y-5 text-[1.08rem] leading-[1.8] text-[#15452e]/80">
@@ -169,10 +168,10 @@ export default async function CauseDetailPage({ params }: PageProps) {
           </div>
 
           {/* Our Approach */}
-          <div className="mt-20 grid gap-12 lg:mt-24 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
+          <div className="mt-16 grid gap-12 lg:mt-18 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
             <div>
               <p className="mb-0 font-[Arial,Helvetica,sans-serif] text-sm font-bold uppercase tracking-[0.16em] text-[#8a6b36]">Our Approach</p>
-              <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,3.5vw,3rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">
+              <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.65rem,3vw,2.4rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">
                 {causeDetail.approach.title}
               </h2>
             </div>
@@ -191,10 +190,10 @@ export default async function CauseDetailPage({ params }: PageProps) {
           </div>
 
           {/* The Impact & Who we help */}
-          <div className="mt-20 grid gap-12 lg:mt-24 lg:grid-cols-2 lg:gap-20">
+          <div className="mt-16 grid gap-12 lg:mt-18 lg:grid-cols-2 lg:gap-20">
             <div>
               <p className="mb-0 font-[Arial,Helvetica,sans-serif] text-sm font-bold uppercase tracking-[0.16em] text-[#8a6b36]">The Impact</p>
-              <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,3.5vw,3rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">What Your Support Makes Possible</h2>
+              <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.65rem,3vw,2.4rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">What Your Support Makes Possible</h2>
               <ul className="m-0 mt-8 list-none space-y-4 p-0">
                 {causeDetail.outcomes.map((outcome) => (
                   <li key={outcome} className="flex gap-4 leading-[1.6] text-[#15452e]/80">
@@ -212,11 +211,11 @@ export default async function CauseDetailPage({ params }: PageProps) {
           </div>
 
           {/* Ways to Give */}
-          <div className="mt-20 lg:mt-24">
+          <div className="mt-16 lg:mt-18">
             <div className="flex flex-wrap items-end justify-between gap-5">
               <div>
                 <p className="mb-0 font-[Arial,Helvetica,sans-serif] text-sm font-bold uppercase tracking-[0.16em] text-[#8a6b36]">Ways To Give</p>
-                <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,3.5vw,3rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">Every Gift Has A Purpose</h2>
+                <h2 className="mb-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.65rem,3vw,2.4rem)] font-normal leading-[1.05] tracking-[-0.03em] text-[#15452e]">Every Gift Has A Purpose</h2>
               </div>
               <Link href="#" className="font-[Arial,Helvetica,sans-serif] text-sm font-bold text-[#8a6b36] underline underline-offset-4 transition-colors hover:text-[#15452e] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b49358]">Donate now</Link>
             </div>
@@ -235,7 +234,7 @@ export default async function CauseDetailPage({ params }: PageProps) {
 
         {/* Other Causes */}
         {others.length > 0 && (
-          <section aria-labelledby="other-causes" className="mt-24 lg:mt-28">
+          <section aria-labelledby="other-causes" className="mt-14 lg:mt-16">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <h2
                 id="other-causes"

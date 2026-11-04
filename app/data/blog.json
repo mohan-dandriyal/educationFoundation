@@ -11,13 +11,22 @@
   "hero": {
     "eyebrow": "JOURNAL & FIELD NOTES",
     "heading": "Stories of Learning, Hope & Community",
-    "description": "Explore field dispatches, educator insights, and student milestones from our 25+ community learning centers.",
+    "description": "Stories, educator insights, and student milestones from our 25+ community learning centers.",
     "image": "/images/banner-blog.jpg",
     "imageAlt": "Books, study materials, and classroom notes",
     "stats": [
-      { "value": "6", "label": "Feature Articles" },
-      { "value": "25+", "label": "Villages Covered" },
-      { "value": "Weekly", "label": "New Stories" }
+      {
+        "value": "6",
+        "label": "Feature Articles"
+      },
+      {
+        "value": "25+",
+        "label": "Villages Covered"
+      },
+      {
+        "value": "Weekly",
+        "label": "New Stories"
+      }
     ]
   },
   "post": [

@@ -51,7 +51,7 @@ export function SuccessStoriesContent({ data }: { data: SuccessStoriesData }) {
     <main className="bg-[#fdfbf3] text-[#15452e]">
       {/* Featured Story Spotlight */}
       {featured && (
-        <section className="px-6 py-18 md:px-[6%]">
+        <section className="px-6 sm:py-16 py-14 md:px-[6%]">
           <MainContainer>
             <div className="grid items-center gap-12 md:grid-cols-[0.85fr_1.15fr] md:gap-20">
               <div className="relative aspect-4/5 overflow-hidden rounded-2xl shadow-lg ring-1 ring-[#15452e]/10">
@@ -64,9 +64,9 @@ export function SuccessStoriesContent({ data }: { data: SuccessStoriesData }) {
                 />
               </div>
               <div>
-                <SectionLabel>{featured.label}</SectionLabel>
+                <SectionLabel className="">{featured.label}</SectionLabel>
                 <div className="mt-2">
-                  <SectionInnerTitle>
+                  <SectionInnerTitle className="">
                     <span className="text-[#15452e]">{featured.title}</span>
                   </SectionInnerTitle>
                 </div>
@@ -87,14 +87,16 @@ export function SuccessStoriesContent({ data }: { data: SuccessStoriesData }) {
 
       {/* Grid of Student Stories */}
       {stories && stories.length > 0 && (
-        <section className="border-t border-[#15452e]/15 bg-[#f4f7f2] px-6 py-18 md:px-[6%]">
+        <section className="border-t border-[#15452e]/15 bg-[#f4f7f2] px-6 sm:py-16 py-14 md:px-[6%]">
           <MainContainer>
-            <div className="text-center max-w-2xl mx-auto lg:pb-14 pb-8">
+            <div className="text-center max-w-2xl mx-auto pb-10">
               <div className="text-center flex justify-center">
-                <SectionLabel>{storiesSection?.label || "Community Voices"}</SectionLabel>
+                <SectionLabel className="">
+                  {storiesSection?.label || "Community Voices"}
+                </SectionLabel>
               </div>
               <div className="mt-2">
-                <SectionInnerTitle>
+                <SectionInnerTitle className="">
                   {storiesSection?.title || "Change Grows One Story At A Time"}
                 </SectionInnerTitle>
               </div>
@@ -140,13 +142,13 @@ export function SuccessStoriesContent({ data }: { data: SuccessStoriesData }) {
 
       {/* Impact Numbers & CTA */}
       {impact && impact.length > 0 && (
-        <section className="bg-[#fdfbf3] px-6 py-16 md:px-[6%]">
+        <section className="bg-[#fdfbf3] px-6 sm:py-16 py-14 md:px-[6%]">
           <MainContainer>
             <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
               <div>
-                <SectionLabel>{ctaSection?.label || "Our impact"}</SectionLabel>
+                <SectionLabel className="">{ctaSection?.label || "Our impact"}</SectionLabel>
                 <div className="mt-2">
-                  <SectionInnerTitle>
+                  <SectionInnerTitle className="">
                     {ctaSection?.heading || "Help Create The Next Success Story"}
                   </SectionInnerTitle>
                 </div>
@@ -155,7 +157,8 @@ export function SuccessStoriesContent({ data }: { data: SuccessStoriesData }) {
                 {ctaSection?.primaryButton || "Get involved"}
               </PrimaryButton>
             </div>
-            <div className="mt-12 grid grid-cols-3 gap-4 border-y border-[#15452e]/20 py-8 sm:gap-8">
+
+            <div className="mt-10 grid grid-cols-3 gap-4 border-y border-[#15452e]/20 py-6 sm:gap-8">
               {impact.map((item) => (
                 <div key={item.label}>
                   <p className="m-0 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,4.5vw,3.75rem)] font-bold text-[#15452e]">
@@ -167,6 +170,7 @@ export function SuccessStoriesContent({ data }: { data: SuccessStoriesData }) {
                 </div>
               ))}
             </div>
+
             {ctaSection?.secondaryHref && (
               <Link
                 href={ctaSection.secondaryHref}

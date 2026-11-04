@@ -64,7 +64,6 @@ export default function BlogSection({
     heading = "All Posts",
     post,
     perPage = 6,
-    breadcrum,
 }: BlogSectionProps) {
     const reduceMotion = useReducedMotion();
     const initial = reduceMotion ? false : "hidden";
@@ -116,12 +115,12 @@ export default function BlogSection({
     return (
         <section
             aria-labelledby="blog-title"
-            className="bg-[#f4f4f4] px-6 pb-16 text-[#252d4a] md:px-[3.15%] md:pb-28"
+            className="bg-[#f4f4f4] px-6 sm:py-16 py-14 text-[#252d4a] md:px-[3.15%] "
         >
             <MainContainer>
                 <div className="mx-auto md:w-8/12 lg:w-11/12">
                     {/* Header: label + search, then the title */}
-                    <motion.div
+                    {/* <motion.div
                         initial={initial}
                         whileInView="show"
                         viewport={{ once: true, amount: 0.4 }}
@@ -129,15 +128,6 @@ export default function BlogSection({
                         className="pt-6"
                     >
                         <div className="flex items-center justify-between gap-6">
-                            <motion.div variants={riseVariants}>
-                                <Link
-                                    href="/blog"
-                                    className="text-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#252d4a]"
-                                >
-                                    {eyebrow}
-                                </Link>
-                            </motion.div>
-
                             <motion.div
                                 variants={riseVariants}
                                 className="flex items-center gap-3"
@@ -190,14 +180,14 @@ export default function BlogSection({
                             </motion.div>
                         </div>
 
-                    </motion.div>
+                    </motion.div> */}
 
-                    <SectionInnerTitle>
+                    <SectionInnerTitle className=" text-center">
                         {heading}
                     </SectionInnerTitle>
 
                     {/* Posts */}
-                    <div ref={listRef} className="mt-14 scroll-mt-24 md:mt-10">
+                    <div ref={listRef} className="scroll-mt-24 mt-10">
                         {/* Announces results to screen readers */}
                         <p className="sr-only" aria-live="polite">
                             {filtered.length} {filtered.length === 1 ? "post" : "posts"}, page{" "}

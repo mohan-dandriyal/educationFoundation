@@ -69,24 +69,25 @@ export function GallerySection({ eyebrow, heading, intro, items }: GallerySectio
   }, [activeIdx, prevImage, nextImage]);
 
   return (
-    <section aria-labelledby="gallery-section-title" className="bg-[#fdfbf3] px-6 py-18 text-[#15452e] md:px-[6%]">
+    <section aria-labelledby="gallery-section-title" className="bg-[#fdfbf3] px-6 py-14 sm:py-16 text-[#15452e] md:px-[6%]">
       <MainContainer>
         <motion.div
           initial={initial}
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
           variants={gridVariants}
-          className="flex flex-col items-center gap-6 border-b border-[#15452e]/15 text-center lg:pb-14 pb-8"
+          className="flex flex-col items-center border-b border-[#15452e]/15 text-center pb-10"
         >
           <div className="flex flex-col items-center">
-            <SectionLabel>{eyebrow}</SectionLabel>
-            <SectionInnerTitle>{heading}</SectionInnerTitle>
+            <SectionLabel className="">{eyebrow}</SectionLabel>
+            <SectionInnerTitle className="">{heading}</SectionInnerTitle>
           </div>
-          <motion.div variants={itemVariants} className="flex max-w-[44ch] flex-col items-center gap-4">
+
+          <motion.div variants={itemVariants} className="mt-4 flex max-w-[72ch] flex-col items-center gap-4">
             <p className="m-0 text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7] text-[#4a5d2e]">{intro}</p>
-            <p className="m-0 font-[Arial,Helvetica,sans-serif] text-xs font-bold uppercase tracking-[0.18em] text-[#8a6b36]">
+            {/* <p className="m-0 font-[Arial,Helvetica,sans-serif] text-xs font-bold uppercase tracking-[0.18em] text-[#8a6b36]">
               {items.length} Moments From Our Community • Click Any Photo To Enlarge
-            </p>
+            </p> */}
           </motion.div>
         </motion.div>
 
@@ -96,7 +97,7 @@ export function GallerySection({ eyebrow, heading, intro, items }: GallerySectio
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
           variants={gridVariants}
-          className="m-0 mt-10 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 md:mt-16 md:grid-cols-3 md:auto-rows-[240px] md:gap-5"
+          className="m-0 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 mt-12 md:grid-cols-3 md:auto-rows-[240px] md:gap-5"
         >
           {items.map((item, index) => (
             <motion.li

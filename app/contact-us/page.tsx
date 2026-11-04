@@ -22,7 +22,6 @@ function ContactUs() {
         stats={contact.hero.stats}
         actions={[
           { label: "Send Message Below", href: "#contact-form-section", variant: "primary" },
-          { label: contact.hero.button.buttonText, href: contact.hero.button.buttonLink, variant: "secondary" },
         ]}
       />
 

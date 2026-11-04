@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "GET IN TOUCH",
     "title": "We'd Love to Hear From You",
-    "description": "Whether you want to sponsor a classroom, volunteer on weekends, organize a school supply drive, or partner with us through CSR, our team is ready to connect.",
+    "description": "Connect with our team to volunteer, sponsor classrooms, partner via CSR, or support our centers.",
     "image": {
       "src": "/images/banner-contact.jpg",
       "alt": "Educare Foundation team members welcoming community partners"
@@ -12,9 +12,18 @@
       "buttonLink": "/our-program"
     },
     "stats": [
-      { "value": "24-48h", "label": "Response Time" },
-      { "value": "6 Days", "label": "Open Weekly" },
-      { "value": "100%", "label": "Direct Support" }
+      {
+        "value": "24-48h",
+        "label": "Response Time"
+      },
+      {
+        "value": "6 Days",
+        "label": "Open Weekly"
+      },
+      {
+        "value": "100%",
+        "label": "Direct Support"
+      }
     ],
     "breadcrum": [
       {

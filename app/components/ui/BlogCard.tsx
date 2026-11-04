@@ -86,13 +86,13 @@ export function BlogCard({ post }: { post: BlogPost }) {
 
         <motion.h3
           variants={detailVariants}
-          className="mb-0 mt-5 min-h-[4.5rem] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.35rem,1.8vw,1.75rem)] font-normal leading-[1.35]"
+          className="mb-0 mt-5  font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.35rem,1.6vw,1.75rem)] font-normal leading-[1.35]"
         >
           <Link
             href={post.href}
             className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_1px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1f4a2c]"
           >
-            {post.title}
+            {post.title?.length > 50 ? `${post.title.slice(0, 50)}...` : post.title}
           </Link>
         </motion.h3>
 

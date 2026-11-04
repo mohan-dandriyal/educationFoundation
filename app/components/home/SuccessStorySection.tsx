@@ -96,7 +96,7 @@ export function SuccessStorySection({
   return (
     <section
       aria-labelledby="success-story-title"
-      className="overflow-hidden bg-[#fdfbf3] py-16 text-[#15452e] md:py-18"
+      className="overflow-hidden bg-[#fdfbf3] py-14 text-[#15452e] md:py-16"
     >
       <MainContainer>
       <div className="mx-auto grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-16 lg:gap-24">
@@ -129,17 +129,19 @@ export function SuccessStorySection({
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
           variants={columnVariants}
-          className="px-5"
+          className="px-5 "
         >
-          <SectionLabel>{content.featured.label}</SectionLabel>
+          <div className="md:block flex flex-col items-center">
 
-          <SectionInnerTitle>
+          <SectionLabel className="">{content.featured.label}</SectionLabel>
+
+          <SectionInnerTitle className="">
             {content.featured.title}
           </SectionInnerTitle>
 
           <motion.p
             variants={riseVariants}
-            className="mb-0 mt-7 max-w-[48ch] text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.7]"
+            className="mb-0 md:mt-7 mt-4 md:max-w-[48ch] max-w-[72ch] md:text-start text-center text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.7]"
           >
             {content.featured.description}
             {/*
@@ -147,6 +149,7 @@ export function SuccessStorySection({
             younger classmates do the same.
             */}
           </motion.p>
+          </div>
 
           <motion.dl
             variants={riseVariants}

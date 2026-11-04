@@ -49,18 +49,18 @@ export default function BlogSection({ eyebrow, heading, post }: BlogSectionProps
                         initial={initial}
                         whileInView="show"
                         viewport={{ once: true, amount: 0.4 }}
-                        className="flex flex-col justify-between lg:pb-14 pb-8"
+                        className="flex flex-col justify-between  md:items-start items-center lg:pb-14 pb-8"
                     >
-                        <div>
+                        <div >
 
-                            <div>
-                                <SectionLabel>
+                            <div className="md:block flex flex-col items-center">
+                                <SectionLabel className="">
                                     {eyebrow}
                                 </SectionLabel>
                             </div>
 
                             <div>
-                                <SectionInnerTitle>
+                                <SectionInnerTitle className="">
                                     {heading}
                                 </SectionInnerTitle>
                             </div>
@@ -75,7 +75,7 @@ export default function BlogSection({ eyebrow, heading, post }: BlogSectionProps
                         }
                     </div>
 
-                    <div className="flex justify-center ">
+                    <div className="flex justify-center mt-2">
                         <PrimaryButton href="/blog">Explore All Post</PrimaryButton>
                     </div>
                 </div>

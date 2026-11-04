@@ -17,6 +17,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import footer from "@/app/data/footer.json";
+import MainContainer from "./ui/MainContainer";
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
 
@@ -46,13 +47,14 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#0e2a1d] text-[#fdfbf3]">
+    <footer className="bg-[#0e2a1d] text-[#fdfbf3] px-5 sm:px-8">
+      <MainContainer>
       <motion.div
         initial={reduceMotion ? false : "hidden"}
         whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
         variants={wrapVariants}
-        className="mx-auto max-w-[1366px] px-6 md:px-[5%]"
+        className=""
       >
         {/* Top Call-To-Action Banner */}
         <motion.div
@@ -64,7 +66,7 @@ export function Footer() {
               <span className="h-px w-8 bg-[#e6f5ae]" />
               {footer.eyebrow}
             </p>
-            <h2 className="m-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2.25rem,4.5vw,4rem)] font-normal leading-[1.06] tracking-[-0.02em] text-[#fdfbf3]">
+            <h2 className="m-0 mt-4 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.75rem,3.2vw,2.75rem)] font-normal leading-[1.06] tracking-[-0.02em] text-[#fdfbf3]">
               {footer.heading}
             </h2>
           </div>
@@ -107,7 +109,7 @@ export function Footer() {
                   alt={footer.logoAlt}
                   width={230}
                   height={62}
-                  className="h-auto w-56 object-contain"
+                  className="h-auto w-38 sm:w-48 object-contain object-left"
                   unoptimized
                 />
               </Link>
@@ -236,6 +238,7 @@ export function Footer() {
           </button>
         </motion.div>
       </motion.div>
+      </MainContainer>
     </footer>
   );
 }

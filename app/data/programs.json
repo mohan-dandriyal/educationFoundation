@@ -2,17 +2,26 @@
   "hero": {
     "label": "OUR PROGRAMS",
     "title": "Creating Opportunities Through Holistic Education",
-    "description": "We believe every child deserves the opportunity to learn, grow, and build a brighter future. Our six core programs provide children from early childhood through adolescence with the resources, skills, and mentorship they need to thrive.",
+    "description": "Discover our six holistic programs providing free schooling, digital literacy, and life skills.",
     "image": "/images/banner-programs.jpg",
     "imageAlt": "Students learning in a classroom with digital and educational tools",
     "primaryButton": {
       "text": "Support a Program",
-      "link": "#"
+      "link": "/contact-us"
     },
     "stats": [
-      { "value": "6", "label": "Core Programs" },
-      { "value": "25+", "label": "Learning Centers" },
-      { "value": "100%", "label": "Free Tuition" }
+      {
+        "value": "6",
+        "label": "Core Programs"
+      },
+      {
+        "value": "25+",
+        "label": "Learning Centers"
+      },
+      {
+        "value": "100%",
+        "label": "Free Tuition"
+      }
     ],
     "breadcrum": [
       {
@@ -145,7 +154,7 @@
       "Integrated academic, nutritional, and emotional support"
     ],
     "buttonText": "Support This Program",
-    "link": "#"
+    "link": "/contact-us"
   },
   "skillsDevelopment": {
     "label": "LEARN AND GROW",
@@ -191,7 +200,7 @@
       "Offline digital learning tablets"
     ],
     "buttonText": "Sponsor a School Kit",
-    "link": "#"
+    "link": "/contact-us"
   },
   "howProgramsWork": {
     "label": "OUR APPROACH",
@@ -277,7 +286,7 @@
     "actions": [
       {
         "text": "Donate Now",
-        "link": "#",
+        "link": "/contact-us",
         "style": "primary"
       },
       {

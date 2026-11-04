@@ -31,16 +31,16 @@ export function FaqSection() {
   return (
     <section
       aria-labelledby="faq-title"
-      className="bg-[#fdfbf3] px-6 py-16 text-[#15452e] md:px-[6%] md:py-18"
+      className="bg-[#fdfbf3] px-6 py-14 text-[#15452e] md:px-[6%] sm:py-16"
     >
       <MainContainer>
        
-        <div className="flex lg:justify-center items-center flex-col lg:pb-14 pb-8">
-          <SectionInnerTitle>{data.faqs.title}</SectionInnerTitle>
+        <div className="flex lg:justify-center items-center flex-col pb-10">
+          <SectionInnerTitle className="">{data.faqs.title}</SectionInnerTitle>
 
           {
             data?.faqs.dis &&
-            <p className="lg:mx-auto lg:text-center mt-7 max-w-[72ch] text-base leading-7 text-[#4a5d2e]">{data?.faqs.dis} </p>
+            <p className="lg:mx-auto lg:text-center mt-4 max-w-[72ch] text-base leading-7 text-[#4a5d2e]">{data?.faqs.dis} </p>
           }
         </div>
 

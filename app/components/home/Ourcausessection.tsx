@@ -116,19 +116,19 @@ export default function OurCausesSection({
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
                     variants={headerVariants}
-                    className="flex flex-col items-center gap-6 text-center lg:pb-10 pb-8"
+                    className="flex flex-col items-center gap-6 text-center "
                 >
 
-                    <div className="flex max-w-[58ch] flex-col items-center">
-                        <SectionLabel>
+                    <div className="flex max-w-[58ch] flex-col items-center pb-10">
+                        <SectionLabel className="">
                             {content.tag}
                         </SectionLabel>
 
-                        <SectionInnerTitle>
+                        <SectionInnerTitle className="">
                             {content.title}
                         </SectionInnerTitle>
                         {content.description && (
-                            <p className="mb-0 mt-5 text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.7] text-[#4a5d2e]">
+                            <p className="mb-0 mt-4 text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.7] text-[#4a5d2e]">
                                 {content.description}
                             </p>
                         )}
@@ -247,7 +247,7 @@ export default function OurCausesSection({
                 </ul>
 
                 {content.buttonText && content.buttonLink && (
-                    <div className="-mt-2 flex justify-center">
+                    <div className="mt-2 flex justify-center">
                         <PrimaryButton href={content.buttonLink}>
                             {content.buttonText}
                         </PrimaryButton>

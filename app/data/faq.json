@@ -2,12 +2,21 @@
   "hero": {
     "eyebrow": "GOT QUESTIONS?",
     "title": "Frequently Asked Questions",
-    "dis": "Find answers about our free learning centers, how donations are utilized, tax-exemption certificates, and how you can volunteer with Educare Foundation.",
+    "dis": "Find quick answers about our learning centers, donations, tax exemptions, and volunteering.",
     "image": "/images/banner-faq.jpg",
     "stats": [
-      { "value": "100%", "label": "Transparency" },
-      { "value": "80G", "label": "Tax Exemption" },
-      { "value": "24-48h", "label": "Support Reply" }
+      {
+        "value": "100%",
+        "label": "Transparency"
+      },
+      {
+        "value": "80G",
+        "label": "Tax Exemption"
+      },
+      {
+        "value": "24-48h",
+        "label": "Support Reply"
+      }
     ]
   },
   "breadcrum": [

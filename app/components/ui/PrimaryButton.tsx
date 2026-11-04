@@ -16,7 +16,7 @@ export const PrimaryButton = ({ children, href }: PrimaryButtonProps) => {
   return (
     // Lift on hover and press on tap, using a spring so it feels physical
     <motion.div
-      className="mt-16 w-fit"
+      className="mt-8 w-fit"
       whileHover={reduceMotion ? undefined : { y: -4 }}
       whileTap={reduceMotion ? undefined : { scale: 0.96, y: 0 }}
       transition={{ type: "spring", stiffness: 400, damping: 22 }}

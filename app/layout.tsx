@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-screen flex-col bg-[#fdfbf3] text-[#15452e]">
+    <html lang="en" className="antialiased">
+      <body className=" bg-[#fdfbf3] text-[#15452e]">
         <ScrollToTop />
         <Suspense fallback={<LoadingScreen />}>
           <Header />

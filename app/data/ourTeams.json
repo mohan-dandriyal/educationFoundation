@@ -2,12 +2,21 @@
   "hero": {
     "eyebrow": "LEADERSHIP & EDUCATORS",
     "title": "The People Behind Every Classroom",
-    "dis": "Meet the dedicated educators, program leaders, community organizers, and mentors who work alongside families every day so every child has a joyful place to learn.",
+    "dis": "Meet the educators, leaders, and mentors working every day to ensure every child thrives.",
     "image": "/images/banner-team.jpg",
     "stats": [
-      { "value": "8+", "label": "Leadership Team" },
-      { "value": "80+", "label": "Volunteers" },
-      { "value": "120+", "label": "Educators Trained" }
+      {
+        "value": "8+",
+        "label": "Leadership Team"
+      },
+      {
+        "value": "80+",
+        "label": "Volunteers"
+      },
+      {
+        "value": "120+",
+        "label": "Educators Trained"
+      }
     ],
     "breadcrum": [
       {
@@ -105,6 +114,6 @@
     "primaryButton": "Apply to Volunteer",
     "primaryHref": "/contact-us",
     "secondaryButton": "Support Our Work",
-    "secondaryHref": "#"
+    "secondaryHref": "/contact-us"
   }
 }

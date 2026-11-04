@@ -23,7 +23,7 @@ function AboutPage() {
         imageAlt={about.banner.imageAlt}
         breadcrumb={about.breadcrum}
         stats={about.banner.stats}
-        actions={about.banner.actions as any}
+        actions={about.banner.actions as React.ComponentProps<typeof PageBanner>['actions']}
       />
 
       {/* Modern, attractive About Story Collage */}

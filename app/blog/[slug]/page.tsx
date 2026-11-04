@@ -52,7 +52,7 @@ async function BlogDetailsContent({ params }: PageProps) {
   // Recent posts: everything except this one, one card per slug, newest three
   const recent = Array.from(
     new Map(posts.filter((p) => p.slug !== slug).map((p) => [p.slug, p])).values()
-  ).slice(0, 3);
+  ).slice(0, 2);
 
   return <BlogDetailsSection post={post} recent={recent} />;
 }

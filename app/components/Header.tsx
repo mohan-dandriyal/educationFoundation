@@ -70,7 +70,7 @@ export function Header() {
                 width={230}
                 height={60}
                 className={`h-auto object-contain transition-[width] duration-300 ${
-                  scrolled ? "w-44 sm:w-48" : "w-48 sm:w-56"
+                  scrolled ? "w-36 sm:w-48" : "w-36 sm:w-56"
                 }`}
                 priority
                 unoptimized
@@ -78,7 +78,7 @@ export function Header() {
             </Link>
 
             {/* Desktop links */}
-            <ul className="hidden items-center gap-5 text-[0.82rem] font-semibold tracking-[0.02em] xl:flex 2xl:gap-7">
+            <ul className="hidden items-center gap-5 text-[15px] font-semibold tracking-[0.02em] xl:flex 2xl:gap-7">
               {content.links.map((link) => {
                 const active =
                   link.href === "/"
@@ -133,29 +133,30 @@ export function Header() {
                 href={content.cta.href}
                 className="inline-flex items-center gap-1.5 rounded-full bg-[#15452e] px-4 py-2 text-xs font-semibold text-[#e6f5ae] sm:px-5 sm:py-2.5 sm:text-sm"
               >
-                <FaHeart className="h-3 w-3 text-[#f59e0b]" />
+                <FaHeart className="h-3 w-3 sm:flex hidden text-[#f59e0b]" />
                 <span>{content.cta.label}</span>
               </Link>
+
               <button
                 type="button"
                 aria-expanded={menuOpen}
                 aria-controls="mobile-navigation"
                 aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
                 onClick={() => setMenuOpen((open) => !open)}
-                className="inline-flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full border border-[#15452e]/25 transition-colors hover:border-[#15452e] hover:bg-[#15452e]/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b49358]"
+                className="inline-flex sm:h-11 sm:w-11 h-8 w-8 flex-col items-center justify-center gap-1.5 rounded-full border border-[#15452e]/25 transition-colors hover:border-[#15452e] hover:bg-[#15452e]/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b49358]"
               >
                 <span
-                  className={`h-0.5 w-5 bg-[#15452e] transition-transform duration-300 ${
+                  className={`h-0.5 sm:w-5 w-4 bg-[#15452e] transition-transform duration-300 ${
                     menuOpen ? "translate-y-[8px] rotate-45" : ""
                   }`}
                 />
                 <span
-                  className={`h-0.5 w-5 bg-[#15452e] transition-opacity duration-200 ${
+                  className={`h-0.5 sm:w-5 w-4 bg-[#15452e] transition-opacity duration-200 ${
                     menuOpen ? "opacity-0" : ""
                   }`}
                 />
                 <span
-                  className={`h-0.5 w-5 bg-[#15452e] transition-transform duration-300 ${
+                  className={`h-0.5 sm:w-5 w-4 bg-[#15452e] transition-transform duration-300 ${
                     menuOpen ? "-translate-y-[8px] -rotate-45" : ""
                   }`}
                 />
@@ -213,6 +214,7 @@ export function Header() {
                   <FaHeart className="h-4 w-4 text-[#f59e0b]" />
                   <span>{content.cta.label}</span>
                 </Link>
+
                 {content.secondaryCta && (
                   <Link
                     href={content.secondaryCta.href}

@@ -62,19 +62,19 @@ export function OurVision({ content }: OurVisionProps) {
                 <div className="max-w-xl lg:pl-4">
 
                     <div>
-                        <SectionLabel>
+                        <SectionLabel className="">
                         {content.tag}
                         </SectionLabel>
                     </div>
 
                     
                     <div>
-                        <SectionInnerTitle>
+                        <SectionInnerTitle className="">
                             {content.title}
                         </SectionInnerTitle>
                     </div>
 
-                    <p className="mb-0 mt-7 max-w-[56ch] text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.75] text-[#15452e]/85">
+                    <p className="mb-0 sm:mt-7 mt-4 max-w-[56ch] text-[clamp(1rem,1.1vw,1.15rem)] leading-[1.75] text-[#15452e]/85">
                         {content.description}
                     </p>
 

@@ -44,9 +44,9 @@ export function AboutSplitSection({
   const initial = reduceMotion ? false : "hidden";
 
   return (
-    <section className="bg-[#fff] px-6 py-16 text-[#15452e] md:px-[6%]">
+    <section className="bg-[#fff] px-6 sm:pt-20 sm:pb-18 pb-16 pt-18 text-[#15452e] md:px-[6%]">
       <MainContainer>
-        <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-16">
+        <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-16">
           {/* Left Column: Visual Collage */}
           <motion.div
             initial={initial}
@@ -99,16 +99,16 @@ export function AboutSplitSection({
             className="lg:col-span-6 flex flex-col justify-center"
           >
             <motion.div variants={riseVariants}>
-              <SectionLabel>{eyebrow}</SectionLabel>
+              <SectionLabel className="">{eyebrow}</SectionLabel>
             </motion.div>
 
-            <motion.div variants={riseVariants} className="mt-3">
-              <SectionInnerTitle>{title}</SectionInnerTitle>
+            <motion.div variants={riseVariants} className="sm:mt-3 mt-2">
+              <SectionInnerTitle className="">{title}</SectionInnerTitle>
             </motion.div>
 
             <motion.p
               variants={riseVariants}
-              className="mt-6 text-[clamp(1.05rem,1.15vw,1.2rem)] leading-relaxed text-[#15452e]/85"
+              className="sm:mt-4 mt-2 text-[clamp(1.05rem,1.15vw,1.2rem)] leading-relaxed text-[#15452e]/85"
             >
               {description}
             </motion.p>

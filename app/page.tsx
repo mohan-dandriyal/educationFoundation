@@ -30,7 +30,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="bg-[#f4f4f4] pt-20">
+      <div className="bg-[#f4f4f4] sm:py-16 py-14">
         <OurProgram
           eyebrow={home.ourProgram.eyebrow ?? ""}
           heading={home.ourProgram.heading ?? ""}
@@ -58,7 +58,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="bg-[#f4f4f4] md:py-18 py-10">
+      <div className="bg-[#f4f4f4] md:py-16 py-14">
         <BlogSection
           eyebrow={home.ourBlog.eyebrow ?? ""}
           heading={home.ourBlog.heading ?? ""}

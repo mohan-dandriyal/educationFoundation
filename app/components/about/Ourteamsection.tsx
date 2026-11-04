@@ -92,16 +92,16 @@ export function OurTeamSection({
           whileInView="show"
           viewport={{ once: true, amount: 0.4 }}
           variants={headerVariants}
-          className="mx-auto flex max-w-[58rem] flex-col items-center gap-6 text-center lg:pb-14 pb-8"
+          className="mx-auto flex max-w-[58rem] flex-col items-center sm:gap-6 text-center lg:pb-14 pb-8"
         >
           <div className="flex flex-col items-center">
-            <SectionLabel>{eyebrow}</SectionLabel>
-            <SectionInnerTitle>{heading}</SectionInnerTitle>
+            <SectionLabel className="">{eyebrow}</SectionLabel>
+            <SectionInnerTitle className="">{heading}</SectionInnerTitle>
           </div>
 
           <motion.p
             variants={riseVariants}
-            className="m-0 max-w-[50ch] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7] text-[#4a5d2e]"
+            className="sm:mt-0 mt-4 max-w-[50ch] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7] text-[#4a5d2e]"
           >
             {intro}
           </motion.p>
@@ -113,7 +113,7 @@ export function OurTeamSection({
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           variants={gridVariants}
-          className="m-0 mt-14 grid list-none grid-cols-2 gap-x-6 gap-y-12 p-0 md:mt-20 md:grid-cols-4 md:gap-x-8"
+          className="m-0 grid list-none grid-cols-2 gap-x-6 gap-y-12 p-0 md:mt-3 md:grid-cols-4 md:gap-x-8"
         >
           {members && members.map((member) => (
             <motion.li

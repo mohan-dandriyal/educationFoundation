@@ -199,8 +199,7 @@ export default function BlogDetailsSection({
           { value: `${post.comments}`, label: "Responses" },
         ]}
         actions={[
-          { label: "Donate Today", href: "#", variant: "primary" },
-          { label: "All Field Notes", href: "/blog", variant: "secondary" },
+          { label: "All Field Notes", href: "/blog", variant: "primary" },
         ]}
       />
 
@@ -327,7 +326,7 @@ export default function BlogDetailsSection({
 
           {/* Recent posts */}
           {recent.length > 0 && (
-            <div className="mx-auto mt-20 max-w-6xl">
+            <div className="mx-auto sm:mt-16 mt-14">
               <div className="flex items-end justify-between gap-6 border-b border-[#15452e]/15 pb-6">
                 <div>
                   <span className="text-xs font-bold uppercase tracking-wider text-[#8a6b36]">Keep Reading</span>
@@ -343,7 +342,7 @@ export default function BlogDetailsSection({
                 </Link>
               </div>
 
-              <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-8 grid gap-8 lg:grid-cols-2">
                 {recent.map((p) => (
                   <BlogCard key={p.id} post={p} />
                 ))}

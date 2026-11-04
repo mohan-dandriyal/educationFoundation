@@ -58,15 +58,15 @@ export function OurMissionSection({
     return (
         <section
             aria-labelledby="mission-title"
-            className="bg-[#fdfbf3]  md:px-[6%] px-6  py-16 text-[#252d4a] md:py-18"
+            className="bg-[#fdfbf3]  md:px-[6%] px-6  py-14 text-[#252d4a] md:py-16"
         >
             <MainContainer>
                 <div className="flex justify-center flex-col items-center text-center lg:pb-14 pb-8">
-                    <SectionLabel>
+                    <SectionLabel className="">
                         <span className="text-[#15452e]/90">{eyebrow}</span>
                     </SectionLabel>
 
-                    <SectionInnerTitle>{heading}</SectionInnerTitle>
+                    <SectionInnerTitle className="">{heading}</SectionInnerTitle>
                 </div>
                 <motion.div
                     initial={reduceMotion ? false : "hidden"}

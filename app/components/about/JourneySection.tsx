@@ -119,7 +119,7 @@ export function OurJourneySection({
     return (
         <section
             aria-labelledby="journey-title"
-            className="border-b border-[#15452e] bg-[#f4f4f4] px-6 py-16 text-[#252d4a] md:px-[6%] md:py-18"
+            className="border-b border-[#15452e] bg-[#f4f4f4] px-6 py-14 text-[#252d4a] md:px-[6%] md:py-16"
         >
             <MainContainer>
                 <div className="mx-auto grid  gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
@@ -131,17 +131,17 @@ export function OurJourneySection({
                         variants={columnVariants}
                         className="self-start md:sticky md:top-28"
                     >
-                        <SectionLabel>
+                        <SectionLabel className="">
                             <span>
                                 {eyebrow}
                             </span>
                         </SectionLabel>
 
-                        <SectionInnerTitle>{heading}</SectionInnerTitle>
+                        <SectionInnerTitle className="">{heading}</SectionInnerTitle>
 
                         <motion.p
                             variants={riseVariants}
-                            className="mb-0 mt-6 max-w-[38ch] text-[#15452e] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7]"
+                            className="mb-0 sm:mt-6 mt-4 max-w-[38ch] text-[#15452e] text-[clamp(1rem,1.1vw,1.2rem)] leading-[1.7]"
                         >
                             {intro}
                         </motion.p>

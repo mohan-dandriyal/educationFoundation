@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function OurTeamPage() {
   return (
-    <div className="bg-[#fdfbf3] pb-24">
+    <div className="bg-[#fdfbf3]">
       {/* Dedicated Page Hero Banner */}
       <PageBanner
         eyebrow={data.hero.eyebrow}
@@ -21,11 +21,10 @@ export default function OurTeamPage() {
         stats={data.hero.stats}
         actions={[
           { label: "Join As Volunteer", href: "/contact-us", variant: "primary" },
-          { label: "Support Our Teachers", href: "#", variant: "secondary" },
         ]}
       />
 
-      <div className="pt-16">
+      <div className="py-14 sm:py-16">
         <OurTeamSection
           eyebrow={data.team.eyebrow}
           heading={data.team.heading}

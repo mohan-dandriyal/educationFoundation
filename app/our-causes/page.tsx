@@ -21,12 +21,11 @@ function CausesPage() {
         breadcrumb={cause.breadcrum}
         stats={cause.banner.stats}
         actions={[
-          { label: "Donate Now", href: "#", variant: "primary" },
-          { label: "Volunteer", href: "/contact-us", variant: "secondary" },
+          { label: "Volunteer With Us", href: "/contact-us", variant: "primary" },
         ]}
       />
 
-      <div className="py-16">
+      <div className="sm:py-16 py-14">
         <OurCausesSection
           currencySymbol="₹"
           content={{ ...cause.ourCauses, causes: cause.ourCauses.causes }}

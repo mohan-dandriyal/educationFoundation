@@ -41,7 +41,6 @@ const photoVariants: Variants = {
 };
 
 export function AboutUsSection({
-    label,
     title,
     description,
     cta,
@@ -62,18 +61,18 @@ export function AboutUsSection({
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
                     variants={columnVariants}
-                    className="px-5 py-16 flex justify-center flex-col items-center md:py-20"
+                    className="px-5 sm:py-16 py-14 flex justify-center flex-col items-center "
                 >
                     <div>
 
-                        <div className="mt-4 text-center">
-                            <SectionInnerTitle>{title}</SectionInnerTitle>
+                        <div className="text-center">
+                            <SectionInnerTitle className="lg:w-8/12 mx-auto">{title}</SectionInnerTitle>
                         </div>
                     </div>
 
                     <motion.p
                         variants={riseVariants}
-                        className="mt-16 max-w-[34ch] text-[clamp(1rem,1.1vw,1.25rem)] leading-normal md:mt-8 md:max-w-[76ch] text-center"
+                        className=" text-[clamp(1rem,1.1vw,1.25rem)] leading-normal mt-4 max-w-[72ch] text-center"
                     >
                         {description}
                     </motion.p>

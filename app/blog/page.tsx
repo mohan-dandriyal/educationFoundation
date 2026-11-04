@@ -21,8 +21,7 @@ function BlogPage() {
         breadcrumb={blog.breadcrum}
         stats={blog.hero.stats}
         actions={[
-          { label: "Donate Today", href: "#", variant: "primary" },
-          { label: "Volunteer", href: "/contact-us", variant: "secondary" },
+          { label: "Volunteer With Us", href: "/contact-us", variant: "primary" },
         ]}
       />
 

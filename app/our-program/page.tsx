@@ -9,7 +9,7 @@ export const metadata = {
 
 function OurProgramPage() {
   return (
-    <div className="bg-[#f4f4f4] pb-20">
+    <div className="bg-[#f4f4f4]">
       {/* Dedicated Page Hero Banner */}
       <PageBanner
         eyebrow={program.hero.label}
@@ -20,12 +20,11 @@ function OurProgramPage() {
         breadcrumb={program.hero.breadcrum}
         stats={program.hero.stats}
         actions={[
-          { label: program.hero.primaryButton.text, href: program.hero.primaryButton.link, variant: "primary" },
-          { label: "Partner With Us", href: "/contact-us", variant: "secondary" },
+          { label: "Partner With Us", href: "/contact-us", variant: "primary" },
         ]}
       />
 
-      <div className="pt-12">
+      <div className="sm:py-16 py-14">
         <OurProgram
           eyebrow={program.programsOverview.label}
           heading={program.programsOverview.title ?? ""}

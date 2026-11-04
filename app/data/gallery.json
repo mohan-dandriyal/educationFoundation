@@ -11,14 +11,38 @@
   "banner": {
     "eyebrow": "PHOTO ARCHIVE",
     "title": "Small Moments, Shared Possibility",
-    "description": "A photographic journey through our classrooms, mobile libraries, digital workshops, and community festivals across 25+ villages.",
+    "description": "A photographic journey through our classrooms, digital labs, and village reading clubs.",
     "image": "/images/banner-gallery.jpg",
-    "imageAlt": "Students exploring books and learning materials in class"
+    "imageAlt": "Students exploring books and learning materials in class",
+    "stats": [
+      {
+        "value": "120+",
+        "label": "Photo Stories"
+      },
+      {
+        "value": "25+",
+        "label": "Learning Centers"
+      },
+      {
+        "value": "1,200+",
+        "label": "Smiles Captured"
+      },
+      {
+        "value": "100%",
+        "label": "Grassroots Life"
+      }
+    ]
   },
   "eyebrow": "MOMENTS FROM THE FIELD",
   "heading": "Small Moments. Shared Possibility.",
   "intro": "A look inside the classrooms, digital labs, mobile libraries, and community celebrations that make our learning movement thrive.",
-  "categories": ["All", "Classrooms", "Digital & STEAM", "School Supplies", "Community"],
+  "categories": [
+    "All",
+    "Classrooms",
+    "Digital & STEAM",
+    "School Supplies",
+    "Community"
+  ],
   "items": [
     {
       "src": "/images/gallery-1.jpg",
