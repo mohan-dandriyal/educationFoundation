@@ -336,11 +336,11 @@ export default function ContactSection({
             >
 
 
-                <SectionLabel>
+                <SectionLabel className="">
                     {content.label}
                 </SectionLabel>
 
-                <SectionInnerTitle>
+                <SectionInnerTitle className="">
                     {content.title}
                 </SectionInnerTitle>
 
@@ -436,7 +436,7 @@ export default function ContactSection({
                             transition={{ duration: 0.5, ease: EASE }}
                         >
                             <div className="mb-8">
-                                <SectionInnerTitle>
+                                <SectionInnerTitle className="">
                                     {content.formTitle}
                                 </SectionInnerTitle>
                             </div>

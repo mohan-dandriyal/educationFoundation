@@ -74,7 +74,7 @@ export function ContactHeroSection({
                 <Breadcrumb items={breadcrum} />
             </div>
 
-                <SectionTitle>
+                <SectionTitle className="">
                     {title}
                 </SectionTitle>
 

@@ -48,13 +48,13 @@ export function TestimonialSection({
 
 
         <div className="text-center flex justify-center">
-          <SectionLabel>
+          <SectionLabel className="">
             {eyebrow}
           </SectionLabel>
         </div>
 
         <div className="text-center flex justify-center lg:pb-14 pb-8">
-          <SectionInnerTitle>
+          <SectionInnerTitle className="">
             {heading}
           </SectionInnerTitle>
         </div>
