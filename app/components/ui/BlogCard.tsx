@@ -74,27 +74,29 @@ export function BlogCard({ post }: { post: BlogPost }) {
       </Link>
 
       {/* Details */}
-      <motion.div variants={detailsVariants} className="px-6  lg:py-4 py-4 flex flex-col justify-center py-3">
-        <motion.div variants={detailVariants} className="text-xs leading-[1.5]">
-          <p className="m-0">{post.author}</p>
-          <p className="m-0 flex items-center gap-2">
-            <time dateTime={post.date}>{post.dateLabel}</time>
-            <span aria-hidden="true">•</span>
-            <span>{post.readTime}</span>
-          </p>
-        </motion.div>
+      <motion.div variants={detailsVariants} className="px-6  lg:py-4  flex flex-col justify-between py-5">
+        <div>
+          <motion.div variants={detailVariants} className="text-xs leading-[1.5]">
+            <p className="m-0">{post.author}</p>
+            <p className="m-0 flex items-center gap-2">
+              <time dateTime={post.date}>{post.dateLabel}</time>
+              <span aria-hidden="true">•</span>
+              <span>{post.readTime}</span>
+            </p>
+          </motion.div>
 
-        <motion.h3
-          variants={detailVariants}
-          className="mb-0 mt-5  font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.35rem,1.6vw,1.75rem)] font-normal leading-[1.35]"
-        >
-          <Link
-            href={post.href}
-            className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_1px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1f4a2c]"
+          <motion.h3
+            variants={detailVariants}
+            className="mb-0 mt-5  font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.35rem,1.6vw,1.75rem)] font-normal leading-[1.35]"
           >
-            {post.title?.length > 50 ? `${post.title.slice(0, 50)}...` : post.title}
-          </Link>
-        </motion.h3>
+            <Link
+              href={post.href}
+              className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_1px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1f4a2c]"
+            >
+              {post.title?.length > 100 ? `${post.title.slice(0, 100)}...` : post.title}
+            </Link>
+          </motion.h3>
+        </div>
 
         {/* Footer: views + like */}
         <motion.div
