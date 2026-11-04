@@ -65,9 +65,7 @@ export function FaqSection() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="flex w-full items-start justify-between gap-6 border-b border-[#15452e]/15 pb-4 text-left"
               >
-                <span className="text-xs font-bold tracking-[0.18em] text-[#8a6b36]">{String(index + 1).padStart(2, "0")}</span>
-                
-                <span role="heading" aria-level={3} className="flex-1 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.25rem,1.7vw,1.7rem)] font-normal leading-[1.2] text-[#15452e]">{item.question}</span>
+                <span role="heading" aria-level={3} className="flex-1 font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(16px,1.5vw,1.6rem)] font-normal leading-[1.2] text-[#15452e]">{item.question}</span>
 
                 <span aria-hidden="true" className={`text-2xl font-light leading-none text-[#6f984b] transition-transform duration-300 ${openIndex === index ? "rotate-45" : ""}`}>+</span>
               </button>
@@ -79,7 +77,7 @@ export function FaqSection() {
                     animate={{ opacity: 1, height: "auto", marginTop: 24 }}
                     exit={reduceMotion ? undefined : { opacity: 0, height: 0, marginTop: 0 }}
                     transition={{ duration: 0.35, ease: EASE }}
-                    className="mb-0  overflow-hidden text-[clamp(0.95rem,1.05vw,1.1rem)] leading-[1.65] text-[#4a5d2e]"
+                    className="mb-0  overflow-hidden text-[clamp(13px,1vw,1.1rem)] leading-[1.65] text-[#4a5d2e]"
                   >
                     {item.answer}
                   </motion.p>
