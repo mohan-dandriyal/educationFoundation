@@ -56,14 +56,14 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
       {/* Full Page Banner for Program Detail */}
       <PageBanner
         eyebrow={program.category}
-        title={program.title}
+        title={"Program Details"}
         description={program.intro}
         image={program.image}
         imageAlt={program.imageAlt}
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Our Programs", href: "/our-program" },
-          { label: program.title },
+          { label: "Program Details" },
         ]}
         stats={program.stats}
         actions={[
@@ -72,9 +72,9 @@ function ProgramDetailsContent({ slug }: { slug: string }) {
       />
 
       {/* Program Story & Features */}
-      <section className="px-6 py-18 md:px-[6%]">
+      <section className="py-18 px-6 sm:px-8">
         <MainContainer>
-          <div className="mx-auto grid max-w-[1200px] items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="mx-auto grid max-w-[1366px] items-center gap-12 lg:grid-cols-12 lg:gap-16">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-1 ring-[#15452e]/10 lg:col-span-6 sm:aspect-[16/11]">
               <Image
                 src={program.image}

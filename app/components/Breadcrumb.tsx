@@ -37,7 +37,7 @@ export function Breadcrumb({
     return (
         <nav
             aria-label="Breadcrumb"
-            className={`font-[Arial,Helvetica,sans-serif] text-sm`}
+            className={`font-[Arial,Helvetica,sans-serif] sm:text-sm text-sx`}
         >
             <ol className={`m-0 flex list-none flex-wrap items-center gap-x-2 gap-y-1 p-0`}>
                 {items.map((item, i) => {

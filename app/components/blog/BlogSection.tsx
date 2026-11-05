@@ -114,10 +114,10 @@ export default function BlogSection({
     return (
         <section
             aria-labelledby="blog-title"
-            className="bg-[#f4f4f4] px-6 sm:py-16 py-14 text-[#252d4a] md:px-[3.15%] "
+            className="bg-[#f4f4f4] px-6 sm:px-8 sm:py-16 py-14 text-[#252d4a] "
         >
             <MainContainer>
-                <div className="mx-auto md:w-8/12 lg:w-11/12">
+                <div className="mx-auto max-w-[1366px]">
                     {/* Header: label + search, then the title */}
                     {/* <motion.div
                         initial={initial}

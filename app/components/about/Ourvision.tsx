@@ -27,7 +27,7 @@ export function OurVision({ content }: OurVisionProps) {
         <section
             id="our-vision"
             aria-labelledby="our-vision-title"
-            className="bg-[#ffffff] px-5 py-16 mb-4 text-[#15452e] sm:px-8"
+            className="bg-[#ffffff]  py-16 mb-4 text-[#15452e] px-5 sm:px-8"
         >
             {/* One reveal for the whole section, played once when it scrolls into view */}
             <motion.div
@@ -35,7 +35,7 @@ export function OurVision({ content }: OurVisionProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.9, ease: EASE }}
-                className="mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-20"
+                className="mx-auto grid w-full max-w-[1366px] items-center gap-14 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-20"
             >
                 {/* Image: arch-shaped frame with the highlight pinned to its corner */}
                 <div className="relative mx-auto w-full max-w-md lg:max-w-none">
@@ -59,7 +59,7 @@ export function OurVision({ content }: OurVisionProps) {
                 </div>
 
                 {/* Text */}
-                <div className="max-w-xl lg:pl-4">
+                <div className=" lg:pl-4">
 
                     <div>
                         <SectionLabel className="">

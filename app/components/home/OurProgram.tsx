@@ -49,7 +49,7 @@ export default function OurProgram({ eyebrow, heading, dis, images, program }: O
         program ?? images?.map((image, index) => ({ id: index, image: image.src, imageAlt: image.alt })) ?? [];
 
     return (
-        <section aria-labelledby="services-title" className="bg-[#f4f4f4] px-5 text-[#15452e] md:px-[3.15%]">
+        <section aria-labelledby="services-title" className="bg-[#f4f4f4] px-5 sm:px-8 text-[#15452e] ">
             <MainContainer>
                 <motion.header
                     initial={reduceMotion ? false : "hidden"}

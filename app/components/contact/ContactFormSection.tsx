@@ -322,9 +322,10 @@ export default function ContactSection({
     const sending = status === "sending";
 
     return (
+        <div className="px-6 sm:px-8">
         <section
             aria-labelledby="contact-title"
-            className="grid grid-cols-1 border-b border-[#15452e] text-[#15452e] md:grid-cols-2"
+            className="max-w-[1366px] mx-auto  grid grid-cols-1 border-b border-[#15452e] text-[#15452e] md:grid-cols-2"
         >
             {/* Left: contact details */}
             <motion.div
@@ -332,7 +333,7 @@ export default function ContactSection({
                 whileInView="show"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={columnVariants}
-                className="border-b border-[#15452e] bg-[#fdfbf3] px-6 py-16 md:border-b-0 md:border-r md:px-[8%] md:py-18"
+                className="border-b border-[#15452e] bg-[#fdfbf3] py-16 md:border-b-0 md:border-r  md:py-18"
             >
 
 
@@ -493,5 +494,6 @@ export default function ContactSection({
                 </AnimatePresence>
             </motion.div>
         </section>
+        </div>
     );
 }

@@ -31,7 +31,7 @@ export function Hero({ content }: HeroProps) {
 
   return (
     <section
-      className="relative isolate flex min-h-[88dvh] items-end overflow-hidden bg-[#0e2a1d] text-[#fdfbf3]"
+      className="relative isolate  flex min-h-[88dvh] items-end overflow-hidden bg-[#0e2a1d] text-[#fdfbf3]"
       aria-labelledby="hero-title"
     >
       {/* Background Hero Photo */}
@@ -57,14 +57,15 @@ export function Hero({ content }: HeroProps) {
         className="absolute inset-0 -z-10 bg-[linear-gradient(110deg,rgba(10,32,21,0.94)_0%,rgba(14,42,29,0.78)_48%,rgba(14,42,29,0.35)_100%)]"
       />
 
-      <div className="mx-auto w-full max-w-[1366px] px-5 pb-16 pt-28 sm:px-8 sm:pb-20 lg:pb-24">
-        <div className="grid items-end gap-12 lg:grid-cols-[1.25fr_0.75fr]">
+    <div className="sm:px-8 px-5 w-full">
+      <div className="mx-auto w-full max-w-[1366px] pb-16 pt-28 sm:pb-20 lg:pb-24">
+        <div className="grid items-end gap-12">
           {/* Left Content Column */}
           <motion.div
             variants={textVariants}
             initial={reduceMotion ? false : "hidden"}
             animate="show"
-            className="max-w-3xl text-left"
+            className="max-w-6xl text-left"
           >
             {content.eyebrow && (
               <motion.div
@@ -79,7 +80,7 @@ export function Hero({ content }: HeroProps) {
             <h1
               id="hero-title"
               aria-label={content.title}
-              className="m-0 max-w-[16ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,5vw,3.75rem)] font-normal leading-[1.05] tracking-[-0.03em] break-words text-[#fdfbf3]"
+              className="m-0 max-w-[18ch] font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(2rem,5vw,3.75rem)] font-normal leading-[1.05] tracking-[-0.03em] break-words text-[#fdfbf3]"
             >
               {words.map((word, i) => (
                 <span key={i} aria-hidden="true">
@@ -101,7 +102,7 @@ export function Hero({ content }: HeroProps) {
 
             <motion.p
               variants={riseVariants}
-              className="mb-0 mt-6 max-w-[54ch] text-[clamp(15px,16px,16px)] leading-[1.75] text-[#fdfbf3]/90"
+              className="mb-0 mt-6 max-w-[68ch] text-[clamp(15px,16px,16px)] leading-[1.75] text-[#fdfbf3]/90"
             >
               {content.description}
             </motion.p>
@@ -132,7 +133,7 @@ export function Hero({ content }: HeroProps) {
           </motion.div>
 
           {/* Right Spotlight Card + Stats */}
-          <motion.div
+          {/* <motion.div
             initial={reduceMotion ? false : { opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.45, ease: EASE }}
@@ -170,9 +171,10 @@ export function Hero({ content }: HeroProps) {
                 ))}
               </dl>
             )}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
+    </div>
     </section>
   );
 }

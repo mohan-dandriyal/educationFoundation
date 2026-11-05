@@ -107,9 +107,9 @@ export default function OurCausesSection({
     return (
         <section
             aria-labelledby="causes-title"
-            className="bg-[#fdfbf3] px-6  text-[#15452e] md:px-[6%]"
+            className="bg-[#fdfbf3] px-6 sm:px-8  text-[#15452e] "
         >
-            <div className="mx-auto max-w-[1200px]">
+            <div className="mx-auto max-w-[1366px]">
                 {/* Header */}
                 <motion.div
                     initial={initial}

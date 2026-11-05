@@ -183,15 +183,15 @@ export default function BlogDetailsSection({
     <div className="bg-[#fdfbf3] text-[#15452e]">
       {/* Blog Detail Hero Banner */}
       <PageBanner
-        eyebrow={`Field Notes • ${post.readTime}`}
-        title={post.title}
+        eyebrow={`Field Notes `}
+        title={"Blog Details"}
         description={`Published on ${post.dateLabel} by ${post.author.name}`}
         image={post.image.src}
         imageAlt={post.image.alt}
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Blog", href: "/blog" },
-          { label: post.title },
+          { label: "Blog Details" },
         ]}
         stats={[
           { value: `${post.views}`, label: "Views" },

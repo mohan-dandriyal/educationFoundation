@@ -66,14 +66,14 @@ export default async function CauseDetailPage({ params }: PageProps) {
       {/* Detail Page Hero Banner */}
       <PageBanner
         eyebrow={cause.category}
-        title={cause.title}
+        title={"Cause Details"}
         description={cause.description}
         image={cause.image}
         imageAlt={cause.imageAlt}
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Our Causes", href: "/our-causes" },
-          { label: cause.title },
+          { label: "Cause Details" },
         ]}
         stats={[
           { value: money(cause.raised), label: "Raised So Far" },
@@ -86,7 +86,9 @@ export default async function CauseDetailPage({ params }: PageProps) {
         ]}
       />
 
-      <article className="mx-auto w-full max-w-7xl px-5 py-18 sm:px-8">
+      <div className="px-6 sm:px-8">
+
+      <article className="mx-auto w-full max-w-[1366px] py-18 ">
         {/* Cause Visual & Quick Overview */}
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl ring-1 ring-[#15452e]/10 sm:aspect-[16/11] lg:col-span-6">
@@ -282,6 +284,7 @@ export default async function CauseDetailPage({ params }: PageProps) {
           </section>
         )}
       </article>
+      </div>
     </main>
   );
 }

@@ -51,7 +51,7 @@ export function SuccessStoriesContent({ data }: { data: SuccessStoriesData }) {
     <main className="bg-[#fdfbf3] text-[#15452e]">
       {/* Featured Story Spotlight */}
       {featured && (
-        <section className="px-6 sm:py-16 py-14 md:px-[6%]">
+        <section className="px-6 sm:px-8 sm:py-16 py-14">
           <MainContainer>
             <div className="grid items-center gap-12 md:grid-cols-[0.85fr_1.15fr] md:gap-20">
               <div className="relative aspect-4/5 overflow-hidden rounded-2xl shadow-lg ring-1 ring-[#15452e]/10">
