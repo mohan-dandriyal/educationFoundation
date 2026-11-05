@@ -31,7 +31,7 @@ export function Hero({ content }: HeroProps) {
 
   return (
     <section
-      className="relative isolate  flex min-h-[88dvh] items-end overflow-hidden bg-[#0e2a1d] text-[#fdfbf3]"
+      className="relative isolate  flex sm:min-h-[88dvh] min-h-[40vh] items-end overflow-hidden bg-[#0e2a1d] text-[#fdfbf3]"
       aria-labelledby="hero-title"
     >
       {/* Background Hero Photo */}
@@ -58,7 +58,7 @@ export function Hero({ content }: HeroProps) {
       />
 
     <div className="sm:px-8 px-5 w-full">
-      <div className="mx-auto w-full max-w-[1366px] pb-16 pt-28 sm:pb-20 lg:pb-24">
+      <div className="mx-auto w-full max-w-[1366px] pb-16 sm:pt-28 pt-20 sm:pb-20 lg:pb-24">
         <div className="grid items-end gap-12">
           {/* Left Content Column */}
           <motion.div
