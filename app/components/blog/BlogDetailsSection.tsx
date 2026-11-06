@@ -14,8 +14,6 @@ import {
   FaHeart,
   FaLink,
   FaLinkedinIn,
-  FaRegComment,
-  FaRegEye,
   FaRegHeart,
   FaXTwitter,
 } from "react-icons/fa6";
@@ -237,8 +235,6 @@ export default function BlogDetailsSection({
                     <p className="m-0 font-bold text-[#15452e]">{post.author.name}</p>
                     <p className="m-0 flex items-center gap-2 text-xs text-[#8a6b36]">
                       <time dateTime={post.date}>{post.dateLabel}</time>
-                      <span aria-hidden="true">•</span>
-                      <span>{post.readTime}</span>
                     </p>
                   </div>
                 </motion.div>

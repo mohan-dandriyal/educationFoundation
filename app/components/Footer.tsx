@@ -80,14 +80,7 @@ export function Footer() {
               <span>{footer.cta.label}</span>
               <FaArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
-            {footer.secondaryCta && (
-              <Link
-                href={footer.secondaryCta.href}
-                className="inline-flex items-center gap-2 rounded-full border border-[#fdfbf3]/30 px-7 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#fdfbf3] transition-colors duration-300 hover:border-[#e6f5ae] hover:text-[#e6f5ae]"
-              >
-                {footer.secondaryCta.label}
-              </Link>
-            )}
+        
           </div>
         </motion.div>
 

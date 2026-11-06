@@ -44,7 +44,9 @@
         "src": "/images/blog-1.jpg",
         "alt": "Children smiling with their new school supply kits in a classroom"
       },
-      "views": 412,
+      "cta": {
+        "label": "React More"
+      },
       "href": "/blog/sharing-school-supplies-spreading-smiles"
     },
     {
@@ -61,7 +63,9 @@
         "src": "/images/blog-2.jpg",
         "alt": "Students raising their hands during a morning lesson"
       },
-      "views": 289,
+      "cta": {
+        "label": "React More"
+      },
       "href": "/blog/how-education-opens-doors-to-new-dreams"
     },
     {
@@ -78,7 +82,9 @@
         "src": "/images/blog-3.jpg",
         "alt": "Children collaborating on an outdoor community activity"
       },
-      "views": 195,
+      "cta": {
+        "label": "React More"
+      },
       "href": "/blog/sustainable-living-tips-reduce-waste-and-conserve-energy"
     },
     {
@@ -95,7 +101,9 @@
         "src": "/images/blog-4.jpg",
         "alt": "Students collaborating around laptops in a digital learning session"
       },
-      "views": 334,
+      "cta": {
+        "label": "React More"
+      },
       "href": "/blog/bridging-the-rural-digital-divide-with-solar-labs"
     },
     {
@@ -112,7 +120,9 @@
         "src": "/images/blog-5.jpg",
         "alt": "Open storybooks and reading materials at a community library"
       },
-      "views": 248,
+      "cta": {
+        "label": "React More"
+      },
       "href": "/blog/why-mobile-libraries-spark-a-lifelong-reading-habit"
     },
     {
@@ -129,7 +139,9 @@
         "src": "/images/blog-6.jpg",
         "alt": "Young women smiling and discussing goals in a mentorship circle"
       },
-      "views": 518,
+      "cta": {
+        "label": "React More"
+      },
       "href": "/blog/mentoring-adolescent-girls-to-complete-high-school"
     }
   ],

@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { motion, useReducedMotion, type Variants } from "motion/react";
-import { FaHeart, FaRegEye, FaRegHeart } from "react-icons/fa6";
 
 export type BlogPost = {
   id: number;
@@ -17,6 +15,7 @@ export type BlogPost = {
   image: { src: string; alt: string };
   views: number;
   href: string;
+  cta: { label: string }
 };
 
 const EASE = [0.2, 0.7, 0.2, 1] as const;
@@ -46,7 +45,6 @@ const detailVariants: Variants = {
 
 export function BlogCard({ post }: { post: BlogPost }) {
   const reduceMotion = useReducedMotion();
-  const [liked, setLiked] = useState(false);
 
   return (
     <motion.article
@@ -76,18 +74,11 @@ export function BlogCard({ post }: { post: BlogPost }) {
       {/* Details */}
       <motion.div variants={detailsVariants} className="px-6  lg:py-4  flex flex-col justify-between py-5">
         <div>
-          <motion.div variants={detailVariants} className="text-xs leading-[1.5]">
-            <p className="m-0">{post.author}</p>
-            <p className="m-0 flex items-center gap-2">
-              <time dateTime={post.date}>{post.dateLabel}</time>
-              <span aria-hidden="true">•</span>
-              <span>{post.readTime}</span>
-            </p>
-          </motion.div>
+
 
           <motion.h3
             variants={detailVariants}
-            className="mb-0 mt-5  font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.35rem,1.6vw,1.75rem)] font-normal leading-[1.35]"
+            className="mb-0  font-[Iowan_Old_Style,Baskerville,Times_New_Roman,serif] text-[clamp(1.35rem,1.6vw,1.75rem)] font-normal leading-[1.35]"
           >
             <Link
               href={post.href}
@@ -96,41 +87,39 @@ export function BlogCard({ post }: { post: BlogPost }) {
               {post.title?.length > 100 ? `${post.title.slice(0, 100)}...` : post.title}
             </Link>
           </motion.h3>
+
+          {/* <motion.div variants={detailVariants} className="text-xs flex justify-between flex-wrap  mt-3 leading-[1.5]">
+            <p className="m-0 font-bold text-[#15452e]">{post.author}</p>
+            <p className="m-0 flex items-center gap-2">
+              <time dateTime={post.date}>{post.dateLabel}</time>
+            </p>
+          </motion.div> */}
         </div>
 
         {/* Footer: views + like */}
         <motion.div
           variants={detailVariants}
-          className="mt-4 flex items-center justify-between border-t border-[#1f4a2c]/30 pt-5 text-xs"
+          className="flex items-center justify-between text-xs border-t pt-3 gap-3 border-gray-300"
         >
-          <span className="flex items-center gap-2">
-            <FaRegEye aria-hidden="true" className="h-4 w-4" />
-            <span aria-label={`${post.views} views`}>{post.views}</span>
-          </span>
 
-          <motion.button
-            type="button"
-            onClick={() => setLiked((v) => !v)}
-            aria-pressed={liked}
-            aria-label={liked ? "Unlike this post" : "Like this post"}
-            whileTap={reduceMotion ? undefined : { scale: 0.8 }}
-            className="text-[#e5484d] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e5484d]"
-          >
-            {/* Heart pops when it becomes liked */}
-            <motion.span
-              key={String(liked)}
-              initial={reduceMotion ? false : { scale: 0.6 }}
-              animate={{ scale: 1 }}
-              transition={{ type: "spring", stiffness: 500, damping: 14 }}
-              className="block"
+          <motion.div className="flex jus items-center gap-4">
+            <span
+              aria-hidden="true"
+              className="grid h-10 w-10 place-items-center rounded-full bg-[#15452e] text-lg font-semibold tracking-wide text-[#e6f5ae]"
             >
-              {liked ? (
-                <FaHeart className="h-4 w-4" />
-              ) : (
-                <FaRegHeart className="h-4 w-4" />
-              )}
-            </motion.span>
-          </motion.button>
+              {post.author?.slice(0, 1)}
+            </span>
+            <div className="text-sm">
+              <p className="m-0 font-bold text-[#15452e]">{post.author}</p>
+              <p className="m-0 flex items-center gap-2 text-xs text-[#8a6b36]">
+                <time dateTime={post.date}>{post.dateLabel}</time>
+              </p>
+            </div>
+          </motion.div>
+
+          <Link href={post.href} className="w-fit border-b-2 border-[#15452e] pb-1 text-sm font-semibold text-[#15452e] transition-colors hover:border-[#4a5d2e] hover:text-[#4a5d2e]">
+            {post.cta?.label || ""}
+          </Link>
         </motion.div>
       </motion.div>
     </motion.article>

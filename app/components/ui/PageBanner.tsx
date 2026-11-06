@@ -52,7 +52,7 @@ export default function PageBanner({
       : description;
 
   return (
-    <section className="relative isolate flex min-h-[280px] items-center overflow-hidden bg-[#07170f] text-[#fdfbf3] sm:min-h-[380px] lg:min-h-[500px]">
+    <section className="relative isolate flex min-h-[280px] items-center overflow-hidden bg-[#07170f] text-[#fdfbf3] sm:min-h-[380px] lg:min-h-[650px]">
       {/* Background Banner Image with gentle cinematic zoom */}
       <motion.div
         className="absolute inset-0 -z-30"

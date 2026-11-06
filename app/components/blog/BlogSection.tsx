@@ -1,18 +1,13 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
-    AnimatePresence,
-    motion,
     useReducedMotion,
     type Variants,
 } from "motion/react";
 import {
     FaArrowLeft,
     FaArrowRight,
-    FaMagnifyingGlass,
-    FaXmark,
 } from "react-icons/fa6";
 import MainContainer from "../ui/MainContainer";
 import { BlogCard, type BlogPost } from "@/app/components/ui/BlogCard"; // adjust path if needed
@@ -30,17 +25,6 @@ type BlogSectionProps = {
     breadcrum : BreadcrumbItem[]
 };
 
-const EASE = [0.2, 0.7, 0.2, 1] as const;
-
-// Header: label, search and title appear one after another
-const headerVariants: Variants = {
-    hidden: {},
-    show: { transition: { delayChildren: 0.1, staggerChildren: 0.12 } },
-};
-const riseVariants: Variants = {
-    hidden: { opacity: 0, y: 14 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } },
-};
 
 
 // Page numbers to show, with gaps for long lists: 1 … 4 5 6 … 12
