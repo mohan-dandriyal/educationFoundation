@@ -9,7 +9,7 @@ import BlogDetailsSection, {
 import type { BlogPost } from "@/app/components/ui/BlogCard";
 import LoadingScreen from "@/app/components/LoadingScreen";
 
-const posts = blog.post as BlogPost[];
+const posts: BlogPost[] = blog.post.map((post) => ({ ...post, views: 0 }));
 const details = blog.details as BlogDetail[];
 
 type PageProps = { params: Promise<{ slug: string }> };

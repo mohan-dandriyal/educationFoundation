@@ -62,7 +62,7 @@ export default function Home() {
         <BlogSection
           eyebrow={home.ourBlog.eyebrow ?? ""}
           heading={home.ourBlog.heading ?? ""}
-          post={blog.post ?? []}
+          post={blog.post?.map((post) => ({ ...post, views: 0 })) ?? []}
            />
       </div>
     </div>

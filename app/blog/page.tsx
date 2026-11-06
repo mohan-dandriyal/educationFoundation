@@ -26,7 +26,7 @@ function BlogPage() {
       />
 
       <BlogSection
-        post={blog.post ?? []}
+        post={(blog.post ?? []).map((post) => ({ ...post, views: 0 }))}
         breadcrum={blog.breadcrum}
       />
     </div>
